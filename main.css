@@ -1,5 +1,5 @@
 .logo {
     margin: var(--length-tab);
-    background: center / contain no-repeat url('./imgs/st.png');
+    background: center / contain no-repeat url('https://st-org.github.io/imgs/st.png');
     height: 8em;
 }
