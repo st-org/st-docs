@@ -1,15 +1,15 @@
 {css-src main.css,global[]}
 {logo[]}
 {title[Simple Text]}
-'Simple Text Project 旨在提供简单而且灵活的文字排版体验. 现有的排版系统主要就是 html 和 latex. 我们的这个新项目以 html 为基础. 具体地, 我们设计了标记语言 stdn. 它在功能上类似于 markdown, 可以编译为 html. 它在语法上类似于 json, 比 markdown 更易扩展, 而且比 html 更简洁.'
+'Simple Text Project is aiming to provide simple and flexible typesetting experience. HTML and LaTeX are two major typesetting systems today. This new project is based on HTML. To be specific, we designed a new markup language STDN which can be compiled to HTML like Markdown. STDN is similar to JSON in syntax. Thus, it is more extensible than Markdown and briefer than HTML.'
 []
 {level 1, label 'quick-start', heading ['Quick Start']}
 {ol[
-    {li[['安装文本编辑器 '{href 'https://code.visualstudio.com',a[vscode]}.]]}
-    {li[['安装 vscode 插件 '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang',a[ddu.st-lang]}.]]}
-    {li[新建文件夹 hello-st.]}
-    {li[['下载 '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.stdn',a[main.stdn]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.css',a[main.css]}' 并放入文件夹 hello-st.']]}
-    {li[用 vscode 打开文件夹 hello-st.]}
-    {li[在 vscode 中打开文件 main.stdn.]}
-    {li['在文件 main.stdn 中右击, 然后点击右键菜单中的 Preview.']}
+    {li[['Install the text editor '{href 'https://code.visualstudio.com',a[vscode]}.]]}
+    {li[['Install the vscode extension '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang',a[ddu.st-lang]}.]]}
+    {li[Create new folder hello-st.]}
+    {li[['Download '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.stdn',a[main.stdn]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.css',a[main.css]}' and move them into hello-st.']]}
+    {li[Open hello-st with vscode.]}
+    {li[Open main.stdn in vscode.]}
+    {li[Right click in the editor and click "Preview" in the context menu.]}
 ]}
