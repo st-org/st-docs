@@ -1,7 +1,7 @@
 {css-src main.css,global[]}
 {logo[]}
 {title[Simple Text]}
-'Simple Text Project is aiming to provide simple and flexible typesetting experience. HTML and LaTeX are two major typesetting systems today. This new project is based on HTML. To be specific, we designed a new markup language STDN which can be compiled to HTML like Markdown. STDN is similar to JSON in syntax. Thus, it is more extensible than Markdown and briefer than HTML.'
+'Simple Text Project is for simple and flexible text typesetting. This new project is based on html. To be specific, we designed a new markup language stdn which can be compiled to html like markdown. This new language is similar to json in syntax. Thus, it is more extensible than markdown and briefer than html.'
 []
 {level 1, label 'quick-start', heading ['Quick Start']}
 {ol[
