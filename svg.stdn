@@ -1,0 +1,66 @@
+{title[SVG]}
+{css-src common.css, global[]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{style width:100%; fill:currentColor, viewBox 0 0 200 100, svg['
+        '   {style r:5, circle['
+        '       {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion[]}'
+        '   ]}'
+        ']}'
+    ]}
+    {style width:100%; fill:currentColor, viewBox 0 0 200 100, svg[
+        {style r:5, circle[
+            {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion[]}
+        ]}
+    ]}
+]}
+[]
+{h2[Supported SVG Elements and Attributes]}
+{dl[
+    {dt[animate]}
+    {dd[
+        attributeName begin dur fill keyTimes repeatCount values
+    ]}
+
+    {dt[animateMotion]}
+    {dd[
+        attributeName begin dur fill keyTimes repeatCount values
+        keyPoints path rotate
+    ]}
+
+    {dt[circle]}
+    {dd[]}
+
+    {dt[ellipse]}
+    {dd[]}
+
+    {dt[foreignObject]}
+    {dd[]}
+    
+    {dt[g]}
+    {dd[]}
+
+    {dt[image]}
+    {dd[href preserveAspectRatio]}
+
+    {dt[path]}
+    {dd[d]}
+
+    {dt[rect]}
+    {dd[]}
+
+    {dt[svg]}
+    {dd[preserveAspectRatio viewBox]}
+
+    {dt[text]}
+    {dd[x y rotate textLength]}
+
+    {dt[textPath]}
+    {dd[path textLength]}
+
+    {dt[tspan]}
+    {dd[x y rotate textLength]}
+]}
+[]
