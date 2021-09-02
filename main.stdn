@@ -1,14 +1,14 @@
-{css-src main.css,global[]}
 {logo[]}
 {title[Simple Text]}
+{css-src main.css, ucs-src common.js, global[]}
 'Simple Text Project is for simple and flexible text typesetting. This new project is based on html. To be specific, we designed a new markup language stdn which can be compiled to html like markdown. This new language is similar to json in syntax. Thus, it is more extensible than markdown and briefer than html.'
 []
 {level 1, label 'quick-start', heading ['Quick Start']}
 {ol[
-    {li[['Install text editor '{href 'https://code.visualstudio.com',a[vscode]}.]]}
-    {li[['Install vscode extension '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang',a[ddu.st-lang]}.]]}
+    {li[['Install text editor '{href 'https://code.visualstudio.com', a[vscode]}.]]}
+    {li[['Install vscode extension '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang', a[ddu.st-lang]}.]]}
     {li[Create new folder hello-st.]}
-    {li[['Download '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.stdn',a[main.stdn]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.css',a[main.css]}' and move them into hello-st.']]}
+    {li[['Download '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.stdn', a[main.stdn]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.css', a[main.css]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/common.js', a[common.js]}' and move them into hello-st.']]}
     {li[Open hello-st with vscode.]}
     {li[Open main.stdn in vscode.]}
     {li[Right click in editor and click "Preview" in context menu.]}

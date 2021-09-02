@@ -1,0 +1,17 @@
+{title[Proof]}
+{css-src common.css, global[]}
+'Special options of proof tag units: mark, desc'
+[]
+Default mark is empty. Default desc is empty.
+[]
+'The compiled result of a proof tag unit consists of four parts: tag, mark, desc, content. The tag part is "proof". The mark part is from the mark option. The desc part is from the desc option. The content part is from the children of the unit.'
+[]
+Add "plain" class will hide the tag part and the desc part.
+[]
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, block, code['{desc God, proof[Obvious.]}']}
+    {desc God, proof[Obvious.]}
+]}
+[]

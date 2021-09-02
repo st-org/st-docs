@@ -1,0 +1,56 @@
+{title[Head]}
+{css-src common.css, ucs-src common.js, global[]}
+{h2[Title and Contents]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{title[Test]}'
+        '{contents[]}'
+        '[]'
+        '{label h1, heading [Test]}'
+        '{level 2, label h2, heading [Test]}'
+    ]}
+    {div[
+        {title[Test]}
+        {contents[]}
+        []
+        {label h1, heading [Test]}
+        {level 2, label h2, heading [Test]}
+    ]}
+]}
+[]
+{h2[Global Tag Unit]}
+Global tag units are used to import css and unit compilers.
+{css-src hello.css, ucs-src hello.js, global[]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {div[
+        {lang stdn, code[
+            '{css-src hello.css, ucs-src hello.js, global[]}'
+            '{name world, hello[]}'
+        ]}
+        {dl[
+            {dt[hello.css]}
+            {dd[{lang css, code[
+                '.unit.hello {'
+                '    font-style: italic;'
+                '    margin: var(--length-gap) 0;'
+                '}'
+            ]}]}
+            {dt[hello.js]}
+            {dd[{lang js, code[
+                'export function hello(unit){'
+                '    const element=document.createElement(\'div\')'
+                '    element.textContent=\'Hello \'+unit.options.name'
+                '    return element'
+                '}'
+            ]}]}
+        ]}
+    ]}
+    {name world, hello[]}
+]}
+[]
+[{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a[ucs.ts]}' is a good example to learn how to write unit compilers.']
+[]
