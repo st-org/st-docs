@@ -6,7 +6,7 @@
     {display[Result]}
     {lang stdn, code['{code[inline]}']}
     {code[inline]}
-    {lang stdn, code['{block, code[block]}']}
+    {lang stdn, block, code['{block, code[block]}']}
     {block, code[block]}
     {lang stdn, code[
         '{code['
