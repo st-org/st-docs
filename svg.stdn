@@ -1,6 +1,6 @@
 {title[SVG]}
 {css-src common.css, global[]}
-{h2[Use SVG Elements]}
+{id use-svg-elements, orbit heading, h2[Use SVG Elements]}
 {two[
     {display[Source]}
     {display[Result]}
@@ -18,7 +18,7 @@
     ]}
 ]}
 []
-{h2[Supported SVG Elements and Attributes]}
+{id supported-svg-elements-and-attributes, orbit heading, h2[Supported SVG Elements and Attributes]}
 {dl[
     {dt[animate]}
     {dd[

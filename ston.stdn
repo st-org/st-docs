@@ -2,7 +2,7 @@
 {css-src common.css, global[]}
 STON is short for simple text object notation.
 []
-{h2[String]}
+{id string, orbit heading, h2[String]}
 {h3[Unquoted]}
 {two[
     {display[STON]}
@@ -34,7 +34,7 @@ STON is short for simple text object notation.
     {lang json, block, code["multi-line\nstring\\n"]}
 ]}
 []
-{h2[Number]}
+{id number, orbit heading, h2[Number]}
 {two[
     {display[STON]}
     {display[JSON]}
@@ -58,7 +58,7 @@ STON is short for simple text object notation.
     {lang json, code['54']}
 ]}
 []
-{h2[Boolean]}
+{id boolean, orbit heading, h2[Boolean]}
 {two[
     {display[STON]}
     {display[JSON]}
@@ -68,7 +68,7 @@ STON is short for simple text object notation.
     {lang json, code['false']}
 ]}
 []
-{h2[Array]}
+{id array, orbit heading, h2[Array]}
 {two[
     {display[STON]}
     {display[JSON]}
@@ -92,7 +92,7 @@ STON is short for simple text object notation.
 []
 Commas can be omitted if there is no confusion.
 []
-{h2[Object]}
+{id object, orbit heading, h2[Object]}
 {two[
     {display[STON]}
     {display[JSON]}
@@ -126,7 +126,7 @@ Default value is true. Default key is __.
 []
 There is no colon between key and value. Spaces between key and value can be omitted if there is no confusion.
 []
-{h2[Comment]}
+{id comment, orbit heading, h2[Comment]}
 {lang ston, code[
     '{'
     '    key value'

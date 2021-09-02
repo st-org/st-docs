@@ -2,15 +2,15 @@
 {css-src common.css, global[]}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
-'Common special options of index units: label (required), orbit, level, mark, desc'
+'Common special options of index units: id (required), orbit, level, mark, desc'
 []
 Default orbit is the tag of the unit. Default level is 1. Default mark is the index of the unit. Default desc is empty.
 []
 'The compiled result of an index unit consists of four parts: tag, mark, desc, content. The tag part is from the orbit option. The mark part is from the mark option. The desc part is from the desc option. The content part is from the children of the unit.'
 []
-Add "plain" class will hide the tag part and the desc part.
+Add "plain" class will hide the tag part.
 []
-{h2[Index Tag Unit]}
+{id index-tag-unit, orbit heading, h2[Index Tag Unit]}
 'We call a general index unit as an "index unit". In contrast, we call a unit whose tag is exactly "index" as an "index tag unit".'
 []
 {two[
@@ -18,69 +18,69 @@ Add "plain" class will hide the tag part and the desc part.
     {display[Result]}
     {lang stdn, code[
         '{display, [\'\pi_1(S^n)=\'{cases['
-        '    [\'\Z & n=1\quad\'{label e3, orbit equation, index[]}\'\\\\\\\\\']'
-        '    [\'0 & n>1\quad\'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{\'\\\'\'}]]}, index[]}]'
+        '    [\'\Z & n=1\quad\'{id e3, orbit equation, index[]}\'\\\\\\\\\']'
+        '    [\'0 & n>1\quad\'{id e4, orbit equation, mark{[[{ref-id e3, class plain, ref[]}{\'\\\'\'}]]}, index[]}]'
         ']}]}'
     ]}
     {display, ['\pi_1(S^n)='{cases[
-        ['\Z & n=1\quad'{label e3, orbit equation, index[]}'\\\\']
-        ['0 & n>1\quad'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{'\''}]]}, index[]}]
+        ['\Z & n=1\quad'{id e3, orbit equation, index[]}'\\\\']
+        ['0 & n>1\quad'{id e4, orbit equation, mark{[[{ref-id e3, class plain, ref[]}{'\''}]]}, index[]}]
     ]}]}
 ]}
 []
-{h2[Heading Tag Unit]}
+{id heading-tag-unit, orbit heading, h2[Heading Tag Unit]}
 {two[
     {display[Source]}
     {display[Result]}
-    {lang stdn, block, code['{label h1, heading [Test]}']}
-    {label h1, heading [Test]}
-    {lang stdn, block, code['{level 2, label h2, heading [Test]}']}
-    {level 2, label h2, heading [Test]}
+    {lang stdn, block, code['{id h1, heading[Test]}']}
+    {id h1, heading[Test]}
+    {lang stdn, block, code['{level 2, id h2, heading[Test]}']}
+    {level 2, id h2, heading[Test]}
 ]}
 []
-{h2[Equation Tag Unit]}
+{id equation-tag-unit, orbit heading, h2[Equation Tag Unit]}
 {two[
     {display[Source]}
     {display[Result]}
-    {lang stdn, block, code['{label e2, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {label e2, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code['{id e2, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e2, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2[Change Level]}
+{id change-level, orbit heading, h2[Change Level]}
 {global, level 2, test[]}
 {two[
     {display[Source]}
     {display[Result]}
     {lang stdn, code[
         '{global, level 2, test[]}'
-        '{label e5, orbit test, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
-        '{label e6, orbit test, level 3, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{id e5, orbit test, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{id e6, orbit test, level 3, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
     ]}
     {div[
-        {label e5, orbit test, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-        {label e6, orbit test, level 3, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {id e5, orbit test, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {id e6, orbit test, level 3, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
     ]}
 ]}
 []
-{h2[Figure Tag Unit]}
+{id figure-tag-unit, orbit heading, h2[Figure Tag Unit]}
 {two[
     {display[Source]}
     {display[Result]}
-    {lang stdn, block, code['{label e7, figure[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {label e7, figure[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code['{id e7, figure[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e7, figure[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2[Theorem Units]}
+{id theorem-units, orbit heading, h2[Theorem Units]}
 {two[
     {display[Source]}
     {display[Result]}
     {lang stdn, code[
-        '{label t1, desc Fermat, theorem['
+        '{id t1, desc Fermat, theorem['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
     ]}
-    {label t1, desc Fermat, theorem[
+    {id t1, desc Fermat, theorem[
         ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
         {display, 'a^n+b^n=c^n.'}
     ]}

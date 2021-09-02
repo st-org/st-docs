@@ -1,29 +1,50 @@
 {title[Ref]}
 {css-src common.css, global[]}
-'Special options of ref tag units: label (required), mark, desc'
+{id ref-tag-unit, orbit heading, h2[Ref Tag Unit]}
+'Special options of ref tag units: ref-id (required), desc'
 []
-Default mark is the index of the index unit referred to. Default desc is empty.
+Default desc is empty.
 []
-'The compiled result of a ref tag unit consists of four parts: tag, mark, desc, content. The tag part is from the orbit option of the index unit referred to. The mark part is from the mark option of the unit or the mark option of the index unit referred to. The desc part is from the desc option of the unit. The content part is from the children of the unit.'
+'The compiled result of a ref tag unit consists of three parts: tag, mark, desc. The tag part is from the orbit option of the index unit referred to. The mark part is from the non-empty children of the unit or the mark part of the index unit referred to. The desc part is from the desc option of the unit.'
 []
-Add "plain" class will hide the tag part and the desc part.
+Add "plain" class will hide the tag part.
 []
 {two[
     {display[Source]}
     {display[Result]}
     {lang stdn, code[
-        '{label t1, mark A, desc Fermat, theorem['
+        '{id t1, mark FLT, desc Fermat, theorem['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
-        '[\'The first successful proof of \'{label t1, mark FLT, ref[]}\' was released in 1994 by Andrew Wiles.\']'
+        '[\'The first successful proof of \'{ref-id t1, ref[]}\' was released in 1994 by Andrew Wiles.\']'
     ]}
     {div[
-        {label t1, mark A, desc Fermat, theorem[
+        {id t1, mark FLT, desc Fermat, theorem[
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
-        ['The first successful proof of '{label t1, mark FLT, ref[]}' was released in 1994 by Andrew Wiles.']
+        ['The first successful proof of '{ref-id t1, ref[]}' was released in 1994 by Andrew Wiles.']
+    ]}
+]}
+[]
+{id use-html-anchor-element, orbit heading, h2[Use HTML Anchor Element]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{id t2, mark FLT, desc Fermat, theorem['
+        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
+        '    {display, \'a^n+b^n=c^n.\'}'
+        ']}'
+        '[\'The first successful proof of \'{href #t2, a[theorem FLT]}\' was released in 1994 by Andrew Wiles.\']'
+    ]}
+    {div[
+        {id t2, mark FLT, desc Fermat, theorem[
+            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+            {display, 'a^n+b^n=c^n.'}
+        ]}
+        ['The first successful proof of '{href #t2, a[theorem FLT]}' was released in 1994 by Andrew Wiles.']
     ]}
 ]}
 []

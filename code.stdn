@@ -1,6 +1,6 @@
 {title[Code]}
 {css-src common.css, global[]}
-{h2[Inline or Block]}
+{id inline-or-block, orbit heading, h2[Inline or Block]}
 {two[
     {display[Source]}
     {display[Result]}
@@ -20,7 +20,8 @@
     ]}
 ]}
 []
-{h2[Highlight]}
+{id highlight, orbit heading, h2[Highlight]}
+{h3[Built-in Langs]}
 'For built-in langs, just pass the name of the lang.'
 []
 {two[
@@ -32,7 +33,7 @@
 []
 'Built-in langs: css, html, javascript, js, json, markdown, md, stdn, ston, ts, typescript, urls'
 []
-{h2[Highlight Other Langs]}
+{h3[Other Langs]}
 You need to import the info of the lang.
 []
 {global, vsce cpp, code[]}

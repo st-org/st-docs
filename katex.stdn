@@ -1,6 +1,6 @@
 {title[Katex]}
 {css-src common.css, global[]}
-{h2[Inline or Display]}
+{id inline-or-display, orbit heading, h2[Inline or Display]}
 {two[
     {display[Source]}
     {display[Result]}
@@ -12,17 +12,17 @@
     {display[{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2[Equation]}
+{id equation, orbit heading, h2[Equation]}
 {two[
     {display[Source]}
     {display[Result]}
-    {lang stdn, code['{label e1, equation[{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {label e1, equation[{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-    {lang stdn, code['{label e2, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {label e2, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, code['{id e1, equation[{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e1, equation[{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, code['{id e2, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e2, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2[Customize Katex Commands]}
+{id customize-katex-commands, orbit heading, h2[Customize Katex Commands]}
 {global, '\def\exp#1{e^{#1}}'}
 {two[
     {display[Source]}
@@ -34,7 +34,7 @@
     {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
-{h2[Use Katex Environments]}
+{id use-katex-environments, orbit heading, h2[Use Katex Environments]}
 {two[
     {display[Source]}
     {display[Result]}
@@ -52,19 +52,19 @@
 []
 'Supported katex environments: aligned, alignedat, array, arraystretch, Bmatrix, bmatrix, cases, matrix, rcases, pmatrix, smallmatrix, Vmatrix, vmatrix'
 []
-{h2[Labels in Katex]}
+{id use-index-units-in-katex, orbit heading, h2[Use Index Units in Katex]}
 {two[
     {display[Source]}
     {display[Result]}
     {lang stdn, code[
         '{display, [\'\pi_1(S^n)=\'{cases['
-        '    [\'\Z & n=1\quad\'{label e3, orbit equation, index[]}\'\\\\\\\\\']'
-        '    [\'0 & n>1\quad\'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{\'\\\'\'}]]}, index[]}]'
+        '    [\'\Z & n=1\quad\'{id e3, orbit equation, index[]}\'\\\\\\\\\']'
+        '    [\'0 & n>1\quad\'{id e4, orbit equation, mark{[[{ref-id e3, class plain, ref[]}{\'\\\'\'}]]}, index[]}]'
         ']}]}'
     ]}
     {display, ['\pi_1(S^n)='{cases[
-        ['\Z & n=1\quad'{label e3, orbit equation, index[]}'\\\\']
-        ['0 & n>1\quad'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{'\''}]]}, index[]}]
+        ['\Z & n=1\quad'{id e3, orbit equation, index[]}'\\\\']
+        ['0 & n>1\quad'{id e4, orbit equation, mark{[[{ref-id e3, class plain, ref[]}{'\''}]]}, index[]}]
     ]}]}
 ]}
 []
