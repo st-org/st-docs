@@ -1,0 +1,70 @@
+{title[Katex]}
+{css-src common.css, global[]}
+{h2[Inline or Display]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code['{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
+    {'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
+    {lang stdn, code['{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
+    {display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
+    {lang stdn, code['{display[{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {display[{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+]}
+[]
+{h2[Equation]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code['{label e1, equation[{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {label e1, equation[{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, code['{label e2, equation[{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {label e2, equation[{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+]}
+[]
+{h2[Customize Katex Commands]}
+{global, '\def\exp#1{e^{#1}}'}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{global, \'\def\exp#1{e^{#1}}\'}'
+        '{display, \'\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2\'}'
+    ]}
+    {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
+]}
+[]
+{h2[Use Katex Environments]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{display, [\'\pi_1(S^n)=\'{cases['
+        '    \'\Z & n=1\\\\\\\\\''
+        '    \'0 & n>1\''
+        ']}]}'
+    ]}
+    {display, ['\pi_1(S^n)='{cases[
+        '\Z & n=1\\\\'
+        '0 & n>1'
+    ]}]}
+]}
+[]
+'Supported katex environments: aligned, alignedat, array, arraystretch, Bmatrix, bmatrix, cases, matrix, rcases, pmatrix, smallmatrix, Vmatrix, vmatrix'
+[]
+{h2[Labels in Katex]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{display, [\'\pi_1(S^n)=\'{cases['
+        '    [\'\Z & n=1\quad\'{label e3, orbit equation, index[]}\'\\\\\\\\\']'
+        '    [\'0 & n>1\quad\'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{\'\\\'\'}]]}, index[]}]'
+        ']}]}'
+    ]}
+    {display, ['\pi_1(S^n)='{cases[
+        ['\Z & n=1\quad'{label e3, orbit equation, index[]}'\\\\']
+        ['0 & n>1\quad'{label e4, orbit equation, mark{[[{label e3, class plain, ref[]}{'\''}]]}, index[]}]
+    ]}]}
+]}
+[]

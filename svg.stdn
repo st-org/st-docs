@@ -1,5 +1,6 @@
 {title[SVG]}
 {css-src common.css, global[]}
+{h2[Use SVG Elements]}
 {two[
     {display[Source]}
     {display[Result]}

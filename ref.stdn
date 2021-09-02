@@ -1,0 +1,29 @@
+{title[Ref]}
+{css-src common.css, global[]}
+'Special options of ref tag units: label (required), mark, desc'
+[]
+Default mark is the index of the index unit referred to. Default desc is empty.
+[]
+'The compiled result of a ref tag unit consists of four parts: tag, mark, desc, content. The tag part is from the orbit option of the index unit referred to. The mark part is from the mark option of the unit or the mark option of the index unit referred to. The desc part is from the desc option of the unit. The content part is from the children of the unit.'
+[]
+Add "plain" class will hide the tag part and the desc part.
+[]
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        '{label t1, mark A, desc Fermat, theorem['
+        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
+        '    {display, \'a^n+b^n=c^n.\'}'
+        ']}'
+        '[\'The first successful proof of \'{label t1, mark FLT, ref[]}\' was released in 1994 by Andrew Wiles.\']'
+    ]}
+    {div[
+        {label t1, mark A, desc Fermat, theorem[
+            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+            {display, 'a^n+b^n=c^n.'}
+        ]}
+        ['The first successful proof of '{label t1, mark FLT, ref[]}' was released in 1994 by Andrew Wiles.']
+    ]}
+]}
+[]

@@ -5,12 +5,12 @@
 []
 {level 1, label 'quick-start', heading ['Quick Start']}
 {ol[
-    {li[['Install the text editor '{href 'https://code.visualstudio.com',a[vscode]}.]]}
-    {li[['Install the vscode extension '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang',a[ddu.st-lang]}.]]}
+    {li[['Install text editor '{href 'https://code.visualstudio.com',a[vscode]}.]]}
+    {li[['Install vscode extension '{href 'https://marketplace.visualstudio.com/items?itemName=ddu.st-lang',a[ddu.st-lang]}.]]}
     {li[Create new folder hello-st.]}
     {li[['Download '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.stdn',a[main.stdn]}', '{href 'https://cdn.jsdelivr.net/gh/st-org/st-docs/main.css',a[main.css]}' and move them into hello-st.']]}
     {li[Open hello-st with vscode.]}
     {li[Open main.stdn in vscode.]}
-    {li[Right click in the editor and click "Preview" in the context menu.]}
+    {li[Right click in editor and click "Preview" in context menu.]}
 ]}
 []
