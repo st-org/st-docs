@@ -4,7 +4,7 @@ STDN is short for simple text document notation and is based on ston. STDN can b
 []
 This article is for explaining the parse of stdn. Compiled results are not invoved in this article. Parsed results are illustrated by ston in this article.
 []
-{h2 [Line]}
+{id line, orbit heading, h2 [Line]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -27,7 +27,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 []
 An Item in line can only be a char or a unit. So an item in the source of a line can only be a string or an object. A string in line source will be converted to chars in the process of parse. An object in line source will be converted to a unit in the process of parse.
 []
-{h2 [Unit]}
+{id unit, orbit heading, h2 [Unit]}
 'A unit is an object with three keys: tag, options, children.'
 []
 {two [
@@ -87,7 +87,7 @@ Default tag is div.
     ]}
 ]}
 []
-{h2 [Options]}
+{id options, orbit heading, h2 [Options]}
 Options of a unit is an object with string or number or boolean or stdn values. Values in options are from non-array values in unit source.
 []
 'For a value in unit source, if it is an object and the value of __ key in the object is an array, then the corresponding value in options is a stdn which is parsed from the array value.'

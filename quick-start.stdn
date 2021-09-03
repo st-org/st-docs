@@ -1,0 +1,11 @@
+{id quick-start, orbit heading, h2 [Quick Start]}
+{ol [
+    {li [['Install text editor '{href https://code.visualstudio.com, a [vscode]}.]]}
+    {li [['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ddu.st-lang, a [ddu.st-lang]}.]]}
+    {li [Create new folder hello-st.]}
+    {li [['Download '{href main.urls, a [main.urls]}', '{href main.stdn, a [main.stdn]}', '{href main.css, a [main.css]}', '{href common.js, a [common.js]}' and move them into hello-st.']]}
+    {li [Open hello-st with vscode.]}
+    {li [Open main.urls in vscode.]}
+    {li [Right click in editor and click "Preview" in context menu.]}
+]}
+[]

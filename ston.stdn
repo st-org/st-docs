@@ -53,7 +53,7 @@ STON is short for simple text object notation.
 {two [
     {display [STON]}
     {display [JSON]}
-    {lang ston, code ['[\'hellow \'world,!]']}
+    {lang ston, code ['[\'hellow \'world, !]']}
     {lang json, code ['["hello ","world","!"]']}
     {lang ston, code [
         '['
@@ -71,7 +71,9 @@ STON is short for simple text object notation.
     ]}
 ]}
 []
-Commas can be omitted if there is no confusion.
+Commas and spaces can be omitted if there is no confusion.
+[]
+[{lang ston, code ['[,\'hellow \'world, , !,]']}' is equivalent to '{lang ston, code ['[\'hellow \'world, !]']}]
 []
 {id object, orbit heading, h2 [Object]}
 {two [
@@ -95,13 +97,15 @@ Commas can be omitted if there is no confusion.
     ]}
 ]}
 []
-Commas can be omitted if there is no confusion.
+Commas and spaces can be omitted if there is no confusion.
+[]
+[{lang ston, code ['{,key\'value\' standalone-key, , \'standalone-value\',}']}' is equivalent to '{lang ston, code ['{key\'value\' standalone-key, \'standalone-value\'}']}]
 []
 Default value is true. Default key is __.
 []
 ['Keys can only contain English letters and '{code [_-]}' and can not be quoted.']
 []
-There is no colon between key and value. Spaces between key and value can be omitted if there is no confusion.
+There is no colon between key and value.
 []
 {id comment, orbit heading, h2 [Comment]}
 {lang ston, code [

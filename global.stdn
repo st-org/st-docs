@@ -61,8 +61,8 @@ Global option units are units with "global" opton. A valid global option unit sh
     {display [Result]}
     {lang stdn, code [
         '{global, level 2, test []}'
-        '{id e5, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{id e1, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
     ]}
-    {id e5, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {id e1, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
