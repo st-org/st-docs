@@ -1,4 +1,49 @@
 {title [STDN]}
 {css-src common.css, global []}
-STDN is short for simple text document notation and is based on ston.
+STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
+[]
+This article is for explaining the parse of stdn. Compiled results are not invoved in this article. Parsed results are illustrated by ston in this article.
+[]
+{h2[Line]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, code[
+        first line
+        'second line, third line'
+        '[fourth line]'
+    ]}
+    {lang ston, code[
+        '['
+        '    [f, i, r, s, t, \' \', l, i, n, e]'
+        '    [s, e, c, o, n, d, \' \', l, i, n, e]'
+        '    [t, h, i, r, d, \' \', l, i, n, e]'
+        '    [f, o, u, r, t, h, \' \', l, i, n, e]'
+        ']'
+    ]}
+]}
+[]
+'The syntax of a whole stdn source should meet the syntax of the content of a ston array. A whole stdn source will be parsed to an array with array items. These array items are called lines. If an item in whole stdn source is not an array, then it will be converted to an array in the process of parse.'
+[]
+An Item in line can only be a char or a unit. So an item in the source of a line can only be a string or an object. A string in line source will be converted to chars in the process of parse. An object in line source will be converted to a unit in the process of parse.
+[]
+{h2[Unit]}
+{two[
+    {display[Source]}
+    {display[Result]}
+    {lang stdn, block, code[
+        '{css-src common.css, global []}'
+    ]}
+    {lang ston, code[
+        '[[{'
+        '    tag global'
+        '    options {'
+        '        css-src common.css'
+        '    }'
+        '    children []'
+        '}]]'
+    ]}
+]}
+[]
+'The key with array value will be regarded as the tag, and the children is from the array value. The syntax inside the array value is exactly the syntax of a whole stdn source.'
 []
