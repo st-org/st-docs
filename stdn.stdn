@@ -1,4 +1,4 @@
-{title[STDN]}
-{css-src common.css, global[]}
+{title [STDN]}
+{css-src common.css, global []}
 STDN is short for simple text document notation and is based on ston.
 []

@@ -1,16 +1,16 @@
-{title[PDF]}
-{id export-to-pdf-using-chrome, orbit heading, h2[Export to PDF Using Chrome]}
-{block, code[npm i -g http-server]}
+{title [PDF]}
+{id export-to-pdf-using-chrome, orbit heading, h2 [Export to PDF Using Chrome]}
+{block, code [npm i -g http-server]}
 Assume that there is test.stdn in the current folder.
-{block, code[http-server --cors -c-1]}
-{block, code[google-chrome https://st-org.github.io?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn]}
-['Press '{kbd[Ctrl]}+{kbd[P]}' in chrome.']
+{block, code [http-server --cors -c-1]}
+{block, code [google-chrome https://st-org.github.io?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn]}
+['Press '{kbd [Ctrl]}+, {kbd [P]}' in chrome.']
 []
 'To export in dark color scheme, set the st color scheme of https://st-org.github.io to dark. Settings can be found at the bottom of the side bar of the webpage of https://st-org.github.io.'
 []
-{id import-pdf-via-svg-image, orbit heading, h2[Import PDF via SVG Image]}
-{block, code[apt install pdf2svg]}
+{id import-pdf-via-svg-image, orbit heading, h2 [Import PDF via SVG Image]}
+{block, code [apt install pdf2svg]}
 Assume that there is test.pdf and test.stdn in the current folder.
-{block, code[pdf2svg test.pdf test%02d.svg all]}
-{block, code['echo "{src test01.svg, class invert, img[]}" >> test.stdn']}
+{block, code [pdf2svg test.pdf test%02d.svg all]}
+{block, code ['echo "{src test01.svg, class invert, img[]}" >> test.stdn']}
 []

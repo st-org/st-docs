@@ -1,5 +1,5 @@
-{title[Proof]}
-{css-src common.css, global[]}
+{title [Proof]}
+{css-src common.css, global []}
 'Special options of proof tag units: mark, desc'
 []
 Default mark is empty. Default desc is empty.
@@ -8,10 +8,10 @@ Default mark is empty. Default desc is empty.
 []
 Add "plain" class will hide the tag part.
 []
-{two[
-    {display[Source]}
-    {display[Result]}
-    {lang stdn, block, code['{desc God, proof[Obvious.]}']}
-    {desc God, proof[Obvious.]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, block, code ['{desc God, proof [Obvious.]}']}
+    {desc God, proof [Obvious.]}
 ]}
 []

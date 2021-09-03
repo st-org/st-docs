@@ -1,87 +1,87 @@
-{title[STON]}
-{css-src common.css, global[]}
+{title [STON]}
+{css-src common.css, global []}
 STON is short for simple text object notation.
 []
-{id string, orbit heading, h2[String]}
-{h3[Unquoted]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code[unquoted string]}
-    {lang json, code["unquoted string"]}
+{id string, orbit heading, h2 [String]}
+{h3 [Unquoted]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code [unquoted string]}
+    {lang json, code ["unquoted string"]}
 ]}
 []
-['Unquoted strings can not contain '{code['\',{}[]\n\r']}' and can not start with space or end with space. There is no escape in unquoted strings.']
+['Unquoted strings can not contain '{code ['\',{}[]\n\r']}' and can not start with whitespace or end with whitespace. There is no escape in unquoted strings.']
 []
-{h3[Quoted]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code['\'\pi\\\\\\pi\\\\\'']}
-    {lang json, code["\\pi\\\\pi\\"]}
+{h3 [Quoted]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code ['\'\pi\\\\\\pi\\\\\'']}
+    {lang json, code ["\\pi\\\\pi\\"]}
 ]}
 []
-['Strings can only be quoted with single quotes. Only '{code['\'']}' and '{code['\\']}' can be escaped. '{code['\\']}' need not to be escaped if there is no confusion.']
+['Strings can only be quoted with single quotes. Only '{code ['\'']}' and '{code [\]}' can be escaped. '{code [\]}' need not to be escaped if there is no confusion.']
 []
-{h3[Multi-Line]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code[
+{h3 [Multi-Line]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code [
         '\'multi-line'
         'string\n\''
     ]}
-    {lang json, block, code["multi-line\nstring\\n"]}
+    {lang json, block, code ["multi-line\nstring\\n"]}
 ]}
 []
-{id number, orbit heading, h2[Number]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code['.5']}
-    {lang json, code['0.5']}
-    {lang ston, code['+1']}
-    {lang json, code['1']}
-    {lang ston, code['2e-3']}
-    {lang json, code['2e-3']}
-    {lang ston, code['-Infinity']}
+{id number, orbit heading, h2 [Number]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code ['.5']}
+    {lang json, code ['0.5']}
+    {lang ston, code ['+1']}
+    {lang json, code ['1']}
+    {lang ston, code ['2e-3']}
+    {lang json, code ['2e-3']}
+    {lang ston, code ['-Infinity']}
     not supported
-    {lang ston, code['NaN']}
+    {lang ston, code ['NaN']}
     not supported
-    {lang ston, code['0xFF']}
-    {lang json, code['255']}
-    {lang ston, code['0xff']}
-    {lang json, code['255']}
-    {lang ston, code['0b11']}
-    {lang json, code['3']}
-    {lang ston, code['0o66']}
-    {lang json, code['54']}
+    {lang ston, code ['0xFF']}
+    {lang json, code ['255']}
+    {lang ston, code ['0xff']}
+    {lang json, code ['255']}
+    {lang ston, code ['0b11']}
+    {lang json, code ['3']}
+    {lang ston, code ['0o66']}
+    {lang json, code ['54']}
 ]}
 []
-{id boolean, orbit heading, h2[Boolean]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code['true']}
-    {lang json, code['true']}
-    {lang ston, code['false']}
-    {lang json, code['false']}
+{id boolean, orbit heading, h2 [Boolean]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code ['true']}
+    {lang json, code ['true']}
+    {lang ston, code ['false']}
+    {lang json, code ['false']}
 ]}
 []
-{id array, orbit heading, h2[Array]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code['[\'hellow \'world,!]']}
-    {lang json, code['["hello ","world","!"]']}
-    {lang ston, code[
+{id array, orbit heading, h2 [Array]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code ['[\'hellow \'world,!]']}
+    {lang json, code ['["hello ","world","!"]']}
+    {lang ston, code [
         '['
         '    \'hellow \''
         '    world'
         '    !'
         ']'
     ]}
-    {lang json, code[
+    {lang json, code [
         '['
         '    "hello ",'
         '    "world",'
@@ -92,24 +92,20 @@ STON is short for simple text object notation.
 []
 Commas can be omitted if there is no confusion.
 []
-{id object, orbit heading, h2[Object]}
-{two[
-    {display[STON]}
-    {display[JSON]}
-    {lang ston, code[
-        '{key\'value\' standalone-key, \'standalone-value\'}'
-    ]}
-    {lang json, code[
-        '{"key":"value","standalone-key":true,"__":"standalone-value"}'
-    ]}
-    {lang ston, code[
+{id object, orbit heading, h2 [Object]}
+{two [
+    {display [STON]}
+    {display [JSON]}
+    {lang ston, code ['{key\'value\' standalone-key, \'standalone-value\'}']}
+    {lang json, code ['{"key":"value","standalone-key":true,"__":"standalone-value"}']}
+    {lang ston, code [
         '{'
         '    key value'
         '    standalone-key'
         '    \'standalone-value\''
         '}'
     ]}
-    {lang json, code[
+    {lang json, code [
         '{'
         '    "key": "value",'
         '    "standalone-key": true,'
@@ -122,12 +118,12 @@ Commas can be omitted if there is no confusion.
 []
 Default value is true. Default key is __.
 []
-['Keys can only contain English letters and '{code[_-]}' and can not be quoted.']
+['Keys can only contain English letters and '{code [_-]}' and can not be quoted.']
 []
 There is no colon between key and value. Spaces between key and value can be omitted if there is no confusion.
 []
-{id comment, orbit heading, h2[Comment]}
-{lang ston, code[
+{id comment, orbit heading, h2 [Comment]}
+{lang ston, code [
     '{'
     '    key value'
     '    // default value is true'
