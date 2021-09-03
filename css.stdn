@@ -1,0 +1,84 @@
+{title [CSS]}
+{css-src common.css, global []}
+{id standard-css-variables, orbit heading, h2 [Standard CSS Variables]}
+{lang css, code [
+    'html {'
+    '    --font: ui-sans-serif, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;'
+    '    --font-mono: ui-monospace, "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
+    '    --length-width: calc(210mm - .8in);'
+    '    ;'
+    '    --length-width-side: 336px;'
+    '    --length-width-bar: 15px;'
+    '    --length-tab: 2em;'
+    '    --length-padding: 1em;'
+    '    --length-gap: .5em;'
+    '    --length-padding-span: .3em;'
+    '    --length-space: .25em;'
+    '    --length-padding-circle: .2em;'
+    '    --length-font-title: 1.8em;'
+    '    --length-font-heading: 1.3em;'
+    '    --length-font-span: .85em;'
+    '    --length-font-log: .8em;'
+    '    --length-font-circle: .7em;'
+    '    --number-ratio-line: 1.5;'
+    '}'
+]}
+[]
+{h3 [Light Color Scheme]}
+{lang css, code [
+    'html {'
+    '    --color-text: black;'
+    '    --color-light: #6a737d;'
+    '    --color-string: darkorange;'
+    '    --color-number: #098658;'
+    '    --color-keyword: #AF00DB;'
+    '    --color-function: #ecad00;'
+    '    --color-variable: deepskyblue;'
+    '    --color-modifier: dodgerblue;'
+    '    --color-class: #267f99;'
+    '    --color-warn: red;'
+    '    --color-comment: limegreen;'
+    '    --color-border: #e1e4e8;'
+    '    --color-bg: white;'
+    '    --color-area: whitesmoke;'
+    '    --color-pre: #f6f8fa;'
+    '    --color-slice: rgba(211, 211, 211, .5);'
+    '    --color-selection: rgba(135, 206, 235, .5);'
+    '    --color-span: rgba(27, 31, 35, .05);'
+    '}'
+]}
+[]
+{h3 [Dark Color Scheme]}
+{lang css, code [
+    'html {'
+    '    --color-text: #cccccc;'
+    '    --color-light: #8f8f8f;'
+    '    --color-string: #df9e61;'
+    '    --color-number: #B5CEA8;'
+    '    --color-keyword: #cc80c6;'
+    '    --color-function: #DCDCAA;'
+    '    --color-variable: #6ec0ec;'
+    '    --color-modifier: #3074ac;'
+    '    --color-class: #4EC9B0;'
+    '    --color-warn: #F44747;'
+    '    --color-comment: #6A9955;'
+    '    --color-border: #2e3133;'
+    '    --color-bg: #131313;'
+    '    --color-area: #161616;'
+    '    --color-pre: #191b1d;'
+    '    --color-slice: rgba(88, 88, 88, .5);'
+    '    --color-selection: rgba(95, 144, 163, .5);'
+    '    --color-span: rgba(58, 61, 65, .5);'
+    '}'
+]}
+[]
+{id useful-css-classes, orbit heading, h2 [Useful CSS Classes]}
+{dl [
+    {dt [dark]}
+    {dd [Turn darker in dark color scheme.]}
+    {dt [invert]}
+    {dd [Invert color in dark color scheme.]}
+    {dt [hide]}
+    {dd [Hide.]}
+]}
+[]
