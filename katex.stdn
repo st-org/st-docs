@@ -40,18 +40,18 @@
     {display [Result]}
     {lang stdn, code [
         '{display, ['
-        '    \'\pi_1(S^n)=\''
+        '    \pi_1(S^n)='
         '    {cases ['
-        '        \'\Z & n=1\\\\\\\\\''
-        '        \'0 & n>1\''
+        '        \Z & n=1\\\\'
+        '        0 & n>1'
         '    ]}'
         ']}'
     ]}
     {display, [
-        '\pi_1(S^n)='
+        \pi_1(S^n)=
         {cases [
-            '\Z & n=1\\\\'
-            '0 & n>1'
+            \Z & n=1\\
+            0 & n>1
         ]}
     ]}
 ]}
@@ -64,18 +64,23 @@
     {display [Result]}
     {lang stdn, code [
         '{display, ['
-        '    \'\pi_1(S^n)=\''
+        '    \pi_1(S^n)='
         '    {cases ['
-        '        [\'\Z & n=1\quad\'{id \'e3\', orbit \'equation\', index []}\'\\\\\\\\\']'
-        '        [\'0 & n>1\quad\'{id \'e4\', orbit \'equation\', mark {[[{ref-id \'e3\', class \'plain\', ref []}{\'\\\'\'}]]}, index []}]'
+        '        [\Z & n=1\quad, {id e3, orbit equation, index []}\\\\]'
+        '        [0 & n>1\quad, {id e4, orbit equation, mark {['
+        '            [{ref-id e3, class plain, ref []}{\'\\\'\'}]'
+        '        ]}, index []}]'
         '    ]}'
         ']}'
     ]}
     {display, [
-        '\pi_1(S^n)='
+        \pi_1(S^n)=
         {cases [
-            ['\Z & n=1\quad'{id 'e3', orbit 'equation', index []}'\\\\']
-            ['0 & n>1\quad'{id 'e4', orbit 'equation', mark {[[{ref-id 'e3', class 'plain', ref []}{'\''}]]}, index []}]
+            [\Z & n=1\quad, {id e3, orbit equation, index []}\\]
+            [0 & n>1\quad, {id e4, orbit equation, mark {[
+                //
+                [{ref-id e3, class plain, ref []}{'\''}]
+            ]}, index []}]
         ]}
     ]}
 ]}

@@ -18,18 +18,23 @@ Add "plain" class will hide the tag part.
     {display [Result]}
     {lang stdn, code [
         '{display, ['
-        '    \'\pi_1(S^n)=\''
+        '    \pi_1(S^n)='
         '    {cases ['
-        '        [\'\Z & n=1\quad\'{id \'e3\', orbit \'equation\', index []}\'\\\\\\\\\']'
-        '        [\'0 & n>1\quad\'{id \'e4\', orbit \'equation\', mark {[[{ref-id \'e3\', class \'plain\', ref []}{\'\\\'\'}]]}, index []}]'
+        '        [\Z & n=1\quad, {id e1, orbit equation, index []}\\\\]'
+        '        [0 & n>1\quad, {id e2, orbit equation, mark {['
+        '            [{ref-id e1, class plain, ref []}{\'\\\'\'}]'
+        '        ]}, index []}]'
         '    ]}'
         ']}'
     ]}
     {display, [
-        '\pi_1(S^n)='
+        \pi_1(S^n)=
         {cases [
-            ['\Z & n=1\quad'{id 'e3', orbit 'equation', index []}'\\\\']
-            ['0 & n>1\quad'{id 'e4', orbit 'equation', mark {[[{ref-id 'e3', class 'plain', ref []}{'\''}]]}, index []}]
+            [\Z & n=1\quad, {id e1, orbit equation, index []}\\]
+            [0 & n>1\quad, {id e2, orbit equation, mark {[
+                //
+                [{ref-id e1, class plain, ref []}{'\''}]
+            ]}, index []}]
         ]}
     ]}
 ]}
@@ -48,8 +53,8 @@ Add "plain" class will hide the tag part.
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id e2, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id e2, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{id e3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
 {id change-level, orbit heading, h2 [Change Level]}
@@ -59,12 +64,12 @@ Add "plain" class will hide the tag part.
     {display [Result]}
     {lang stdn, code [
         '{global, level 2, test []}'
-        '{id e5, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
-        '{id e6, orbit test, level 3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{id e4, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{id e5, orbit test, level 3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
     ]}
     {div [
-        {id e5, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-        {id e6, orbit test, level 3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {id e4, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {id e5, orbit test, level 3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
     ]}
 ]}
 []
@@ -72,8 +77,8 @@ Add "plain" class will hide the tag part.
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id e7, figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id e7, figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{id e6, figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {id e6, figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
 {id theorem-units, orbit heading, h2 [Theorem Units]}
