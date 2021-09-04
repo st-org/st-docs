@@ -8,7 +8,7 @@ for(const doc of readFileSync(join(__dirname,'docs'),{encoding:'utf8'}).trim().s
     const string=readFileSync(join(__dirname,doc+'.stdn'),{encoding:'utf8'})
     const title=string.match(/title \[(.+?)\]/)[1]
     array.push(`    {dt [{src ${doc}.stdn, a [${title}]}]}`,'    {dd [')
-    for(const [,id,name] of string.matchAll(/id ([a-z-]+).+h2 \[(.+?)\]/g)){
+    for(const [,id,name] of string.matchAll(/(?:^|\n){id ([a-z-]+).+h2 \[(.+?)\]/g)){
         array.push(`        {src ${doc}.stdn#${id}, a [${name}]}`)
     }
     array.push('    ]}')

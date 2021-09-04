@@ -1,6 +1,9 @@
 export async function a(unit,Compiler){
     const element=document.createElement('a')
-    element.target='_blank'
+    const {href}=unit.options
+    if(typeof href!=='string'||!href.startsWith('#')){
+        element.target='_blank'
+    }
     const {src}=unit.options
     if(typeof src==='string'){
         const [src0,hash]=src.split('#')
