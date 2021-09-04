@@ -17,7 +17,7 @@ STON is short for simple text object notation.
 {two [
     {display [STON]}
     {display [JSON]}
-    {lang ston, code ['\'\pi\\\\\\pi\\\\\'']}
+    {lang ston, code ['\'\pi\\\\\pi\\\\\'']}
     {lang json, code ["\\pi\\\\pi\\"]}
 ]}
 []

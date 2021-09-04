@@ -2,13 +2,29 @@
 {css-src common.css, global []}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
-'Common special options of index units: id (required), orbit, level, mark, desc'
+['Index units are all '{src compile.stdn#id-unit, a [id units]}.]
 []
-Default orbit is the tag of the unit. Default level is 1. Default mark is the index of the unit. Default desc is empty.
+'The compiled result of an index unit consists of four parts: tag, mark, desc, content. Tag part is from the orbit of the unit. Mark part is from mark option or the index of the unit. Desc part is from desc option. Content part is from the children of the unit.'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc, content. The tag part is from the orbit option. The mark part is from the mark option. The desc part is from the desc option. The content part is from the children of the unit.'
+Add "plain" class will hide tag part.
 []
-Add "plain" class will hide the tag part.
+{id theorem-units, orbit heading, h2 [Theorem Units]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{id t1, desc Fermat, theorem ['
+        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
+        '    {display, \'a^n+b^n=c^n.\'}'
+        ']}'
+    ]}
+    {id t1, desc Fermat, theorem [
+        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+        {display, 'a^n+b^n=c^n.'}
+    ]}
+]}
+[]
+'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
 {id index-tag-unit, orbit heading, h2 [Index Tag Unit]}
 'We call a general index unit as an "index unit". In contrast, we call a unit whose tag is exactly "index" as an "index tag unit".'
@@ -20,7 +36,7 @@ Add "plain" class will hide the tag part.
         '{display, ['
         '    \pi_1(S^n)='
         '    {cases ['
-        '        [\Z & n=1\quad, {id e1, orbit equation, index []}\\\\]'
+        '        [\Z & n=1\quad, {id e1, orbit equation, index []}\\\]'
         '        [0 & n>1\quad, {id e2, orbit equation, mark {['
         '            [{ref-id e1, class plain, ref []}{\'\\\'\'}]'
         '        ]}, index []}]'
@@ -40,6 +56,8 @@ Add "plain" class will hide the tag part.
 ]}
 []
 {id heading-tag-unit, orbit heading, h2 [Heading Tag Unit]}
+Tag part of a heading tag unit is hided.
+[]
 {two [
     {display [Source]}
     {display [Result]}
@@ -80,22 +98,4 @@ Add "plain" class will hide the tag part.
     {lang stdn, block, code ['{id e6, figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {id e6, figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
-[]
-{id theorem-units, orbit heading, h2 [Theorem Units]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{id t1, desc Fermat, theorem ['
-        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
-        '    {display, \'a^n+b^n=c^n.\'}'
-        ']}'
-    ]}
-    {id t1, desc Fermat, theorem [
-        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
-        {display, 'a^n+b^n=c^n.'}
-    ]}
-]}
-[]
-'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []

@@ -1,13 +1,11 @@
 {title [Ref]}
 {css-src common.css, global []}
 {id ref-tag-unit, orbit heading, h2 [Ref Tag Unit]}
-'Special options of ref tag units: ref-id (required), desc'
+Ref tag units should have ref-id option.
 []
-Default desc is empty.
+['The compiled result of a ref tag unit consists of three parts: tag, mark, desc. Tag part is from the orbit of the '{src compile.stdn#id-unit, a [id unit]}' referred to. Mark part is from the non-empty children of the unit or the mark part of the id unit referred to. Desc part is from desc option.']
 []
-'The compiled result of a ref tag unit consists of three parts: tag, mark, desc. The tag part is from the orbit option of the index unit referred to. The mark part is from the non-empty children of the unit or the mark part of the index unit referred to. The desc part is from the desc option of the unit.'
-[]
-Add "plain" class will hide the tag part.
+Add "plain" class will hide tag part.
 []
 {two [
     {display [Source]}
