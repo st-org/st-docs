@@ -4,6 +4,8 @@ STDN is short for simple text document notation and is based on ston. STDN can b
 []
 This article is for explaining the parse of stdn. Compiled results are not invoved in this article. Parsed results are illustrated by ston in this article.
 []
+['All the source code of parse is in '{href https://github.com/st-org/stdn/blob/main/src/mod.ts, a [mod.ts]}.]
+[]
 {id line, orbit heading, h2 [Line]}
 {two [
     {display [Source]}

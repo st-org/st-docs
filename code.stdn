@@ -34,7 +34,9 @@
 'Built-in langs: css, html, javascript, js, json, markdown, md, stdn, ston, ts, typescript, urls'
 []
 {h3 [Other Langs]}
-You need to import the info of the lang.
+['You need to import the info of the lang via vsce option or vsce-gh option or vsce-src option of '{src global.stdn#global-option-units, a [global option units]}' whose tag is code.']
+[]
+[You can import multiple langs via multiple global option units.]
 []
 {global, vsce cpp, code []}
 {global, vsce-gh James-Yu/LaTeX-Workshop, code []}

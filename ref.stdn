@@ -3,7 +3,7 @@
 {id ref-tag-unit, orbit heading, h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
-['The compiled result of a ref tag unit consists of three parts: tag, mark, desc. Tag part is from the orbit of the '{src compile.stdn#id-unit, a [id unit]}' referred to. Mark part is from the non-empty children of the unit or the mark part of the id unit referred to. Desc part is from desc option.']
+['The compiled result of a ref tag unit consists of three parts: tag, mark, desc. Tag part is from the orbit of the '{src compile.stdn#id-unit, a [id unit]}' referred to. Mark part is from the non-empty children of the unit or mark part of the id unit referred to. Desc part is from desc option.']
 []
 Add "plain" class will hide tag part.
 []
