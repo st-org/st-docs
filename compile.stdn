@@ -1,0 +1,68 @@
+{title [Compile]}
+{css-src common.css, ucs-src common.js, global []}
+['STDN can be compiled to html. To be exact, a stdn will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}.]
+[]
+This article is for explaining the compile of stdn. Compiled results are illustrated by html in this article.
+[]
+{h2 [Line]}
+Each line will be compiled to a div with "st-line" class.
+[]
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        first line
+        '[\'second \'{span [line]}]'
+    ]}
+    {lang html, code [
+        <div class="st-line">first line</div>
+        <div class="st-line">second <span class="unit span" data-tag="span">line</span></div>
+    ]}
+]}
+[]
+{h2 [Unit]}
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-option-unit, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler, then the unit will be compiled using the unit compiler. If the tag of the unit is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag of the unit is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
+[]
+['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}'. You can import other unit compilers using '{src global.stdn#global-tag-unit, a [global tag units]}.]
+[]
+['For a non-stdn value option of the unit, if it is in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' or the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then it will be added to the compiled result of the unit, even if the unit is compiled using a unit compiler. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
+[]
+"unit" and the tag of the unit will always be added to the class of the compiled result. "data-tag" attribute of the compiled result will always be the tag of the unit.
+[]
+{h2 [Id Unit]}
+['A unit whose "id" option has non-empty string value is call an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index. Default orbit is the tag of the unit. Default level is 1. Orbit can be changed by "orbit" option. Level can be changed by "level" option and gloabl "level" option, i.e. "level" option of the last '{src global.stdn#global-option-unit, a [global option unit]}' whose tag is the orbit of the unit. The compiled result of an id unit will have "data-index" attribute, "data-orbit" attribute and "data-level" attribute.']
+[]
+{h2 [Children]}
+['If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}' which will be appended to the compiled result of the unit. If the tag of the unit is in the '{href #supported-html-elements-with-inline-children, a [following supported list]}', then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.']
+[]
+{id supported-html-elements-with-inline-children, div ['Supported html elements with inline children: a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr, del, ins, col, colgroup, table, tbody, tfoot, thead, tr.']}
+[]
+{h3 [Inline Way]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{span ['
+        '    first line'
+        '    second line'
+        ']}'
+    ]}
+    {lang html, code [
+        <div class="st-line"><span class="unit span" data-tag="span">first line
+        second line</span></div>
+    ]}
+]}
+[]
+{h3 [Normal Way]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{div ['
+        '    first line'
+        '    second line'
+        ']}'
+    ]}
+    {lang html, block, code [<div class="st-line"><div class="unit div" data-tag="div"><div class="st-line">first line</div><div class="st-line">second line</div></div></div>]}
+]}
+[]

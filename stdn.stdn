@@ -88,7 +88,7 @@ Default tag is div.
 ]}
 []
 {id options, orbit heading, h2 [Options]}
-Options of a unit is an object with string or number or boolean or stdn values. Values in options are from non-array values in unit source.
+Options of a unit is an object with string or number or boolean or stdn values. Values in options are from non-array values in unit source. A key in options is called a option of the unit.
 []
 'For a value in unit source, if it is an object and the value of __ key in the object is an array, then the corresponding value in options is a stdn which is parsed from the array value.'
 []

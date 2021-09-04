@@ -1,6 +1,5 @@
 {title [SVG]}
-{css-src common.css, global []}
-{id use-svg-elements, orbit heading, h2 [Use SVG Elements]}
+{css-src common.css, ucs-src common.js, global []}
 {two [
     {display [Source]}
     {display [Result]}
@@ -20,7 +19,7 @@
     ]}
 ]}
 []
-{id supported-svg-elements-and-attributes, orbit heading, h2 [Supported SVG Elements and Attributes]}
+{id supported-svg-elements-and-attributes, h3 [Supported SVG Elements and Attributes]}
 {dl [
     {dt [animate]}
     {dd [attributeName begin dur fill keyTimes repeatCount values]}
@@ -52,4 +51,6 @@
     {dt [tspan]}
     {dd [x y rotate textLength]}
 ]}
+[]
+['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/SVG/Element, a [mdn]}.]
 []
