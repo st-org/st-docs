@@ -47,13 +47,13 @@
         '{global, vsce cpp, code []}'
         '{lang cpp, code ['
         '    \'int main(){\''
-        '    \'    return 0\''
+        '    \'    return 0;\''
         '    \'}\''
         ']}'
     ]}
     {lang cpp, code [
         'int main(){'
-        '    return 0'
+        '    return 0;'
         '}'
     ]}
     {lang stdn, code [
@@ -65,8 +65,8 @@
         ']}'
         '{lang bibtex, code ['
         '    \'@article {MR721448,\''
-        '    \'   AUTHOR = {Atiyah, M. F. and Bott, R.},\''
-        '    \'   TITLE = {The moment map and equivariant cohomology}\''
+        '    \'    AUTHOR = {Atiyah, M. F. and Bott, R.},\''
+        '    \'    TITLE = {The moment map and equivariant cohomology}\''
         '    \'}\''
         ']}'
     ]}
@@ -78,8 +78,8 @@
         ]}
         {lang bibtex, code [
             '@article {MR721448,'
-            '   AUTHOR = {Atiyah, M. F. and Bott, R.},'
-            '   TITLE = {The moment map and equivariant cohomology}'
+            '    AUTHOR = {Atiyah, M. F. and Bott, R.},'
+            '    TITLE = {The moment map and equivariant cohomology}'
             '}'
         ]}
     ]}
