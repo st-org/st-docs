@@ -1,5 +1,5 @@
 {title [Index]}
-{css-src common.css, global []}
+{css-src common.css, ucs-src common.js, global []}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
 ['Index units are all '{src compile.stdn#id-unit, a [id units]}.]

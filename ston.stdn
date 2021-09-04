@@ -1,5 +1,5 @@
 {title [STON]}
-{css-src common.css, global []}
+{css-src common.css, ucs-src common.js, global []}
 STON is short for simple text object notation.
 []
 {id string, orbit heading, h2 [String]}

@@ -1,5 +1,5 @@
 {title [Proof]}
-{css-src common.css, global []}
+{css-src common.css, ucs-src common.js, global []}
 'The compiled result of a proof tag unit consists of four parts: tag, mark, desc, content. Tag part is "proof". Mark part is from mark option. Desc part is from desc option. Content part is from the children of the unit.'
 []
 Add "plain" class will hide tag part.

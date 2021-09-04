@@ -1,5 +1,5 @@
 {title [Ref]}
-{css-src common.css, global []}
+{css-src common.css, ucs-src common.js, global []}
 {id ref-tag-unit, orbit heading, h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
