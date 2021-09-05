@@ -5,14 +5,14 @@
     {display [Result]}
     {lang stdn, code [
         '{style width:100%; fill:currentColor, viewBox 0 0 200 100, svg ['
-        '    {style r:5, circle ['
+        '    {style r:5px, circle ['
         '        {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion []}'
         '    ]}'
         ']}'
     ]}
     {style width:100%; fill:currentColor, viewBox 0 0 200 100, svg [
         //
-        {style r:5, circle [
+        {style r:5px, circle [
             //
             {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion []}
         ]}
