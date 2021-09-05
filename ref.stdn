@@ -46,3 +46,22 @@ Add "plain" class will hide tag part.
     ]}
 ]}
 []
+{id cross-file-ref, orbit heading, h2 [Cross File Ref]}
+['The unit compiler of a in '{href common.js, a [common.js]}' is a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fix the problem of relative href in vscode preview.']
+[]
+{two [
+    {display [Source]}
+    {display [Result]}
+    {div [
+        {lang stdn, code [
+            '{ucs-src common.js, global []}'
+            '{src compile.stdn#id-unit, a [id unit]}'
+        ]}
+        {dl [
+            {dt [common.js]}
+            {dd [{src common.js, lang js, block, code []}]}
+        ]}
+    ]}
+    {src compile.stdn#id-unit, a [id unit]}
+]}
+[]

@@ -27,7 +27,7 @@ Each line will be compiled to a div with "st-line" class.
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}'. You can import other unit compilers using '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []
-['For a non-stdn value option of the unit, if it is in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' or the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then it will be added to the compiled result of the unit, even if the unit is compiled using a unit compiler. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
+['For a non-stdn value option of the unit, if it is in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' or the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', and the corresponding attribute of the compiled result has not been set or it is "class", then it will be added to the compiled result of the unit, even if the unit is compiled using a unit compiler. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
 []
 "unit" and the tag of the unit will always be added to the class of the compiled result. "data-tag" attribute of the compiled result will always be the tag of the unit.
 []

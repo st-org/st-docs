@@ -43,6 +43,7 @@
     {dd [
         {src code.stdn#inline-or-block, a [Inline or Block]}
         {src code.stdn#highlight, a [Highlight]}
+        {src code.stdn#use-src, a [Use Src]}
     ]}
     {dt [{src katex.stdn, a [Katex]}]}
     {dd [
@@ -65,6 +66,7 @@
     {dd [
         {src ref.stdn#ref-tag-unit, a [Ref Tag Unit]}
         {src ref.stdn#use-html-anchor-element, a [Use HTML Anchor Element]}
+        {src ref.stdn#cross-file-ref, a [Cross File Ref]}
     ]}
     {dt [{src proof.stdn, a [Proof]}]}
     {dd [

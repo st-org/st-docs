@@ -89,3 +89,15 @@
 []
 [{lang stdn, code ['{global, vsce-gh James-Yu/LaTeX-Workshop, code []}']}' is short for '{lang stdn, code ['{global, vsce-src https://cdn.jsdelivr.net/gh/James-Yu/LaTeX-Workshop, code []}']}.]
 []
+{id use-src, orbit heading, h2 [Use Src]}
+You can easily display the content of a code file via src option.
+[]
+Note that block option is needed if the code file has multiple lines.
+[]
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code ['{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}']}
+    {src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}
+]}
+[]
