@@ -6,9 +6,9 @@
     {display [Result]}
     {lang stdn, code ['{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
     {'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
-    {lang stdn, code ['{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
+    {lang stdn, block, code ['{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
     {display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
-    {lang stdn, code ['{display [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {lang stdn, block, code ['{display [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
@@ -16,9 +16,9 @@
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, code ['{id e1, equation [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {lang stdn, block, code ['{id e1, equation [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {id e1, equation [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-    {lang stdn, code ['{id e2, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {lang stdn, block, code ['{id e2, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {id e2, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
