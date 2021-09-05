@@ -3,10 +3,10 @@
 {block, code [npm i -g http-server]}
 Assume that there is test.stdn in the current folder.
 {block, code [http-server --cors -c-1]}
-{block, code [google-chrome https://st-org.github.io?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn]}
+{block, code [google-chrome https://st-org.github.io/?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn]}
 ['Press '{kbd [Ctrl]}+, {kbd [P]}' in chrome.']
 []
-'To export in dark color scheme, set the st color scheme of https://st-org.github.io to dark. Settings can be found at the bottom of the side bar of the webpage of https://st-org.github.io.'
+'To export in dark color scheme, set the st color scheme of https://st-org.github.io to dark. Settings can be found at the bottom of the side bar of the webpage.'
 []
 {id import-pdf-via-svg-image, orbit heading, h2 [Import PDF via SVG Image]}
 {block, code [apt install pdf2svg]}
