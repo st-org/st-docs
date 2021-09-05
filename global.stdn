@@ -31,20 +31,9 @@ Each global tag unit will be compiled to an empty div.
         ]}
         {dl [
             {dt [hello.css]}
-            {dd [{lang css, code [
-                '.unit.hello {'
-                '    font-style: italic;'
-                '    margin: var(--length-gap) 0;'
-                '}'
-            ]}]}
+            {dd [{src hello.css, lang css, block, code []}]}
             {dt [hello.js]}
-            {dd [{lang js, code [
-                'export function hello(unit){'
-                '    const element=document.createElement(\'div\')'
-                '    element.textContent=\'Hello \'+unit.options.name'
-                '    return element'
-                '}'
-            ]}]}
+            {dd [{src hello.js, lang js, block, code []}]}
         ]}
     ]}
     {name world, hello []}
