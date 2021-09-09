@@ -45,13 +45,13 @@
         {src code.stdn#highlight, a [Highlight]}
         {src code.stdn#use-src, a [Use Src]}
     ]}
-    {dt [{src katex.stdn, a [Katex]}]}
+    {dt [{src katex.stdn, a [KaTeX]}]}
     {dd [
         {src katex.stdn#inline-or-display, a [Inline or Display]}
         {src katex.stdn#equation, a [Equation]}
-        {src katex.stdn#customize-katex-commands, a [Customize Katex Commands]}
-        {src katex.stdn#use-katex-environments, a [Use Katex Environments]}
-        {src katex.stdn#use-index-units-in-katex, a [Use Index Units in Katex]}
+        {src katex.stdn#customize-katex-commands, a [Customize KaTeX Commands]}
+        {src katex.stdn#use-katex-environments, a [Use KaTeX Environments]}
+        {src katex.stdn#use-index-units-in-katex, a [Use Index Units in KaTeX]}
     ]}
     {dt [{src index.stdn, a [Index]}]}
     {dd [
@@ -75,6 +75,7 @@
     {dd [
         {src pdf.stdn#export-to-pdf-using-chrome, a [Export to PDF Using Chrome]}
         {src pdf.stdn#import-pdf-via-svg-image, a [Import PDF via SVG Image]}
+        {src pdf.stdn#import-tikz-via-standalone-pdf, a [Import TikZ via Standalone PDF]}
     ]}
 ]}
 []

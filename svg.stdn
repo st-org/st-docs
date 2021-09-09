@@ -52,5 +52,7 @@
     {dd [x y rotate textLength]}
 ]}
 []
+Some svg attributes like "r" of "circle" are not supported directly because they can be used as css properties.
+[]
 ['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/SVG/Element, a [mdn]}.]
 []
