@@ -1,7 +1,9 @@
 {title [PDF]}
 {css-src common.css, ucs-src common.js, global []}
 {id export-to-pdf-using-chrome, orbit heading, h2 [Export to PDF Using Chrome]}
-You need to create a local http server to host related resources. There are many methods to create a local http server.
+Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
+[]
+You need to create a http server to host the current folder. There are many methods to create a http server.
 []
 {dl [
     {dt [Method One]}
@@ -9,8 +11,6 @@ You need to create a local http server to host related resources. There are many
         ['Require '{href https://nodejs.org, a [nodejs]}.]
         []
         {block, code [npm i -g http-server]}
-        []
-        Assume that there is test.stdn in the current folder.
         []
         {block, code [http-server --cors -c-1]}
         []
@@ -23,9 +23,7 @@ You need to create a local http server to host related resources. There are many
         []
         ['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, a [ritwickdey.LiveServer]}.]
         []
-        Assume that there is test.stdn in the current folder.
-        []
-        Open the current folder in vscode.
+        Open the current folder with vscode.
         []
         Click "Go Live" in status bar.
         []
