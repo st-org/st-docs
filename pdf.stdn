@@ -14,7 +14,7 @@ You need to create a local http server to host related resources. There are many
         []
         {block, code [http-server --cors -c-1]}
         []
-        ['Open '{href https://st-org.github.io/?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn, a [https://st-org.github.io/?src=http%3A%2F%2Flocalhost%3A8080%2Ftest.stdn]}' in chrome.']
+        ['Open '{href https://st-org.github.io/?src=http://localhost:8080/test.stdn, a [https://st-org.github.io/?src=http://localhost:8080/test.stdn]}' in chrome.']
         []
     ]}
     {dt [Method Two]}
@@ -29,7 +29,7 @@ You need to create a local http server to host related resources. There are many
         []
         Click "Go Live" in status bar.
         []
-        ['Open '{href https://st-org.github.io/?src=http%3A%2F%2Flocalhost%3A5500%2Ftest.stdn, a [https://st-org.github.io/?src=http%3A%2F%2Flocalhost%3A5500%2Ftest.stdn]}' in chrome.']
+        ['Open '{href https://st-org.github.io/?src=http://localhost:5500/test.stdn, a [https://st-org.github.io/?src=http://localhost:5500/test.stdn]}' in chrome.']
         []
     ]}
 ]}
