@@ -14,6 +14,8 @@ This article is for explaining the parse of stdn. Compiled results are not invov
         first line
         'second line, third line'
         '[fourth line]'
+        '\'fifth'
+        ' line\''
     ]}
     {lang ston, code [
         '['
@@ -21,6 +23,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
         '    [s, e, c, o, n, d, \' \', l, i, n, e]'
         '    [t, h, i, r, d, \' \', l, i, n, e]'
         '    [f, o, u, r, t, h, \' \', l, i, n, e]'
+        '    [f, i, f, t, h, \' \', l, i, n, e]'
         ']'
     ]}
 ]}
