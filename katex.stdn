@@ -56,32 +56,30 @@
     ]}
 ]}
 []
-'Supported katex environments: aligned, alignedat, array, arraystretch, Bmatrix, bmatrix, cases, matrix, rcases, pmatrix, smallmatrix, Vmatrix, vmatrix'
+'Supported katex environments: align, alignat, aligned, alignedat, array, arraystretch, Bmatrix, bmatrix, cases, CD, darray, dcases, drcases, gather, matrix, pmatrix, rcases, smallmatrix, split, subarray, Vmatrix, vmatrix'
+[]
+'Note that, for tags in the following list, the katex environment actually used is added with "*" like "align*".'
+[]
+'Converted katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
 []
 {id use-index-units-in-katex, orbit heading, h2 [Use Index Units in KaTeX]}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{display, ['
-        '    \pi_1(S^n)='
-        '    {cases ['
-        '        [\Z & n=1\quad, {id e3, orbit equation, index []}\\\]'
-        '        [0 & n>1\quad, {id e4, orbit equation, mark {['
-        '            [{ref-id e3, class plain, ref []}{\'\\\'\'}]'
-        '        ]}, index []}]'
-        '    ]}'
+        '{align ['
+        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id e3, orbit equation, index []}\'}\'\\\]'
+        '    [\'&=\Z \tag*{\'{id e4, orbit equation, mark {['
+        '        [{ref-id e3, class plain, ref []}{\'\\\'\'}]'
+        '    ]}, index []}\'}\']'
         ']}'
     ]}
-    {display, [
-        \pi_1(S^n)=
-        {cases [
-            [\Z & n=1\quad, {id e3, orbit equation, index []}\\]
-            [0 & n>1\quad, {id e4, orbit equation, mark {[
-                //
-                [{ref-id e3, class plain, ref []}{'\''}]
-            ]}, index []}]
-        ]}
+    {align [
+        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id e3, orbit equation, index []}'}'\\]
+        ['&=\Z \tag*{'{id e4, orbit equation, mark {[
+            //
+            [{ref-id e3, class plain, ref []}{'\''}]
+        ]}, index []}'}']
     ]}
 ]}
 []

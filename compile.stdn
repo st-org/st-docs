@@ -39,13 +39,22 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {id id-unit, orbit heading, h2 [Id Unit]}
-['A unit whose "id" option has non-empty string value is call an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index. Default orbit is the tag of the unit. Default level is 1. Orbit can be changed by "orbit" option. Level can be changed by "level" option and gloabl "level" option, i.e. "level" option of the last '{src global.stdn#global-option-units, a [global option unit]}' whose tag is the orbit of the unit. The compiled result of an id unit will have "data-index" attribute, "data-orbit" attribute and "data-level" attribute.']
+'A unit whose "id" option has non-empty string value is call an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index.'
+[]
+['To be exact, orbit is non-empty orbit option or non-empty last global orbit option of the tag or the tag, and level is non-empty level option or non-empty last global level option of the tag or non-empty last global level option of the real orbit of the orbit or 1. Here, last global option of some value means option of the last '{src global.stdn#global-option-units, a [global option unit]}' whose tag is the value, and real orbit of some value means the real orbit of the value of non-empty global "merge-into" option of the value or the value.']
+[]
+'Id units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any id unit whose real orbit is heading and level is smaller than the level of the id units to be indexed.'
+[]
+'The compiled result of an id unit will have "data-orbit" attribute, "data-level" attribute and "data-index" attribute.'
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id id-unit, orbit heading, h2 [Id Unit]}']}
-    {lang html, block, code [<div class="st-line"><h2 data-orbit="heading" data-level="1" data-index="3" id="id-unit" class="unit h2" data-tag="h2"><div class="st-line">Id Unit</div></h2></div>]}
+    {lang stdn, block, code [
+        '{global, orbit heading, h2 []}'
+        '{id id-unit, h2 [Id Unit]}'
+    ]}
+    {lang html, block, code [<div class="st-line"><div class="unit global"></div></div><div class="st-line"><h2 data-orbit="heading" data-level="1" data-index="3" id="id-unit" class="unit h2" data-tag="h2"><div class="st-line">Id Unit</div></h2></div>]}
 ]}
 []
 {id children, orbit heading, h2 [Children]}
