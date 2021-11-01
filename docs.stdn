@@ -59,8 +59,9 @@
         {src index.stdn#index-tag-unit, a [Index Tag Unit]}
         {src index.stdn#heading-tag-unit, a [Heading Tag Unit]}
         {src index.stdn#equation-tag-unit, a [Equation Tag Unit]}
-        {src index.stdn#change-level, a [Change Level]}
         {src index.stdn#figure-tag-unit, a [Figure Tag Unit]}
+        {src index.stdn#change-level, a [Change Level]}
+        {src index.stdn#merge-orbits, a [Merge Orbits]}
     ]}
     {dt [{src ref.stdn, a [Ref]}]}
     {dd [

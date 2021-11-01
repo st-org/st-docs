@@ -1,7 +1,7 @@
 const {join}=require('path')
 const {readFileSync,writeFileSync}=require('fs')
 const array=[
-    '{id docs, orbit heading, h2 [Docs]}',
+    '{id docs, h2 [Docs]}',
     '{dl [',
 ]
 for(const doc of readFileSync(join(__dirname,'docs'),{encoding:'utf8'}).trim().split('\n')){
