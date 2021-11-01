@@ -17,10 +17,7 @@ Each line will be compiled to a div with "st-line" class.
         first line
         '[\'second \'{span [line]}]'
     ]}
-    {lang html, code [
-        <div class="st-line">first line</div>
-        <div class="st-line">second <span class="unit span" data-tag="span">line</span></div>
-    ]}
+    {lang html, code [<div class="st-line">first line</div><div class="st-line">second <span class="unit span" data-tag="span">line</span></div>]}
 ]}
 []
 {id unit, h2 [Unit]}
