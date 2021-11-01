@@ -1,4 +1,4 @@
-{id quick-start, orbit heading, h2 [Quick Start]}
+{id quick-start, h2 [Quick Start]}
 {ol [
     {li [['Install text editor '{href https://code.visualstudio.com, a [vscode]}.]]}
     {li [['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ddu.st-lang, a [ddu.st-lang]}.]]}

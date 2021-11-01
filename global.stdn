@@ -1,6 +1,7 @@
 {title [Global]}
 {css-src common.css, ucs-src common.js, global []}
-{id title, orbit heading, h2 [Title]}
+{global, orbit heading, h2 []}
+{id title, h2 [Title]}
 A valid title tag unit should be at the beginning of a line of stdn.
 []
 {two [
@@ -13,7 +14,7 @@ A valid title tag unit should be at the beginning of a line of stdn.
     ]}
 ]}
 []
-{id global-tag-unit, orbit heading, h2 [Global Tag Unit]}
+{id global-tag-unit, h2 [Global Tag Unit]}
 Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn.
 []
 Multiple global tag units are supported. The value of css-src and ucs-src can be a urls file.
@@ -41,7 +42,7 @@ Each global tag unit will be compiled to an empty div.
 []
 [{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}' is a good example to learn how to write unit compilers.']
 []
-{id global-option-units, orbit heading, h2 [Global Option Units]}
+{id global-option-units, h2 [Global Option Units]}
 Global option units are units with "global" option. A valid global option unit should be at the beginning of a line of stdn.
 []
 'Multiple global option units are supported. In global option units, the value of options like *src and *href can be a urls file.'

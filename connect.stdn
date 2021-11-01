@@ -1,4 +1,4 @@
-{id connect, orbit heading, h2 [Connect]}
+{id connect, h2 [Connect]}
 {dl [
     {dt [Github]}
     {dd [{href https://github.com/st-org, a [st-org]}]}

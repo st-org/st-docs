@@ -1,10 +1,11 @@
 {title [CSS]}
 {css-src common.css, ucs-src common.js, global []}
+{global, orbit heading, h2 []}
 ['In stdn, css can be used via "style" option or '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []
 ['You can learn css in '{href https://developer.mozilla.org/en-US/docs/Web/CSS/Reference, a [mdn]}.]
 []
-{id standard-css-variables, orbit heading, h2 [Standard CSS Variables]}
+{id standard-css-variables, h2 [Standard CSS Variables]}
 {lang css, code [
     'html {'
     '    --font: ui-sans-serif, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;'
@@ -76,7 +77,7 @@
     '}'
 ]}
 []
-{id useful-css-classes, orbit heading, h2 [Useful CSS Classes]}
+{id useful-css-classes, h2 [Useful CSS Classes]}
 {dl [
     {dt [dark]}
     {dd [Turn darker in dark color scheme.]}

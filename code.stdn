@@ -1,6 +1,7 @@
 {title [Code]}
 {css-src common.css, ucs-src common.js, global []}
-{id inline-or-block, orbit heading, h2 [Inline or Block]}
+{global, orbit heading, h2 []}
+{id inline-or-block, h2 [Inline or Block]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -20,7 +21,7 @@
     ]}
 ]}
 []
-{id highlight, orbit heading, h2 [Highlight]}
+{id highlight, h2 [Highlight]}
 {h3 [Built-in Langs]}
 'For built-in langs, just pass the name of the lang.'
 []
@@ -89,7 +90,7 @@
 []
 [{lang stdn, code ['{global, vsce-gh James-Yu/LaTeX-Workshop, code []}']}' is short for '{lang stdn, code ['{global, vsce-src https://cdn.jsdelivr.net/gh/James-Yu/LaTeX-Workshop, code []}']}.]
 []
-{id use-src, orbit heading, h2 [Use Src]}
+{id use-src, h2 [Use Src]}
 You can easily display the content of a code file via src option.
 []
 Note that block option is needed if the code file has multiple lines.

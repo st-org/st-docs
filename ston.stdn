@@ -1,10 +1,11 @@
 {title [STON]}
 {css-src common.css, ucs-src common.js, global []}
+{global, orbit heading, h2 []}
 STON is short for simple text object notation.
 []
 ['All the source code of ston is in '{href https://github.com/st-org/ston/blob/main/src/mod.ts, a [mod.ts]}.]
 []
-{id string, orbit heading, h2 [String]}
+{id string, h2 [String]}
 {h3 [Unquoted]}
 {two [
     {display [STON]}
@@ -36,7 +37,7 @@ STON is short for simple text object notation.
     {lang json, block, code ["multi-line\nstring\\n"]}
 ]}
 []
-{id number, orbit heading, h2 [Number]}
+{id number, h2 [Number]}
 {lang ston, code ['.5']}
 {lang ston, code ['+1']}
 {lang ston, code ['2e-3']}
@@ -47,11 +48,11 @@ STON is short for simple text object notation.
 {lang ston, code ['0b11']}
 {lang ston, code ['0o66']}
 []
-{id boolean, orbit heading, h2 [Boolean]}
+{id boolean, h2 [Boolean]}
 {lang ston, code ['true']}
 {lang ston, code ['false']}
 []
-{id array, orbit heading, h2 [Array]}
+{id array, h2 [Array]}
 {two [
     {display [STON]}
     {display [JSON]}
@@ -77,7 +78,7 @@ Commas and spaces can be omitted if there is no confusion.
 []
 [{lang ston, code ['[,\'hellow \'world, , !,]']}' is equivalent to '{lang ston, code ['[\'hellow \'world, !]']}]
 []
-{id object, orbit heading, h2 [Object]}
+{id object, h2 [Object]}
 {two [
     {display [STON]}
     {display [JSON]}
@@ -109,7 +110,7 @@ Default value is true. Default key is __.
 []
 There is no colon between key and value.
 []
-{id comment, orbit heading, h2 [Comment]}
+{id comment, h2 [Comment]}
 {lang ston, code [
     '{'
     '    key value'

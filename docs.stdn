@@ -1,4 +1,4 @@
-{id docs, orbit heading, h2 [Docs]}
+{id docs, h2 [Docs]}
 {dl [
     {dt [{src ston.stdn, a [STON]}]}
     {dd [

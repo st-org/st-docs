@@ -1,6 +1,7 @@
 {title [KaTeX]}
 {css-src common.css, ucs-src common.js, global []}
-{id inline-or-display, orbit heading, h2 [Inline or Display]}
+{global, orbit heading, h2 []}
+{id inline-or-display, h2 [Inline or Display]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -12,7 +13,7 @@
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id equation, orbit heading, h2 [Equation]}
+{id equation, h2 [Equation]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -22,7 +23,7 @@
     {id e2, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id customize-katex-commands, orbit heading, h2 [Customize KaTeX Commands]}
+{id customize-katex-commands, h2 [Customize KaTeX Commands]}
 {global, '\def\exp#1{e^{#1}}'}
 {two [
     {display [Source]}
@@ -34,7 +35,7 @@
     {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
-{id use-katex-environments, orbit heading, h2 [Use KaTeX Environments]}
+{id use-katex-environments, h2 [Use KaTeX Environments]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -62,7 +63,7 @@
 []
 'Converted katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
 []
-{id use-index-units-in-katex, orbit heading, h2 [Use Index Units in KaTeX]}
+{id use-index-units-in-katex, h2 [Use Index Units in KaTeX]}
 {two [
     {display [Source]}
     {display [Result]}
