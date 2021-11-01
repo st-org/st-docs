@@ -28,9 +28,9 @@ Each line will be compiled to a div with "st-line" class.
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}'. You can import other unit compilers using '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []
-['For a non-stdn value option of the unit, if it is in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' or the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', and the corresponding attribute of the compiled result has not been set or it is "class", then it will be added to the compiled result of the unit, even if the unit is compiled using a unit compiler. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
+['For a non-stdn value option of the unit, if it is in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' or the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}' and the corresponding attribute has not been set by unit compiler, then it will be added to the compiled result of the unit. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
 []
-"unit" and the tag of the unit will always be added to the class of the compiled result. "data-tag" attribute of the compiled result will always be the tag of the unit.
+'Class list of the compiled result will always contain "unit", the tag of the unit and class names in "class" option. "data-tag" attribute will always be the tag of the unit.'
 []
 {two [
     {display [Source]}
@@ -40,11 +40,11 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {id id-unit, h2 [Id Unit]}
-'A unit whose "id" option has non-empty string value is call an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index.'
+'A unit whose "id" option has non-empty string value is called an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index.'
 []
-['To be exact, orbit is non-empty orbit option or non-empty last global orbit option of the tag or the tag, and level is non-empty level option or non-empty last global level option of the tag or non-empty last global level option of the real orbit of the orbit or 1. Here, last global option of some value means option of the last '{src global.stdn#global-option-units, a [global option unit]}' whose tag is the value, and real orbit of some value means the real orbit of the value of non-empty global "merge-into" option of the value or the value.']
+['To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the '{src global.stdn#global-option-units, a [global option unit]}' of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit.']
 []
-'Id units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any id unit whose real orbit is heading and level is smaller than the level of the id units to be indexed.'
+Id units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any id unit whose real orbit is heading and level is smaller than the level of the id units to be indexed.
 []
 'The compiled result of an id unit will have "data-orbit" attribute, "data-level" attribute and "data-index" attribute.'
 []

@@ -28,7 +28,7 @@ Add "plain" class will hide tag part.
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
 {id index-tag-unit, h2 [Index Tag Unit]}
-'We call a general index unit as an "index unit". In contrast, we call a unit whose tag is exactly "index" as an "index tag unit".'
+'We call a general index unit an "index unit". In contrast, we call a unit whose tag is exactly "index" an "index tag unit".'
 []
 {two [
     {display [Source]}
