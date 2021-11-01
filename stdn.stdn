@@ -34,7 +34,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 An Item in line can only be a char or a unit. So an item in the source of a line can only be a string or an object. A string in line source will be converted to chars in the process of parse. An object in line source will be converted to a unit in the process of parse.
 []
 {id unit, h2 [Unit]}
-'A unit is an object with three keys: tag, options, children.'
+'A unit is an object with three keys: tag, options and children.'
 []
 {two [
     {display [Source]}
