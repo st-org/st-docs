@@ -1,5 +1,5 @@
 {title [STDN]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
 []

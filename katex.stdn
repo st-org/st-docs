@@ -1,5 +1,5 @@
 {title [KaTeX]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id inline-or-display, h2 [Inline or Display]}
 {two [

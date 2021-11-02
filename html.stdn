@@ -1,5 +1,5 @@
 {title [HTML]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {two [
     {display [Source]}
     {display [Result]}

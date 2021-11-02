@@ -102,7 +102,7 @@ Note that block option is needed if the code file has multiple lines.
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, code ['{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}']}
+    {lang stdn, block, code ['{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}']}
     {src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}
 ]}
 []

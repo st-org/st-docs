@@ -1,5 +1,5 @@
 {title [CSS]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 ['In stdn, css can be used via "style" option or '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []

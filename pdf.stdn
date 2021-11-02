@@ -1,5 +1,5 @@
 {title [PDF]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id export-to-pdf-using-chrome, h2 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
@@ -43,7 +43,9 @@ Assume that there is test.pdf in the current folder.
 []
 {block, code [pdf2svg test.pdf test%02d.svg all]}
 []
-{block, code ['echo "{src test01.svg, class invert, style display:block, img []}" >> test.stdn']}
+'Then, you can import test01.svg via following code.'
+[]
+{lang stdn, block, code ['{src test01.svg, class invert, style display:block, img []}']}
 []
 {id import-tikz-via-standalone-pdf, h2 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
@@ -57,5 +59,7 @@ Assume that there is fiber-bundle.tex with following content in the current fold
 []
 {block, code [pdf2svg fiber-bundle.pdf fiber-bundle.svg]}
 []
-{block, code ['echo "{src fiber-bundle.svg, class invert, style display:block, img []}" >> test.stdn']}
+'Then, you can import fiber-bundle.svg via following code.'
+[]
+{lang stdn, block, code ['{src fiber-bundle.svg, class invert, style display:block, img []}']}
 []
