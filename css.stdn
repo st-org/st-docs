@@ -79,10 +79,52 @@
 {id useful-css-classes, h2 [Useful CSS Classes]}
 {dl [
     {dt [dark]}
-    {dd [Turn darker in dark color scheme.]}
+    {dd [
+        Turn darker in dark color scheme.
+        {lang css, code [
+            '{'
+            '    filter: brightness(.5);'
+            '}'
+        ]}
+    ]}
     {dt [invert]}
-    {dd [Invert color in dark color scheme.]}
+    {dd [
+        Invert color in dark color scheme.
+        {lang css, code [
+            '{'
+            '    filter: invert(.9147982) brightness(.8745098);'
+            '}'
+        ]}
+    ]}
+    {dt [collapse]}
+    {dd [{lang css, code [
+        '{'
+        '    visibility: collapse;'
+        '}'
+    ]}]}
     {dt [hide]}
-    {dd [Hide.]}
+    {dd [{lang css, code [
+        '{'
+        '    display: none !important;'
+        '}'
+    ]}]}
+    {dt [invisible]}
+    {dd [{lang css, code [
+        '{'
+        '    visibility: hidden;'
+        '}'
+    ]}]}
+    {dt [translucent]}
+    {dd [{lang css, code [
+        '{'
+        '    opacity: .5;'
+        '}'
+    ]}]}
+    {dt [transparent]}
+    {dd [{lang css, code [
+        '{'
+        '    opacity: 0;'
+        '}'
+    ]}]}
 ]}
 []
