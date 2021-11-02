@@ -56,8 +56,8 @@ STON is short for simple text object notation.
 {two [
     {display [STON]}
     {display [JSON]}
-    {lang ston, code ['[\'hellow \'world, !]']}
-    {lang json, code ['["hello ","world","!"]']}
+    {lang ston, block, code ['[\'hellow \'world, !]']}
+    {lang json, block, code ['["hello ","world","!"]']}
     {lang ston, code [
         '['
         '    \'hellow \''
@@ -82,8 +82,8 @@ Commas and spaces can be omitted if there is no confusion.
 {two [
     {display [STON]}
     {display [JSON]}
-    {lang ston, code ['{key\'value\' standalone-key, \'standalone-value\'}']}
-    {lang json, code ['{"key":"value","standalone-key":true,"__":"standalone-value"}']}
+    {lang ston, block, code ['{key\'value\' standalone-key, \'standalone-value\'}']}
+    {lang json, block, code ['{"key":"value","standalone-key":true,"__":"standalone-value"}']}
     {lang ston, code [
         '{'
         '    key value'

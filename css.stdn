@@ -8,10 +8,7 @@
 {id standard-css-variables, h2 [Standard CSS Variables]}
 {lang css, code [
     'html {'
-    '    --font: ui-sans-serif, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;'
-    '    --font-mono: ui-monospace, "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
     '    --length-width: calc(210mm - .8in);'
-    '    ;'
     '    --length-width-side: 336px;'
     '    --length-width-bar: 15px;'
     '    --length-tab: 2em;'
@@ -26,6 +23,8 @@
     '    --length-font-log: .8em;'
     '    --length-font-circle: .7em;'
     '    --number-ratio-line: 1.5;'
+    '    --font: ui-sans-serif, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;'
+    '    --font-mono: ui-monospace, "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
     '}'
 ]}
 []

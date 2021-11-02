@@ -1,5 +1,5 @@
 {title [Global]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id title, h2 [Title]}
 A valid title tag unit should be at the beginning of a line of stdn.
@@ -15,39 +15,35 @@ A valid title tag unit should be at the beginning of a line of stdn.
 ]}
 []
 {id global-tag-unit, h2 [Global Tag Unit]}
-Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn.
+Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn. You can import multiple css and unit compilers via multiple global tag units.
 []
-Multiple global tag units are supported. The value of css-src and ucs-src can be a urls file.
-[]
-Each global tag unit will be compiled to an empty div.
-[]
-{css-src hello.css, ucs-src hello.js, global []}
+{mod hello, global []}
 {two [
     {display [Source]}
     {display [Result]}
-    {div [
-        {lang stdn, code [
-            '{css-src hello.css, ucs-src hello.js, global []}'
-            '{name world, hello []}'
-        ]}
-        {dl [
-            {dt [hello.css]}
-            {dd [{src hello.css, lang css, block, code []}]}
-            {dt [hello.js]}
-            {dd [{src hello.js, lang js, block, code []}]}
-        ]}
+    {lang stdn, code [
+        '{mod hello, global []}'
+        '{name world, hello []}'
     ]}
     {name world, hello []}
 ]}
 []
-[{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}' is a good example to learn how to write unit compilers.']
+Following expressions are equivalent.
+[]
+{ul [
+    {li [{lang stdn, block, code ['{mod hello, global []}']}]}
+    {li [{lang stdn, block, code ['{css hello, ucs hello, global []}']}]}
+    {li [{lang stdn, block, code ['{mod-gh st-mod/hello, global []}']}]}
+    {li [{lang stdn, block, code ['{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}']}]}
+    {li [{lang stdn, block, code ['{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.js, global []}']}]}
+]}
+[]
+css-src and ucs-src can point to a urls file and support relative url.
 []
 {id global-option-units, h2 [Global Option Units]}
-Global option units are units with "global" option. A valid global option unit should be at the beginning of a line of stdn. A global option unit whose tag is some value is called a global option unit of the value for short.
+Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn. A global option unit whose tag is some value is called a global option unit of the value for short.
 []
-'Options of global option units can be accessed in unit compilers and the effect of these options are determined by specific unit compilers.'
-[]
-Each global option unit will be compiled to an empty div.
+['Global option units have built-in effect on '{src compile.stdn#id-unit, a [id units]}.]
 []
 {global, level 2, test []}
 {two [

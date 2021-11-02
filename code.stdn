@@ -1,5 +1,5 @@
 {title [Code]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id inline-or-block, h2 [Inline or Block]}
 {two [
@@ -35,9 +35,7 @@
 'Built-in langs: css, html, javascript, js, json, markdown, md, stdn, ston, ts, typescript, urls'
 []
 {h3 [Other Langs]}
-['You need to import the info of the lang via vsce option or vsce-gh option or vsce-src option of '{src global.stdn#global-option-units, a [global option units]}' whose tag is code.']
-[]
-[You can import multiple langs via multiple global option units.]
+['For other langs, you need to import the info of the lang via '{src global.stdn#global-option-units, a [global option units]}' of code. You can import multiple langs via multiple global option units.']
 []
 {global, vsce cpp, code []}
 {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
@@ -86,12 +84,18 @@
     ]}
 ]}
 []
-[{lang stdn, code ['{global, vsce cpp, code []}']}' is short for '{lang stdn, code ['{global, vsce-gh microsoft/vscode/extensions/cpp, code []}']}.]
+Following expressions are equivalent.
 []
-[{lang stdn, code ['{global, vsce-gh James-Yu/LaTeX-Workshop, code []}']}' is short for '{lang stdn, code ['{global, vsce-src https://cdn.jsdelivr.net/gh/James-Yu/LaTeX-Workshop, code []}']}.]
+{ul [
+    {li [{lang stdn, block, code ['{global, vsce cpp, code []}']}]}
+    {li [{lang stdn, block, code ['{global, vsce-gh microsoft/vscode/extensions/cpp, code []}']}]}
+    {li [{lang stdn, block, code ['{global, vsce-src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, code []}']}]}
+]}
+[]
+vsce-src can point to a urls file and supports relative url.
 []
 {id use-src, h2 [Use Src]}
-You can easily display the content of a code file via src option.
+You can easily display the content of a code file via src option which supports relative url.
 []
 Note that block option is needed if the code file has multiple lines.
 []

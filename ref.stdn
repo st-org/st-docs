@@ -1,5 +1,5 @@
 {title [Ref]}
-{css-src common.css, ucs-src common.js, global []}
+{css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id ref-tag-unit, h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
@@ -48,20 +48,14 @@ Add "plain" class will hide tag part.
 ]}
 []
 {id cross-file-ref, h2 [Cross File Ref]}
-['The unit compiler of a in '{href common.js, a [common.js]}' is a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
+['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {div [
-        {lang stdn, code [
-            '{ucs-src common.js, global []}'
-            '{src compile.stdn#id-unit, a [id unit]}'
-        ]}
-        {dl [
-            {dt [common.js]}
-            {dd [{src common.js, lang js, block, code []}]}
-        ]}
+    {lang stdn, code [
+        '{ucs cfr, global []}'
+        '{src compile.stdn#id-unit, a [id unit]}'
     ]}
     {src compile.stdn#id-unit, a [id unit]}
 ]}

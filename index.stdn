@@ -79,6 +79,8 @@ Tag part of a heading tag unit is hided.
 ]}
 []
 {id change-level, h2 [Change Level]}
+['This is a common feature of '{src compile.stdn#id-unit, a [id units]}.]
+[]
 {global, level 2, test []}
 {two [
     {display [Source]}
@@ -95,6 +97,8 @@ Tag part of a heading tag unit is hided.
 ]}
 []
 {id merge-orbits, h2 [Merge Orbits]}
+['This is a common feature of '{src compile.stdn#id-unit, a [id units]}.]
+[]
 {global, merge-into theorem, remark []}
 {two [
     {display [Source]}
