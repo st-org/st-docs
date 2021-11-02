@@ -126,5 +126,11 @@
         '    opacity: 0;'
         '}'
     ]}]}
+    {dt [warn]}
+    {dd [{lang css, code [
+        '{'
+        '    color: var(--color-warn);'
+        '}'
+    ]}]}
 ]}
 []
