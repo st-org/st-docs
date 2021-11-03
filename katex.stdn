@@ -63,7 +63,7 @@
 []
 'Converted katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
 []
-{id use-index-units-in-katex, h2 [Use Index Units in KaTeX]}
+{id use-units-in-katex, h2 [Use Units in KaTeX]}
 {two [
     {display [Source]}
     {display [Result]}

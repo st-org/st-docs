@@ -51,7 +51,7 @@
         {src katex.stdn#equation, a [Equation]}
         {src katex.stdn#customize-katex-commands, a [Customize KaTeX Commands]}
         {src katex.stdn#use-katex-environments, a [Use KaTeX Environments]}
-        {src katex.stdn#use-index-units-in-katex, a [Use Index Units in KaTeX]}
+        {src katex.stdn#use-units-in-katex, a [Use Units in KaTeX]}
     ]}
     {dt [{src index.stdn, a [Index]}]}
     {dd [
