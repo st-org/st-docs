@@ -2,16 +2,11 @@
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {id title, h2 [Title]}
-A valid title tag unit should be at the beginning of a line of stdn.
-[]
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{title [Test]}']}
-    {div [
-        // this is not a valid title tag unit
-        {title [Test]}
-    ]}
+    {lang stdn, block, code ['{title [Global]}']}
+    {title [Global]}
 ]}
 []
 {id global-tag-unit, h2 [Global Tag Unit]}
