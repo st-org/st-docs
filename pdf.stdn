@@ -34,7 +34,7 @@ You need to create a http server to host the current folder. There are many meth
 ]}
 ['Then, press '{kbd [Ctrl]}+, {kbd [P]}' in chrome.']
 []
-'To export in dark color scheme, set the st color scheme of https://st-org.github.io to dark. Settings can be found at the bottom of the side bar of the webpage.'
+'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
 []
 {id import-pdf-via-svg-image, h2 [Import PDF via SVG Image]}
 ['You can use '{href https://github.com/dawbarton/pdf2svg, a [pdf2svg]}' to convert pdf to svg.']

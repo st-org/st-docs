@@ -1,5 +1,5 @@
-.logo {
-    margin: var(--length-tab);
+.unit.logo {
     background: center / contain no-repeat url('https://st-org.github.io/imgs/st.png');
     height: 8em;
+    margin: var(--length-tab);
 }
