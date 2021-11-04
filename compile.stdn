@@ -58,7 +58,7 @@ Id units with the same real orbit and level will be ordered togather and given t
 {id children, h2 [Children]}
 ['If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}' which will be appended to the compiled result of the unit. If the tag of the unit is in the '{href #supported-html-elements-with-inline-children, a [following list]}', then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.']
 []
-{id supported-html-elements-with-inline-children, div ['Supported html elements with inline children: a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr, del, ins, col, colgroup, table, tbody, tfoot, thead, tr.']}
+{id supported-html-elements-with-inline-children, div ['Supported html elements with inline children: a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr, audio, img, track, video, iframe, del, ins, col, colgroup, table, tbody, tfoot, thead, tr.']}
 []
 {h3 [Inline Way]}
 {two [
