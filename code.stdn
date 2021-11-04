@@ -44,13 +44,13 @@
     {display [Result]}
     {lang stdn, code [
         '{global, vsce cpp, code []}'
-        '{lang cpp, code ['
+        '{lang c, code ['
         '    \'int main(){\''
         '    \'    return 0;\''
         '    \'}\''
         ']}'
     ]}
-    {lang cpp, code [
+    {lang c, code [
         'int main(){'
         '    return 0;'
         '}'
