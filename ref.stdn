@@ -6,44 +6,44 @@ Ref tag units should have ref-id option.
 []
 ['The compiled result of a ref tag unit consists of three parts: tag, mark, desc. Tag part is from the orbit of the '{src compile.stdn#id-unit, a [id unit]}' referred to. Mark part is from the non-empty children of the unit or mark part of the id unit referred to. Desc part is from desc option.']
 []
-Adding "plain" class can hide tag part.
-[]
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{id t1, mark FLT, desc Fermat, theorem ['
+        '{id flt1, mark FLT, desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
-        '[\'The first successful proof of \'{ref-id t1, ref []}\' was released in 1994 by Andrew Wiles.\']'
+        '[\'The first successful proof of \'{ref-id flt1, ref []}\' was released in 1994 by Andrew Wiles.\']'
     ]}
     {div [
-        {id t1, mark FLT, desc Fermat, theorem [
+        {id flt1, mark FLT, desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
-        ['The first successful proof of '{ref-id t1, ref []}' was released in 1994 by Andrew Wiles.']
+        ['The first successful proof of '{ref-id flt1, ref []}' was released in 1994 by Andrew Wiles.']
     ]}
 ]}
+[]
+Adding "plain" class can hide tag part. Adding "capitalize" class can capitalize tag part.
 []
 {id use-html-anchor-element, h2 [Use HTML Anchor Element]}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{id t2, mark FLT, desc Fermat, theorem ['
+        '{id flt2, mark FLT, desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
-        '[\'The first successful proof of \'{href #t2, a [theorem FLT]}\' was released in 1994 by Andrew Wiles.\']'
+        '[\'The first successful proof of \'{href #flt2, a [theorem FLT]}\' was released in 1994 by Andrew Wiles.\']'
     ]}
     {div [
-        {id t2, mark FLT, desc Fermat, theorem [
+        {id flt2, mark FLT, desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
-        ['The first successful proof of '{href #t2, a [theorem FLT]}' was released in 1994 by Andrew Wiles.']
+        ['The first successful proof of '{href #flt2, a [theorem FLT]}' was released in 1994 by Andrew Wiles.']
     ]}
 ]}
 []

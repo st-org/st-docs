@@ -1,30 +1,55 @@
 {title [Proof]}
 {css-src common.css, ucs cfr, global []}
+{global, orbit heading, h2 []}
 'The compiled result of a proof tag unit consists of four parts: tag, mark, desc, content. Tag part is "proof". Mark part is from mark option. Desc part is from desc option. Content part is from the children of the unit.'
-[]
-Adding "plain" class can hide tag part.
 []
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, block, code [
-        '{id t1, mark FLT, desc Fermat, theorem ['
+        '{id flt, mark FLT, desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
         '{mark {['
-        '    [\'of \'{ref-id t1, ref []}]'
+        '    [\'of \'{ref-id flt, ref []}]'
         ']}, desc Wiles, proof [Omitted.]}'
     ]}
     {div [
-        {id t1, mark FLT, desc Fermat, theorem [
+        {id flt, mark FLT, desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
         {mark {[
             //
-            ['of '{ref-id t1, ref []}]
+            ['of '{ref-id flt, ref []}]
         ]}, desc Wiles, proof [Omitted.]}
+    ]}
+]}
+[]
+Adding "plain" class can hide tag part.
+[]
+{id qed-here, h2 [QED Here]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, block, code [
+        '{id nlp, theorem [There is no largest prime number.]}'
+        '{class no-qed, proof [{ul ['
+        '    {li [[\'Suppose \'{\'p\'}\' were the largest prime number.\']]}'
+        '    {li [[\'Let \'{\'q\'}\' be the product of the first \'{\'p\'}\' numbers.\']]}'
+        '    {li [[\'Then \'{\'q+1\'}\' is not divisible by any of them.\']]}'
+        '    {li [[\'But \'{\'q+1\'}\' is greater than \'{\'1\'}\', thus divisible by some prime number not in the first \'{\'p\'}\' numbers.\'{qed []}]]}'
+        ']}]}'
+    ]}
+    {div [
+        {id nlp, theorem [There is no largest prime number.]}
+        {class no-qed, proof [{ul [
+            {li [['Suppose '{'p'}' were the largest prime number.']]}
+            {li [['Let '{'q'}' be the product of the first '{'p'}' numbers.']]}
+            {li [['Then '{'q+1'}' is not divisible by any of them.']]}
+            {li [['But '{'q+1'}' is greater than '{'1'}', thus divisible by some prime number not in the first '{'p'}' numbers.'{qed []}]]}
+        ]}]}
     ]}
 ]}
 []

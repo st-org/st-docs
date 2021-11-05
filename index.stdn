@@ -7,28 +7,12 @@
 []
 'The compiled result of an index unit consists of four parts: tag, mark, desc, content. Tag part is from the orbit of the unit. Mark part is from non-empty mark option or the index of the unit. Desc part is from desc option. Content part is from the children of the unit.'
 []
-Adding "plain" class can hide tag part.
-[]
-{id theorem-units, h2 [Theorem Units]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{id t1, desc Fermat, theorem ['
-        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
-        '    {display, \'a^n+b^n=c^n.\'}'
-        ']}'
-    ]}
-    {id t1, desc Fermat, theorem [
-        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
-        {display, 'a^n+b^n=c^n.'}
-    ]}
-]}
-[]
-'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
-[]
 {id index-tag-unit, h2 [Index Tag Unit]}
 'We call a general index unit an "index unit". In contrast, we call a unit whose tag is exactly "index" an "index tag unit".'
+[]
+Index tag units are most basic index units.
+[]
+Adding "plain" class can hide tag part which is a common feature of all index units and many other built-in units.
 []
 {two [
     {display [Source]}
@@ -50,16 +34,34 @@ Adding "plain" class can hide tag part.
     ]}
 ]}
 []
+{hr []}
+[]
+Index tag units are compiled in inline mode by default which can be changed by "block" option.
+[]
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{id MR721448, orbit article, block, index ['
+        '    [\'M. F. Atiyah and R. Bott, \'{i [The moment map and equivariant cohomology]}\', Topology 23 (1984), no 1, 1-28.\']'
+        ']}'
+    ]}
+    {id MR721448, orbit article, block, index [
+        //
+        ['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']
+    ]}
+]}
+[]
 {id heading-tag-unit, h2 [Heading Tag Unit]}
 Tag part of a heading tag unit is hided.
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id h1, heading [Test]}']}
-    {id h1, heading [Test]}
-    {lang stdn, block, code ['{level 2, id h2, heading [Test]}']}
-    {level 2, id h2, heading [Test]}
+    {lang stdn, block, code ['{id test1, heading [Test]}']}
+    {id test1, heading [Test]}
+    {lang stdn, block, code ['{id test2, level 2, heading [Test]}']}
+    {id test2, level 2, heading [Test]}
 ]}
 []
 {id equation-tag-unit, h2 [Equation Tag Unit]}
@@ -77,6 +79,24 @@ Tag part of a heading tag unit is hided.
     {lang stdn, block, code ['{id f1, figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {id f1, figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
+[]
+{id theorem-units, h2 [Theorem Units]}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{id flt1, desc Fermat, theorem ['
+        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
+        '    {display, \'a^n+b^n=c^n.\'}'
+        ']}'
+    ]}
+    {id flt1, desc Fermat, theorem [
+        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+        {display, 'a^n+b^n=c^n.'}
+    ]}
+]}
+[]
+'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
 {id change-level, h2 [Change Level]}
 ['This is a common feature of '{src compile.stdn#id-unit, a [id units]}.]
@@ -105,22 +125,22 @@ Tag part of a heading tag unit is hided.
     {display [Result]}
     {lang stdn, code [
         '{global, merge-into theorem, remark []}'
-        '{id t2, desc Fermat, theorem ['
+        '{id flt2, desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
         '{id r1, remark ['
-        '    [\'The first successful proof of \'{ref-id t2, ref []}\' was released in 1994 by Andrew Wiles.\']'
+        '    [\'The first successful proof of \'{ref-id flt2, ref []}\' was released in 1994 by Andrew Wiles.\']'
         ']}'
     ]}
     {div [
-        {id t2, desc Fermat, theorem [
+        {id flt2, desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
         {id r1, remark [
             //
-            ['The first successful proof of '{ref-id t2, ref []}' was released in 1994 by Andrew Wiles.']
+            ['The first successful proof of '{ref-id flt2, ref []}' was released in 1994 by Andrew Wiles.']
         ]}
     ]}
 ]}

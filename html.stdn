@@ -1,5 +1,6 @@
 {title [HTML]}
 {css-src common.css, ucs cfr, global []}
+{global, orbit heading, h2 []}
 {two [
     {display [Source]}
     {display [Result]}
