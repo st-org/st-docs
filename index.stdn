@@ -127,14 +127,14 @@ This is a common feature of all units.
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
-        '{remark [The first successful proof of above theorem was released in 1994 by Andrew Wiles.]}'
+        '{remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}'
     ]}
     {div [
         {desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
-        {remark [The first successful proof of above theorem was released in 1994 by Andrew Wiles.]}
+        {remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}
     ]}
 ]}
 []
