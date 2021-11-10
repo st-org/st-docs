@@ -25,7 +25,22 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {h2 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div. Here, real tag is recursively determined by non-empty global "compile-with" option.']
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div. Here, real tag is recursively determined by non-empty global "compile-with" option which is precisely showed in the following code.']
+[]
+{lang js, code [
+    'function getRealTag(tag){'
+    '    let realTag=tagToRealTag[tag]'
+    '    if(realTag!==undefined){'
+    '        return realTag'
+    '    }'
+    '    tagToRealTag[tag]=tag'
+    '    const value=getLastGlobalOption(\'compile-with\',tag,tagToGlobalOptions)'
+    '    if(typeof value!==\'string\'||value.length===0||value===tag){'
+    '        return tag'
+    '    }'
+    '    return tagToRealTag[tag]=getRealTag(value)'
+    '}'
+]}
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
@@ -59,11 +74,16 @@ Each line will be compiled to a div with "st-line" class.
 []
 {lang js, code [
     'function getRealOrbit(orbit){'
+    '    let realOrbit=orbitToRealOrbit[orbit]'
+    '    if(realOrbit!==undefined){'
+    '        return realOrbit'
+    '    }'
+    '    orbitToRealOrbit[orbit]=orbit'
     '    const value=getLastGlobalOption(\'merge-into\',orbit,tagToGlobalOptions)'
     '    if(typeof value!==\'string\'||value.length===0||value===orbit){'
     '        return orbit'
     '    }'
-    '    return getRealOrbit(value)'
+    '    return orbitToRealOrbit[orbit]=getRealOrbit(value)'
     '}'
     let orbit=unit.options.orbit
     '    ??getLastGlobalOption(\'orbit\',unit.tag,tagToGlobalOptions)'
