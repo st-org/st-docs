@@ -10,7 +10,7 @@
 []
 Index tag units are most basic index units.
 []
-Adding "plain" class can hide tag part which is a common feature of all index units and many other built-in units.
+Adding "no-tag" class can hide tag part which is a common feature of all index units and many other built-in units.
 []
 {two [
     {display [Source]}
@@ -19,7 +19,7 @@ Adding "plain" class can hide tag part which is a common feature of all index un
         '{align ['
         '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
         '    [\'&=\Z \tag*{\'{orbit equation, mark {['
-        '        [{ref-id h-vs-h-tilde, class plain, ref []}{\'\\\'\'}]'
+        '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
         '    ]}, index []}\'}\']'
         ']}'
     ]}
@@ -27,7 +27,7 @@ Adding "plain" class can hide tag part which is a common feature of all index un
         ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
         ['&=\Z \tag*{'{orbit equation, mark {[
             //
-            [{ref-id h-vs-h-tilde, class plain, ref []}{'\''}]
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
         ]}, index []}'}']
     ]}
 ]}
@@ -36,18 +36,15 @@ Adding "plain" class can hide tag part which is a common feature of all index un
 []
 Index tag units are compiled in inline mode by default which can be changed by "block" option.
 []
+{global, compile-with index, block, article []}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{orbit article, block, index ['
-        '    [\'M. F. Atiyah and R. Bott, \'{i [The moment map and equivariant cohomology]}\', Topology 23 (1984), no 1, 1-28.\']'
-        ']}'
+        '{global, compile-with index, block, article []}'
+        '{article [[\'M. F. Atiyah and R. Bott, \'{i [The moment map and equivariant cohomology]}\', Topology 23 (1984), no 1, 1-28.\']]}'
     ]}
-    {orbit article, block, index [
-        //
-        ['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']
-    ]}
+    {article [['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']]}
 ]}
 []
 {h2 [Heading Tag Unit]}

@@ -71,7 +71,7 @@
         '{align ['
         '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
         '    [\'&=\Z \tag*{\'{orbit equation, mark {['
-        '        [{ref-id h-vs-h-tilde, class plain, ref []}{\'\\\'\'}]'
+        '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
         '    ]}, index []}\'}\']'
         ']}'
     ]}
@@ -79,7 +79,7 @@
         ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
         ['&=\Z \tag*{'{orbit equation, mark {[
             //
-            [{ref-id h-vs-h-tilde, class plain, ref []}{'\''}]
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
         ]}, index []}'}']
     ]}
 ]}

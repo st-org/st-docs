@@ -27,7 +27,7 @@
     ]}
 ]}
 []
-Adding "plain" class can hide tag part.
+Adding "no-tag" class can hide tag part.
 []
 {h2 [QED Here]}
 {two [
