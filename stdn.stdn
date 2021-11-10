@@ -103,7 +103,7 @@ Options of a unit is an object with string or number or boolean or stdn values. 
     {display [Result]}
     {lang stdn, block, code [
         '{mark {['
-        '    [\'of \'{ref-id t1, ref []}]'
+        '    [\'of \'{ref-id flt, ref []}]'
         ']}, proof []}'
     ]}
     {lang ston, code [
@@ -114,7 +114,7 @@ Options of a unit is an object with string or number or boolean or stdn values. 
         '            [o, f, \' \', {'
         '                tag ref'
         '                options {'
-        '                    ref-id t1'
+        '                    ref-id flt'
         '                }'
         '                children []'
         '            }]'
