@@ -2,6 +2,8 @@
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
 {h2 [Title]}
+Text content of the first title tag unit will be viewed as the title.
+[]
 {two [
     {display [Source]}
     {display [Result]}

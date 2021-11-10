@@ -27,11 +27,11 @@ Each line will be compiled to a div with "st-line" class.
 {h2 [Unit]}
 ['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
-['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}'. You can import other unit compilers using '{src global.stdn#global-tag-unit, a [global tag units]}.]
+['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
 'Class list of the compiled result will contain "unit", the tag and class names in "class" option.'
 []
-The compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.
+'If the unit is not a global tag unit or global option unit, then the compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.'
 []
 {lang js, code [
     'function stringToId(string){'
@@ -49,13 +49,13 @@ The compiled result will have id which is from string value "id" option or the f
     {display [Source]}
     {display [Result]}
     {lang stdn, block, code ['{src https://st-org.github.io/imgs/st.png, img []}']}
-    {lang html, block, code [<div class="st-line"><img class="unit img" id="~4" src="https://st-org.github.io/imgs/st.png"></div>]}
+    {lang html, block, code [<div class="st-line"><img class="unit img" id="~2" src="https://st-org.github.io/imgs/st.png"></div>]}
 ]}
 []
 {h2 [Index]}
-An index will be allocated to each unit according to the orbit and the level of the unit.
+'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
 []
-['To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the '{src global.stdn#global-option-units, a [global option unit]}' of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit. The precise process is showed in the following code.']
+'To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the global option unit of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit. The precise process is showed in the following code.'
 []
 {lang js, code [
     'function getRealOrbit(orbit){'
@@ -84,7 +84,7 @@ Units with the same real orbit and level will be ordered togather and given the 
 ['Indexes can be accessed in unit compilers and are put into compiled results by unit compilers for '{src index.stdn, a [standard index units]}.]
 []
 {h2 [Children]}
-['If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}' which will be appended to the compiled result of the unit. If the tag is in the '{href #supported-html-elements-with-inline-children, a [following list]}', then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.']
+'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the tag is in the following list, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
 []
 {dl [
     {dt [Supported html elements with inline children]}
