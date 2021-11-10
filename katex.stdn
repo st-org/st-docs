@@ -1,7 +1,7 @@
 {title [KaTeX]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-{id inline-or-display, h2 [Inline or Display]}
+{h2 [Inline or Display]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -13,17 +13,17 @@
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id equation, h2 [Equation]}
+{h2 [Equation]}
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id e1, equation [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id e1, equation [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-    {lang stdn, block, code ['{id e2, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id e2, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{equation [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {equation [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id customize-katex-commands, h2 [Customize KaTeX Commands]}
+{h2 [Customize KaTeX Commands]}
 {global, '\def\exp#1{e^{#1}}'}
 {two [
     {display [Source]}
@@ -35,7 +35,7 @@
     {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
-{id use-katex-environments, h2 [Use KaTeX Environments]}
+{h2 [Use KaTeX Environments]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -61,25 +61,25 @@
 []
 'Note that, for tags in the following list, the katex environment actually used is added with "*" like "align*".'
 []
-'Converted katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
+'Adding star katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
 []
-{id use-units-in-katex, h2 [Use Units in KaTeX]}
+{h2 [Use Units in KaTeX]}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id e3, orbit equation, index []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{id e4, orbit equation, mark {['
-        '        [{ref-id e3, class plain, ref []}{\'\\\'\'}]'
+        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
+        '    [\'&=\Z \tag*{\'{orbit equation, mark {['
+        '        [{ref-id h-vs-h-tilde, class plain, ref []}{\'\\\'\'}]'
         '    ]}, index []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id e3, orbit equation, index []}'}'\\]
-        ['&=\Z \tag*{'{id e4, orbit equation, mark {[
+        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
+        ['&=\Z \tag*{'{orbit equation, mark {[
             //
-            [{ref-id e3, class plain, ref []}{'\''}]
+            [{ref-id h-vs-h-tilde, class plain, ref []}{'\''}]
         ]}, index []}'}']
     ]}
 ]}

@@ -7,7 +7,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 []
 ['All the source code of parse is in '{href https://github.com/st-org/stdn/blob/main/src/mod.ts, a [mod.ts]}.]
 []
-{id line, h2 [Line]}
+{h2 [Line]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -33,7 +33,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 []
 An Item in line can only be a char or a unit. So an item in the source of a line can only be a string or an object. A string in line source will be converted to chars in the process of parse. An object in line source will be converted to a unit in the process of parse.
 []
-{id unit, h2 [Unit]}
+{h2 [Unit]}
 'A unit is an object with three keys: tag, options and children.'
 []
 {two [
@@ -93,7 +93,7 @@ Default tag is div.
     ]}
 ]}
 []
-{id options, h2 [Options]}
+{h2 [Options]}
 Options of a unit is an object with string or number or boolean or stdn values. Values in options are from non-array values in unit source. A key in options is called a option of the unit.
 []
 'For a value in unit source, if it is an object and the value of __ key in the object is an array, then the corresponding value in options is a stdn which is parsed from the array value.'

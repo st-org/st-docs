@@ -20,7 +20,7 @@
     ]}
 ]}
 []
-{id supported-svg-elements-and-attributes, h3 [Supported SVG Elements and Attributes]}
+{h3 [Supported SVG Elements and Attributes]}
 {dl [
     {dt [animate]}
     {dd [attributeName begin dur fill keyTimes repeatCount values]}

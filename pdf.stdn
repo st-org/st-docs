@@ -1,7 +1,7 @@
 {title [PDF]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-{id export-to-pdf-using-chrome, h2 [Export to PDF Using Chrome]}
+{h2 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
 []
 You need to create a http server to host the current folder. There are many methods to create a http server.
@@ -36,7 +36,7 @@ You need to create a http server to host the current folder. There are many meth
 []
 'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
 []
-{id import-pdf-via-svg-image, h2 [Import PDF via SVG Image]}
+{h2 [Import PDF via SVG Image]}
 ['You can use '{href https://github.com/dawbarton/pdf2svg, a [pdf2svg]}' to convert pdf to svg.']
 []
 Assume that there is test.pdf in the current folder.
@@ -47,7 +47,7 @@ Assume that there is test.pdf in the current folder.
 []
 {lang stdn, block, code ['{src test01.svg, class invert, style display:block, img []}']}
 []
-{id import-tikz-via-standalone-pdf, h2 [Import TikZ via Standalone PDF]}
+{h2 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
 []
 Assume that there is fiber-bundle.tex with following content in the current folder.

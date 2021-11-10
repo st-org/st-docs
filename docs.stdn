@@ -1,4 +1,4 @@
-{id docs, h2 [Docs]}
+{h2 [Docs]}
 {dl [
     {dt [{src ston.stdn, a [STON]}]}
     {dd [
@@ -19,7 +19,7 @@
     {dd [
         {src compile.stdn#line, a [Line]}
         {src compile.stdn#unit, a [Unit]}
-        {src compile.stdn#id-unit, a [Id Unit]}
+        {src compile.stdn#index, a [Index]}
         {src compile.stdn#children, a [Children]}
     ]}
     {dt [{src html.stdn, a [HTML]}]}

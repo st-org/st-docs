@@ -1,7 +1,7 @@
 {title [Code]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-{id inline-or-block, h2 [Inline or Block]}
+{h2 [Inline or Block]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -21,7 +21,7 @@
     ]}
 ]}
 []
-{id highlight, h2 [Highlight]}
+{h2 [Highlight]}
 {h3 [Built-in Langs]}
 'For built-in langs, just pass the name of the lang.'
 []
@@ -94,7 +94,7 @@ Following expressions are equivalent.
 []
 vsce-src can point to a urls file and supports relative url.
 []
-{id use-src, h2 [Use Src]}
+{h2 [Use Src]}
 You can easily display the content of a code file via src option which supports relative url.
 []
 Note that block option is needed if the code file has multiple lines.

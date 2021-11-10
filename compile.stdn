@@ -7,9 +7,13 @@ This article is for explaining the compile of stdn. Compiled results are illustr
 []
 ['All the source code of compile is in '{href https://github.com/st-org/stc/blob/main/src/compiler.ts, a [compiler.ts]}.]
 []
-{id line, h2 [Line]}
+{h2 [Line]}
 Each line will be compiled to a div with "st-line" class.
 []
+{class hide, div [
+    first line
+    ['second '{span [line]}]
+]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -17,50 +21,81 @@ Each line will be compiled to a div with "st-line" class.
         first line
         '[\'second \'{span [line]}]'
     ]}
-    {lang html, block, code [<div class="st-line">first line</div><div class="st-line">second <span class="unit span" data-tag="span">line</span></div>]}
+    {lang html, block, code [<div class="st-line">first line</div><div class="st-line">second <span class="unit span" id="line~2">line</span></div>]}
 ]}
 []
-{id unit, h2 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler, then the unit will be compiled using the unit compiler. If the tag of the unit is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag of the unit is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
+{h2 [Unit]}
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}'. You can import other unit compilers using '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []
-['For a non-stdn value option of the unit, if the corresponding attribute has not been set by unit compiler, then it will be added to the compiled result of the unit. The corresponding attribute will have "data-" prefix if the option is not in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' and the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}'. If the value of the option is not a string, then the value will be converted to a string before being added to the compiled result.']
+'Class list of the compiled result will contain "unit", the tag and class names in "class" option.'
 []
-'Class list of the compiled result will always contain "unit", the tag of the unit and class names in "class" option. "data-tag" attribute will always be the tag of the unit.'
+The compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.
 []
+{lang js, code [
+    'function stringToId(string){'
+    '    return string.replace(/[^\s\w-]/g,\'\').toLowerCase().trim().split(/[\s_-]+/).join(\'-\')'
+    '}'
+    'const baseId=stringToId(typeof unit.options.id===\'string\'?unit.options.id:unitToInlinePlainString(unit))'
+    'const count=baseIdToCount[baseId]=(baseIdToCount[baseId]??0)+1'
+    'const id=count>1||baseId.length===0?`${baseId}~${count}`:baseId'
+]}
+[]
+['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' and the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}.]
+[]
+{class hide, div [{src https://st-org.github.io/imgs/st.png, img []}]}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, block, code ['{src https://st-org.github.io/imgs/st.png, img []}']}
-    {lang html, block, code [<div class="st-line"><img src="https://st-org.github.io/imgs/st.png" class="unit img" data-tag="img"></div>]}
+    {lang html, block, code [<div class="st-line"><img class="unit img" id="~4" src="https://st-org.github.io/imgs/st.png"></div>]}
 ]}
 []
-{id id-unit, h2 [Id Unit]}
-'A unit whose "id" option has non-empty string value is called an id unit. Id units will be "counted", i.e. an index will be allocated to the unit. Orbit and level will be extracted from an id unit and will affect the index.'
+{h2 [Index]}
+An index will be allocated to each unit according to the orbit and the level of the unit.
 []
-['To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the '{src global.stdn#global-option-units, a [global option unit]}' of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit.']
+['To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the '{src global.stdn#global-option-units, a [global option unit]}' of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit. The precise process is showed in the following code.']
 []
-Id units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any id unit whose real orbit is heading and level is smaller than the level of the id units to be indexed.
-[]
-'The compiled result of an id unit will have "data-orbit" attribute, "data-level" attribute and "data-index" attribute.'
-[]
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, block, code [
-        '{global, h2 []}'
-        '{id id-unit, h2 [Id Unit]}'
-    ]}
-    {lang html, block, code [<div class="st-line"><div class="unit global"></div></div><div class="st-line"><h2 data-orbit="heading" data-level="1" data-index="3" id="id-unit" class="unit h2" data-tag="h2"><div class="st-line">Id Unit</div></h2></div>]}
+{lang js, code [
+    'function getRealOrbit(orbit){'
+    '    const value=getLastGlobalOption(\'merge-into\',orbit,tagToGlobalOptions)'
+    '    if(typeof value!==\'string\'||value.length===0||value===orbit){'
+    '        return orbit'
+    '    }'
+    '    return getRealOrbit(value)'
+    '}'
+    let orbit=unit.options.orbit
+    '    ??getLastGlobalOption(\'orbit\',unit.tag,tagToGlobalOptions)'
+    'if(typeof orbit!==\'string\'||orbit.length===0){'
+    '    orbit=unit.tag'
+    '}'
+    const realOrbit=getRealOrbit(orbit)
+    let level=unit.options.level
+    '    ??getLastGlobalOption(\'level\',unit.tag,tagToGlobalOptions)'
+    '    ??getLastGlobalOption(\'level\',realOrbit,tagToGlobalOptions)'
+    'if(typeof level!==\'number\'||level<=0||level%1!==0){'
+    '    level=1'
+    '}'
 ]}
 []
-{id children, h2 [Children]}
-['If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}' which will be appended to the compiled result of the unit. If the tag of the unit is in the '{href #supported-html-elements-with-inline-children, a [following list]}', then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.']
+Units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any unit whose real orbit is heading and level is smaller than the level of the units to be indexed.
 []
-{id supported-html-elements-with-inline-children, div ['Supported html elements with inline children: a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr, audio, img, track, video, iframe, del, ins, col, colgroup, table, tbody, tfoot, thead, tr.']}
+['Indexes can be accessed in unit compilers and are put into compiled results by unit compilers for '{src index.stdn, a [standard index units]}.]
+[]
+{h2 [Children]}
+['If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}' which will be appended to the compiled result of the unit. If the tag is in the '{href #supported-html-elements-with-inline-children, a [following list]}', then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.']
+[]
+{dl [
+    {dt [Supported html elements with inline children]}
+    {dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins col colgroup table tbody tfoot thead tr]}
+]}
 []
 {h3 [Inline Way]}
+{class hide, div [{span [
+    first line
+    second line
+]}]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -71,12 +106,16 @@ Id units with the same real orbit and level will be ordered togather and given t
         ']}'
     ]}
     {lang html, code [
-        <div class="st-line"><span class="unit span" data-tag="span">first line
+        <div class="st-line"><span class="unit span" id="first-line~4">first line
         second line</span></div>
     ]}
 ]}
 []
 {h3 [Normal Way]}
+{class hide, div [{div [
+    first line
+    second line
+]}]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -86,6 +125,6 @@ Id units with the same real orbit and level will be ordered togather and given t
         '    second line'
         ']}'
     ]}
-    {lang html, block, code [<div class="st-line"><div class="unit div" data-tag="div"><div class="st-line">first line</div><div class="st-line">second line</div></div></div>]}
+    {lang html, block, code [<div class="st-line"><div class="unit div" id="first-line~6"><div class="st-line">first line</div><div class="st-line">second line</div></div></div>]}
 ]}
 []

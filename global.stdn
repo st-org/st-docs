@@ -1,7 +1,7 @@
 {title [Global]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-{id title, h2 [Title]}
+{h2 [Title]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -9,7 +9,7 @@
     {title [Global]}
 ]}
 []
-{id global-tag-unit, h2 [Global Tag Unit]}
+{h2 [Global Tag Unit]}
 Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn. You can import multiple css and unit compilers via multiple global tag units.
 []
 {mod hello, global []}
@@ -35,10 +35,10 @@ Following expressions are equivalent.
 []
 css-src and ucs-src can point to a urls file and support relative url.
 []
-{id global-option-units, h2 [Global Option Units]}
+{h2 [Global Option Units]}
 Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn. A global option unit whose tag is some value is called a global option unit of the value for short.
 []
-['Global option units have built-in effect on '{src compile.stdn#id-unit, a [id units]}.]
+['Global option units have built-in effect on '{src compile.stdn#index, a [indexes]}.]
 []
 {global, level 2, test []}
 {two [
@@ -46,8 +46,8 @@ Global option units are units with "global" option and are designed to pass glob
     {display [Result]}
     {lang stdn, code [
         '{global, level 2, test []}'
-        '{id e1, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
     ]}
-    {id e1, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []

@@ -3,12 +3,10 @@
 {global, orbit heading, h2 []}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
-['Index units are all '{src compile.stdn#id-unit, a [id units]}.]
+'The compiled result of an index unit consists of four parts: tag, mark, desc and content. Tag part is from the orbit. Mark part is from non-empty mark option or the index. Desc part is from desc option. Content part is from the children.'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc, content. Tag part is from the orbit of the unit. Mark part is from non-empty mark option or the index of the unit. Desc part is from desc option. Content part is from the children of the unit.'
-[]
-{id index-tag-unit, h2 [Index Tag Unit]}
-'We call a general index unit an "index unit". In contrast, we call a unit whose tag is exactly "index" an "index tag unit".'
+{h2 [Index Tag Unit]}
+'We call a general index unit an index unit. In contrast, we call a unit whose tag is exactly "index" an index tag unit.'
 []
 Index tag units are most basic index units.
 []
@@ -19,17 +17,17 @@ Adding "plain" class can hide tag part which is a common feature of all index un
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id e1, orbit equation, index []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{id e2, orbit equation, mark {['
-        '        [{ref-id e1, class plain, ref []}{\'\\\'\'}]'
+        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
+        '    [\'&=\Z \tag*{\'{orbit equation, mark {['
+        '        [{ref-id h-vs-h-tilde, class plain, ref []}{\'\\\'\'}]'
         '    ]}, index []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id e1, orbit equation, index []}'}'\\]
-        ['&=\Z \tag*{'{id e2, orbit equation, mark {[
+        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
+        ['&=\Z \tag*{'{orbit equation, mark {[
             //
-            [{ref-id e1, class plain, ref []}{'\''}]
+            [{ref-id h-vs-h-tilde, class plain, ref []}{'\''}]
         ]}, index []}'}']
     ]}
 ]}
@@ -42,55 +40,55 @@ Index tag units are compiled in inline mode by default which can be changed by "
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{id MR721448, orbit article, block, index ['
+        '{orbit article, block, index ['
         '    [\'M. F. Atiyah and R. Bott, \'{i [The moment map and equivariant cohomology]}\', Topology 23 (1984), no 1, 1-28.\']'
         ']}'
     ]}
-    {id MR721448, orbit article, block, index [
+    {orbit article, block, index [
         //
         ['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']
     ]}
 ]}
 []
-{id heading-tag-unit, h2 [Heading Tag Unit]}
+{h2 [Heading Tag Unit]}
 Tag part of a heading tag unit is hided.
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id test1, heading [Test]}']}
-    {id test1, heading [Test]}
-    {lang stdn, block, code ['{id test2, level 2, heading [Test]}']}
-    {id test2, level 2, heading [Test]}
+    {lang stdn, block, code ['{heading [Test]}']}
+    {heading [Test]}
+    {lang stdn, block, code ['{level 2, heading [Test]}']}
+    {level 2, heading [Test]}
 ]}
 []
-{id equation-tag-unit, h2 [Equation Tag Unit]}
+{h2 [Equation Tag Unit]}
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id e3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id e3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id figure-tag-unit, h2 [Figure Tag Unit]}
+{h2 [Figure Tag Unit]}
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{id f1, figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
-    {id f1, figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {lang stdn, block, code ['{figure [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+    {figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{id theorem-units, h2 [Theorem Units]}
+{h2 [Theorem Units]}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{id flt1, desc Fermat, theorem ['
+        '{desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
     ]}
-    {id flt1, desc Fermat, theorem [
+    {desc Fermat, theorem [
         ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
         {display, 'a^n+b^n=c^n.'}
     ]}
@@ -98,8 +96,8 @@ Tag part of a heading tag unit is hided.
 []
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
-{id change-level, h2 [Change Level]}
-['This is a common feature of '{src compile.stdn#id-unit, a [id units]}.]
+{h2 [Change Level]}
+This is a common feature of all units.
 []
 {global, level 2, test []}
 {two [
@@ -107,17 +105,17 @@ Tag part of a heading tag unit is hided.
     {display [Result]}
     {lang stdn, code [
         '{global, level 2, test []}'
-        '{id e4, orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
-        '{id e5, orbit test, level 3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
+        '{orbit test, level 3, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
     ]}
     {div [
-        {id e4, orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-        {id e5, orbit test, level 3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+        {orbit test, level 3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
     ]}
 ]}
 []
-{id merge-orbits, h2 [Merge Orbits]}
-['This is a common feature of '{src compile.stdn#id-unit, a [id units]}.]
+{h2 [Merge Orbits]}
+This is a common feature of all units.
 []
 {global, merge-into theorem, remark []}
 {two [
@@ -125,23 +123,18 @@ Tag part of a heading tag unit is hided.
     {display [Result]}
     {lang stdn, code [
         '{global, merge-into theorem, remark []}'
-        '{id flt2, desc Fermat, theorem ['
+        '{desc Fermat, theorem ['
         '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
         '    {display, \'a^n+b^n=c^n.\'}'
         ']}'
-        '{id r1, remark ['
-        '    [\'The first successful proof of \'{ref-id flt2, ref []}\' was released in 1994 by Andrew Wiles.\']'
-        ']}'
+        '{remark [The first successful proof of above theorem was released in 1994 by Andrew Wiles.]}'
     ]}
     {div [
-        {id flt2, desc Fermat, theorem [
+        {desc Fermat, theorem [
             ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
             {display, 'a^n+b^n=c^n.'}
         ]}
-        {id r1, remark [
-            //
-            ['The first successful proof of '{ref-id flt2, ref []}' was released in 1994 by Andrew Wiles.']
-        ]}
+        {remark [The first successful proof of above theorem was released in 1994 by Andrew Wiles.]}
     ]}
 ]}
 []

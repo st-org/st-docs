@@ -1,10 +1,10 @@
 {title [Ref]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-{id ref-tag-unit, h2 [Ref Tag Unit]}
+{h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
-['The compiled result of a ref tag unit consists of three parts: tag, mark, desc. Tag part is from the orbit of the '{src compile.stdn#id-unit, a [id unit]}' referred to. Mark part is from the non-empty children of the unit or mark part of the id unit referred to. Desc part is from desc option.']
+['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. Tag part is from the orbit of the referred unit. Mark part is from the non-empty children of the unit or mark part of the referred unit. Desc part is from desc option.']
 []
 {two [
     {display [Source]}
@@ -27,7 +27,7 @@ Ref tag units should have ref-id option.
 []
 Adding "plain" class can hide tag part. Adding "capitalize" class can capitalize tag part.
 []
-{id use-html-anchor-element, h2 [Use HTML Anchor Element]}
+{h2 [Use HTML Anchor Element]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -47,7 +47,7 @@ Adding "plain" class can hide tag part. Adding "capitalize" class can capitalize
     ]}
 ]}
 []
-{id cross-file-ref, h2 [Cross File Ref]}
+{h2 [Cross File Ref]}
 ['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
 []
 {two [
@@ -55,8 +55,8 @@ Adding "plain" class can hide tag part. Adding "capitalize" class can capitalize
     {display [Result]}
     {lang stdn, code [
         '{ucs cfr, global []}'
-        '{src compile.stdn#id-unit, a [id unit]}'
+        '{src compile.stdn#index, a [Index]}'
     ]}
-    {src compile.stdn#id-unit, a [id unit]}
+    {src compile.stdn#index, a [Index]}
 ]}
 []
