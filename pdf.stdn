@@ -43,14 +43,14 @@ Assume that there is test.pdf in the current folder.
 []
 {block, code [pdf2svg test.pdf test%02d.svg all]}
 []
-'Then, you can import test01.svg via following code.'
+'Then, you can import test01.svg via the following code.'
 []
 {lang stdn, block, code ['{src test01.svg, class invert, style display:block, img []}']}
 []
 {h2 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
 []
-Assume that there is fiber-bundle.tex with following content in the current folder.
+Assume that there is fiber-bundle.tex with the following content in the current folder.
 []
 {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
 {src fiber-bundle.tex, lang latex, block, code []}
@@ -59,7 +59,7 @@ Assume that there is fiber-bundle.tex with following content in the current fold
 []
 {block, code [pdf2svg fiber-bundle.pdf fiber-bundle.svg]}
 []
-'Then, you can import fiber-bundle.svg via following code.'
+'Then, you can import fiber-bundle.svg via the following code.'
 []
 {lang stdn, block, code ['{src fiber-bundle.svg, class invert, style display:block, img []}']}
 []
