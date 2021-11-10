@@ -38,9 +38,11 @@ Following expressions are equivalent.
 css-src and ucs-src can point to a urls file and support relative url.
 []
 {h2 [Global Option Units]}
-Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn. A global option unit whose tag is some value is called a global option unit of the value for short.
+Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn.
 []
-['Global option units have built-in effect on '{src compile.stdn#index, a [indexes]}.]
+A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called an global option of the value for short.
+[]
+['Global option units have built-in effect on indexes and the selecting of unit compilers which is detailedly explained in '{src compile.stdn, a [compile.stdn]}.]
 []
 {global, level 2, test []}
 {two [

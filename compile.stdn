@@ -25,7 +25,7 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {h2 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div. Here, real tag is recursively determined by non-empty global "compile-with" option.']
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
@@ -55,7 +55,7 @@ Each line will be compiled to a div with "st-line" class.
 {h2 [Index]}
 'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
 []
-'To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit of the orbit or 1. Here, global option of some value means option of the global option unit of the value, and real orbit of some orbit is recursively determined by non-empty "merge-into" option of the orbit. The precise process is showed in the following code.'
+'To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit or 1. Here, real orbit is recursively determined by non-empty global "merge-into" option. The precise process is showed in the following code.'
 []
 {lang js, code [
     'function getRealOrbit(orbit){'

@@ -96,9 +96,19 @@ Tag part of a heading tag unit is hided.
 []
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
-{h2 [Change Level]}
-This is a common feature of all units.
+{h2 [Customize Theorem Units]}
+{global, compile-with remark, warning []}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{global, compile-with remark, warning []}'
+        '{warning [This unit is compiled by the unit compiler of remark.]}'
+    ]}
+    {warning [This unit is compiled by the unit compiler of remark.]}
+]}
 []
+{h2 [Change Level]}
 {global, level 2, test []}
 {two [
     {display [Source]}
@@ -115,8 +125,6 @@ This is a common feature of all units.
 ]}
 []
 {h2 [Merge Orbits]}
-This is a common feature of all units.
-[]
 {global, merge-into theorem, remark []}
 {two [
     {display [Source]}

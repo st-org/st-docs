@@ -32,7 +32,7 @@ You need to create a http server to host the current folder. There are many meth
         []
     ]}
 ]}
-['Then, press '{kbd [Ctrl]}+, {kbd [P]}' in chrome.']
+['Then, press '{kbd [Ctrl]}+{kbd [P]}' in chrome.']
 []
 'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
 []
