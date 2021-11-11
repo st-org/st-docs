@@ -4,7 +4,7 @@
 {h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
-['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. Tag part is from the tag of the referred unit. Mark part is from the non-empty children of the unit or mark part of the referred unit. Desc part is from desc option.']
+['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. The tag part is from the tag of the referred unit. The mark part is from the non-empty children of the unit or the mark part of the referred unit. The desc part is from desc option.']
 []
 {two [
     {display [Source]}
@@ -25,7 +25,7 @@ Ref tag units should have ref-id option.
     ]}
 ]}
 []
-Adding "no-tag" class can hide tag part. Adding "capitalize-tag" class can capitalize tag part.
+Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can capitalize the tag part.
 []
 {h2 [Use HTML Anchor Element]}
 {two [

@@ -1,7 +1,7 @@
 {title [Proof]}
 {css-src common.css, ucs cfr, global []}
 {global, orbit heading, h2 []}
-'The compiled result of a proof tag unit consists of four parts: tag, mark, desc and content. Tag part is "proof". Mark part is from mark option. Desc part is from desc option. Content part is from the children.'
+'The compiled result of a proof tag unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from mark option. The desc part is from desc option. The content part is from the children.'
 []
 {two [
     {display [Source]}
@@ -27,7 +27,7 @@
     ]}
 ]}
 []
-Adding "no-tag" class can hide tag part.
+Adding "no-tag" class can hide the tag part.
 []
 {h2 [QED Here]}
 {two [
