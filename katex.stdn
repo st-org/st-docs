@@ -69,18 +69,18 @@
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{orbit equation, mark {['
+        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
+        '    [\'&=\Z \tag*{\'{compile-with index, mark {['
         '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
-        '    ]}, index []}\'}\']'
+        '    ]}, equation []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
-        ['&=\Z \tag*{'{orbit equation, mark {[
+        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+        ['&=\Z \tag*{'{compile-with index, mark {[
             //
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, index []}'}']
+        ]}, equation []}'}']
     ]}
 ]}
 []

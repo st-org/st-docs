@@ -25,26 +25,13 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {h2 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div. Here, real tag is recursively determined by non-empty global "compile-with" option which is precisely showed in the following code.']
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the real tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
-{lang js, code [
-    'function getRealTag(tag){'
-    '    let realTag=tagToRealTag[tag]'
-    '    if(realTag!==undefined){'
-    '        return realTag'
-    '    }'
-    '    tagToRealTag[tag]=tag'
-    '    const value=getLastGlobalOption(\'compile-with\',tag,tagToGlobalOptions)'
-    '    if(typeof value!==\'string\'||value.length===0||value===tag){'
-    '        return tag'
-    '    }'
-    '    return tagToRealTag[tag]=getRealTag(value)'
-    '}'
-]}
+The real tag is non-empty "compile-with" option or non-empty global "compile-with" option of the tag or the tag.
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
-'Class list of the compiled result will contain "unit", the tag and class names in "class" option.'
+'Class list of the compiled result will contain "unit", the real tag and class names in "class" option.'
 []
 'If the unit is not a global tag unit or global option unit, then the compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.'
 []
@@ -70,36 +57,9 @@ Each line will be compiled to a div with "st-line" class.
 {h2 [Index]}
 'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
 []
-'To be exact, orbit is determined successively by non-empty orbit option or non-empty global orbit option of the tag or the tag, and level is by non-empty level option or non-empty global level option of the tag or non-empty global level option of the real orbit or 1. Here, real orbit is recursively determined by non-empty global "merge-into" option. The precise process is showed in the following code.'
+The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1.
 []
-{lang js, code [
-    'function getRealOrbit(orbit){'
-    '    let realOrbit=orbitToRealOrbit[orbit]'
-    '    if(realOrbit!==undefined){'
-    '        return realOrbit'
-    '    }'
-    '    orbitToRealOrbit[orbit]=orbit'
-    '    const value=getLastGlobalOption(\'merge-into\',orbit,tagToGlobalOptions)'
-    '    if(typeof value!==\'string\'||value.length===0||value===orbit){'
-    '        return orbit'
-    '    }'
-    '    return orbitToRealOrbit[orbit]=getRealOrbit(value)'
-    '}'
-    let orbit=unit.options.orbit
-    '    ??getLastGlobalOption(\'orbit\',unit.tag,tagToGlobalOptions)'
-    'if(typeof orbit!==\'string\'||orbit.length===0){'
-    '    orbit=unit.tag'
-    '}'
-    const realOrbit=getRealOrbit(orbit)
-    let level=unit.options.level
-    '    ??getLastGlobalOption(\'level\',unit.tag,tagToGlobalOptions)'
-    '    ??getLastGlobalOption(\'level\',realOrbit,tagToGlobalOptions)'
-    'if(typeof level!==\'number\'||level<=0||level%1!==0){'
-    '    level=1'
-    '}'
-]}
-[]
-Units with the same real orbit and level will be ordered togather and given the index one by one. The index will be reset by any unit whose real orbit is heading and level is smaller than the level of the units to be indexed.
+Units with the same orbit and level will be ordered togather and given the index one by one. The index will be reset by any unit whose orbit is heading and level is smaller than the level of the units to be indexed.
 []
 ['Indexes can be accessed in unit compilers and are put into compiled results by unit compilers for '{src index.stdn, a [standard index units]}.]
 []

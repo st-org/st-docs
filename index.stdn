@@ -17,18 +17,18 @@ Adding "no-tag" class can hide tag part which is a common feature of all index u
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, orbit equation, index []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{orbit equation, mark {['
+        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
+        '    [\'&=\Z \tag*{\'{compile-with index, mark {['
         '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
-        '    ]}, index []}\'}\']'
+        '    ]}, equation []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, orbit equation, index []}'}'\\]
-        ['&=\Z \tag*{'{orbit equation, mark {[
+        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+        ['&=\Z \tag*{'{compile-with index, mark {[
             //
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, index []}'}']
+        ]}, equation []}'}']
     ]}
 ]}
 []
@@ -94,15 +94,37 @@ Tag part of a heading tag unit is hided.
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
 {h2 [Customize Theorem Units]}
-{global, compile-with remark, warning []}
+{global, compile-with remark, notice []}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{global, compile-with remark, warning []}'
-        '{warning [This unit is compiled by the unit compiler of remark.]}'
+        '{global, compile-with remark, notice []}'
+        '{notice [This unit is compiled by the unit compiler of remark.]}'
     ]}
-    {warning [This unit is compiled by the unit compiler of remark.]}
+    {notice [This unit is compiled by the unit compiler of remark.]}
+]}
+[]
+{h2 [Index Theorem Units Together]}
+{global, orbit theorem, remark []}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, code [
+        '{global, orbit theorem, remark []}'
+        '{desc Fermat, theorem ['
+        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
+        '    {display, \'a^n+b^n=c^n.\'}'
+        ']}'
+        '{remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}'
+    ]}
+    {div [
+        {desc Fermat, theorem [
+            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+            {display, 'a^n+b^n=c^n.'}
+        ]}
+        {remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}
+    ]}
 ]}
 []
 {h2 [Change Level]}
@@ -118,28 +140,6 @@ Tag part of a heading tag unit is hided.
     {div [
         {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
         {orbit test, level 3, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-    ]}
-]}
-[]
-{h2 [Merge Orbits]}
-{global, merge-into theorem, remark []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{global, merge-into theorem, remark []}'
-        '{desc Fermat, theorem ['
-        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
-        '    {display, \'a^n+b^n=c^n.\'}'
-        ']}'
-        '{remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}'
-    ]}
-    {div [
-        {desc Fermat, theorem [
-            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
-            {display, 'a^n+b^n=c^n.'}
-        ]}
-        {remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}
     ]}
 ]}
 []
