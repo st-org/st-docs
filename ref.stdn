@@ -4,7 +4,7 @@
 {h2 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
-['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. Tag part is from the orbit of the referred unit. Mark part is from the non-empty children of the unit or mark part of the referred unit. Desc part is from desc option.']
+['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. Tag part is from the tag of the referred unit. Mark part is from the non-empty children of the unit or mark part of the referred unit. Desc part is from desc option.']
 []
 {two [
     {display [Source]}

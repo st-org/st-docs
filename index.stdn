@@ -3,7 +3,7 @@
 {global, orbit heading, h2 []}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc and content. Tag part is from the orbit. Mark part is from non-empty mark option or the index. Desc part is from desc option. Content part is from the children.'
+'The compiled result of an index unit consists of four parts: tag, mark, desc and content. Tag part is from the tag. Mark part is from non-empty mark option or the index. Desc part is from desc option. Content part is from the children.'
 []
 {h2 [Index Tag Unit]}
 'We call a general index unit an index unit. In contrast, we call a unit whose tag is exactly "index" an index tag unit.'
