@@ -32,7 +32,7 @@ Following expressions are equivalent.
     {li [{lang stdn, block, code ['{css hello, ucs hello, global []}']}]}
     {li [{lang stdn, block, code ['{mod-gh st-mod/hello, global []}']}]}
     {li [{lang stdn, block, code ['{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}']}]}
-    {li [{lang stdn, block, code ['{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.js, global []}']}]}
+    {li [{lang stdn, block, code ['{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}']}]}
 ]}
 []
 css-src and ucs-src can point to a urls file and support relative url.
