@@ -45,7 +45,7 @@ Assume that there is test.pdf in the current folder.
 []
 'Then, you can import test01.svg via the following code.'
 []
-{lang stdn, block, code ['{src test01.svg, class invert, style display:block, img []}']}
+{lang stdn, block, code ['{src test01.svg, class invert, img []}']}
 []
 {h2 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
@@ -61,5 +61,5 @@ Assume that there is fiber-bundle.tex with the following content in the current 
 []
 'Then, you can import fiber-bundle.svg via the following code.'
 []
-{lang stdn, block, code ['{src fiber-bundle.svg, class invert, style display:block, img []}']}
+{lang stdn, block, code ['{src fiber-bundle.svg, class invert, img []}']}
 []
