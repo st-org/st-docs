@@ -22,7 +22,7 @@
     {dt [Supported html elements]}
     {dd [address article aside footer header h1 h2 h3 h4 h5 h6 main nav section blockquote dd div dl dt figcaption figure hr li ol p pre ul a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins caption col colgroup table tbody td tfoot th thead tr]}
     {dt [Supported html attributes]}
-    {dd [align allow alt autoplay cite class cols colspan controls data-* decoding default dir download headers hidden href id kind label lang loop muted name open poster preload rel reversed rows rowspan sandbox scope span spellcheck src srcdoc start style target value]}
+    {dd [accesskey align allow alt autoplay cite class cols colspan controls coords crossorigin datetime data-* decoding default dir download draggable for headers href hreflang id kind label lang loop muted name open ping poster preload referrerpolicy rel reversed rows rowspan sandbox scope span spellcheck src srcdoc srclang srcset start style tabindex target title translate usemap value]}
 ]}
 []
 ['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/HTML/Reference, a [mdn]}.]
