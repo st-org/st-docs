@@ -26,6 +26,8 @@ You need to create a http server to host the current folder. There are many meth
         []
         Open the current folder with vscode.
         []
+        Open test.stdn in vscode.
+        []
         ['Press '{kbd [Alt]}+{kbd [L]}' and '{kbd [Alt]}+{kbd [O]}.]
         []
         ['Open '{href https://st-org.github.io/?src=http://localhost:5500/test.stdn, a [https://st-org.github.io/?src=http://localhost:5500/test.stdn]}' in chrome.']
@@ -44,6 +46,7 @@ You need to create a http server to host the current folder. There are many meth
         Create index.html with the following content in the current folder.
         []
         {lang html, code [
+            <!DOCTYPE html>
             <html data-src="test.stdn">
             '    <body>'
             '        <script type="module" src="https://cdn.jsdelivr.net/gh/st-org/st-view/main.js"></script>'
