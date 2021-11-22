@@ -52,3 +52,19 @@ Adding "no-tag" class can hide the tag part.
     ]}
 ]}
 []
+{h1 [Solution]}
+{global, compile-with proof, solution []}
+{two [
+    {display [Source]}
+    {display [Result]}
+    {lang stdn, block, code [
+        '{global, compile-with proof, solution []}'
+        '{exercise [There is no largest prime number.]}'
+        '{solution [Omitted.]}'
+    ]}
+    {div [
+        {exercise [There is no largest prime number.]}
+        {solution [Omitted.]}
+    ]}
+]}
+[]
