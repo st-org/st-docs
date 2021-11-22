@@ -1,6 +1,5 @@
 {title [SVG]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
 {two [
     {display [Source]}
     {display [Result]}
@@ -20,7 +19,7 @@
     ]}
 ]}
 []
-{h3 [Supported SVG Elements and Attributes]}
+{h2 [Supported SVG Elements and Attributes]}
 {dl [
     {dt [animate]}
     {dd [attributeName begin dur fill keyTimes repeatCount values]}

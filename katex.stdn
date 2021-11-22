@@ -1,7 +1,6 @@
 {title [KaTeX]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
-{h2 [Inline or Display]}
+{h1 [Inline or Display]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -13,7 +12,7 @@
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2 [Equation]}
+{h1 [Equation]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -23,7 +22,7 @@
     {equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2 [Customize KaTeX Commands]}
+{h1 [Customize KaTeX Commands]}
 {global, '\def\exp#1{e^{#1}}'}
 {two [
     {display [Source]}
@@ -35,7 +34,7 @@
     {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
-{h2 [Use KaTeX Environments]}
+{h1 [Use KaTeX Environments]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -63,7 +62,7 @@
 []
 'Adding star katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
 []
-{h2 [Use Units in KaTeX]}
+{h1 [Use Units in KaTeX]}
 {two [
     {display [Source]}
     {display [Result]}

@@ -1,7 +1,6 @@
 {title [Global]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
-{h2 [Title]}
+{h1 [Title]}
 Text content of the first title tag unit will be viewed as the title.
 []
 {two [
@@ -11,7 +10,7 @@ Text content of the first title tag unit will be viewed as the title.
     {title [Global]}
 ]}
 []
-{h2 [Global Tag Unit]}
+{h1 [Global Tag Unit]}
 Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn. You can import multiple css and unit compilers via multiple global tag units.
 []
 {mod hello, global []}
@@ -37,7 +36,7 @@ Following expressions are equivalent.
 []
 css-src and ucs-src can point to a urls file and support relative url.
 []
-{h2 [Global Option Units]}
+{h1 [Global Option Units]}
 Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn.
 []
 A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called an global option of the value for short.

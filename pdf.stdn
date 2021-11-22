@@ -1,6 +1,6 @@
 {title [PDF]}
 {css-src common.css, ucs cfr@0.0.9, global []}
-{h2 [Export to PDF Using Chrome]}
+{h1 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
 []
 [{src view.stdn, a [View]}' test.stdn in chrome.']
@@ -9,7 +9,7 @@ Assume that there is test.stdn in the current folder and related local resources
 []
 'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
 []
-{h2 [Import PDF via SVG Image]}
+{h1 [Import PDF via SVG Image]}
 ['You can use '{href https://github.com/dawbarton/pdf2svg, a [pdf2svg]}' to convert pdf to svg.']
 []
 Assume that there is test.pdf in the current folder.
@@ -20,7 +20,7 @@ Assume that there is test.pdf in the current folder.
 []
 {lang stdn, block, code ['{src test01.svg, class invert, img []}']}
 []
-{h2 [Import TikZ via Standalone PDF]}
+{h1 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
 []
 Assume that there is fiber-bundle.tex with the following content in the current folder.

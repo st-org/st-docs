@@ -1,7 +1,6 @@
 {title [Ref]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
-{h2 [Ref Tag Unit]}
+{h1 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
 ['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. The tag part is from the tag of the referred unit. The mark part is from the non-empty children of the unit or the mark part of the referred unit. The desc part is from desc option.']
@@ -27,7 +26,7 @@ Ref tag units should have ref-id option.
 []
 Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can capitalize the tag part.
 []
-{h2 [Use HTML Anchor Element]}
+{h1 [Use HTML Anchor Element]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -47,7 +46,7 @@ Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can c
     ]}
 ]}
 []
-{h2 [Cross File Ref]}
+{h1 [Cross File Ref]}
 ['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
 []
 {two [

@@ -1,13 +1,12 @@
 {title [Compile]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
 ['STDN can be compiled to html. To be exact, a stdn will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}.]
 []
 This article is for explaining the compile of stdn. Compiled results are illustrated by html in this article.
 []
 ['All the source code of compile is in '{href https://github.com/st-org/stc/blob/main/src/compiler.ts, a [compiler.ts]}.]
 []
-{h2 [Line]}
+{h1 [Line]}
 Each line will be compiled to a div with "st-line" class.
 []
 {class hide, div [
@@ -24,7 +23,7 @@ Each line will be compiled to a div with "st-line" class.
     {lang html, block, code [<div class="st-line">first line</div><div class="st-line">second <span class="unit span" id="line~2">line</span></div>]}
 ]}
 []
-{h2 [Unit]}
+{h1 [Unit]}
 ['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the real tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
 The real tag is non-empty "compile-with" option or non-empty global "compile-with" option of the tag or the tag.
@@ -54,7 +53,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
     {lang html, block, code [<div class="st-line"><img class="unit img" id="~2" src="https://st-org.github.io/imgs/st.png"></div>]}
 ]}
 []
-{h2 [Index]}
+{h1 [Index]}
 'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
 []
 'The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. h6 tag units are special. Their default orbit is heading and their default level is 6. h1, h2, h3, h4, h5 are similar.'
@@ -63,7 +62,7 @@ Units with the same orbit and level will be ordered togather and given the index
 []
 ['Indexes can be accessed in unit compilers and are put into compiled results by unit compilers for '{src index.stdn, a [standard index units]}.]
 []
-{h2 [Children]}
+{h1 [Children]}
 'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the tag is in the following list, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
 []
 {dl [
@@ -71,7 +70,7 @@ Units with the same orbit and level will be ordered togather and given the index
     {dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins col colgroup table tbody tfoot thead tr]}
 ]}
 []
-{h3 [Inline Way]}
+{h2 [Inline Way]}
 {class hide, div [{span [
     first line
     second line
@@ -91,7 +90,7 @@ Units with the same orbit and level will be ordered togather and given the index
     ]}
 ]}
 []
-{h3 [Normal Way]}
+{h2 [Normal Way]}
 {class hide, div [{div [
     first line
     second line

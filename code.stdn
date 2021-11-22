@@ -1,7 +1,6 @@
 {title [Code]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
-{h2 [Inline or Block]}
+{h1 [Inline or Block]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -21,8 +20,8 @@
     ]}
 ]}
 []
-{h2 [Highlight]}
-{h3 [Built-in Langs]}
+{h1 [Highlight]}
+{h2 [Built-in Langs]}
 'For built-in langs, just pass the name of the lang.'
 []
 {two [
@@ -34,7 +33,7 @@
 []
 'Built-in langs: css, html, javascript, js, json, markdown, md, stdn, ston, ts, typescript, urls'
 []
-{h3 [Other Langs]}
+{h2 [Other Langs]}
 ['For other langs, you need to import the info of the lang via '{src global.stdn#global-option-units, a [global option units]}' of code. You can import multiple langs via multiple global option units.']
 []
 {global, vsce cpp, code []}
@@ -94,7 +93,7 @@ Following expressions are equivalent.
 []
 vsce-src can point to a urls file and supports relative url.
 []
-{h2 [Use Src]}
+{h1 [Use Src]}
 You can easily display the content of a code file via src option which supports relative url.
 []
 Note that block option is needed if the code file has multiple lines.

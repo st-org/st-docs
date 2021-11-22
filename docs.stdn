@@ -1,4 +1,4 @@
-{h2 [Docs]}
+{h1 [Docs]}
 {dl [
     {dt [{src ston.stdn, a [STON]}]}
     {dd [
@@ -73,6 +73,12 @@
     {dt [{src proof.stdn, a [Proof]}]}
     {dd [
         {src proof.stdn#qed-here, a [QED Here]}
+    ]}
+    {dt [{src view.stdn, a [View]}]}
+    {dd [
+        {src view.stdn#method-one, a [Method One]}
+        {src view.stdn#method-two, a [Method Two]}
+        {src view.stdn#method-three, a [Method Three]}
     ]}
     {dt [{src pdf.stdn, a [PDF]}]}
     {dd [

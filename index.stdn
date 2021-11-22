@@ -1,11 +1,10 @@
 {title [Index]}
 {css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
 'Standard index units: index, heading, equation, figure, theorem units'
 []
 'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from non-empty mark option or the index. The desc part is from desc option. The content part is from the children.'
 []
-{h2 [Index Tag Unit]}
+{h1 [Index Tag Unit]}
 'We call a general index unit an index unit. In contrast, we call a unit whose tag is exactly "index" an index tag unit.'
 []
 Index tag units are most basic index units.
@@ -47,7 +46,7 @@ Index tag units are compiled in inline mode by default which can be changed by "
     {article [['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']]}
 ]}
 []
-{h2 [Heading Tag Unit]}
+{h1 [Heading Tag Unit]}
 The tag part of a heading tag unit is hided.
 []
 {two [
@@ -59,7 +58,7 @@ The tag part of a heading tag unit is hided.
     {level 2, heading [Test]}
 ]}
 []
-{h2 [Equation Tag Unit]}
+{h1 [Equation Tag Unit]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -67,7 +66,7 @@ The tag part of a heading tag unit is hided.
     {equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2 [Figure Tag Unit]}
+{h1 [Figure Tag Unit]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -75,7 +74,7 @@ The tag part of a heading tag unit is hided.
     {figure [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-{h2 [Theorem Units]}
+{h1 [Theorem Units]}
 {two [
     {display [Source]}
     {display [Result]}
@@ -93,7 +92,7 @@ The tag part of a heading tag unit is hided.
 []
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
-{h2 [Customize Theorem Units]}
+{h1 [Customize Theorem Units]}
 {global, compile-with remark, notice []}
 {two [
     {display [Source]}
@@ -105,7 +104,7 @@ The tag part of a heading tag unit is hided.
     {notice [This unit is compiled by the unit compiler of remark.]}
 ]}
 []
-{h2 [Index Theorem Units Together]}
+{h1 [Index Theorem Units Together]}
 {global, orbit theorem, remark []}
 {two [
     {display [Source]}
@@ -127,7 +126,7 @@ The tag part of a heading tag unit is hided.
     ]}
 ]}
 []
-{h2 [Change Level]}
+{h1 [Change Level]}
 {global, level 2, test []}
 {two [
     {display [Source]}
