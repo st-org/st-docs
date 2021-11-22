@@ -73,6 +73,7 @@
     {dt [{src proof.stdn, a [Proof]}]}
     {dd [
         {src proof.stdn#qed-here, a [QED Here]}
+        {src proof.stdn#solution, a [Solution]}
     ]}
     {dt [{src view.stdn, a [View]}]}
     {dd [
