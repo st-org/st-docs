@@ -1,65 +1,10 @@
 {title [PDF]}
-{css-src common.css, ucs cfr, global []}
-{global, orbit heading, h2 []}
+{css-src common.css, ucs cfr@0.0.9, global []}
 {h2 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
 []
-You need to create a http server to host the current folder. There are many methods to create a http server.
+[{src view.stdn, a [View]}' test.stdn in chrome.']
 []
-{dl [
-    {dt [Method One]}
-    {dd [
-        ['Require '{href https://nodejs.org, a [nodejs]}.]
-        []
-        {block, code [npm i -g http-server]}
-        []
-        {block, code [http-server --cors -c-1]}
-        []
-        ['Open '{href https://st-org.github.io/?src=http://localhost:8080/test.stdn, a [https://st-org.github.io/?src=http://localhost:8080/test.stdn]}' in chrome.']
-        []
-    ]}
-    {dt [Method Two]}
-    {dd [
-        ['Require '{href https://code.visualstudio.com, a [vscode]}.]
-        []
-        ['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, a [ritwickdey.LiveServer]}.]
-        []
-        Open the current folder with vscode.
-        []
-        Open test.stdn in vscode.
-        []
-        ['Press '{kbd [Alt]}+{kbd [L]}' and '{kbd [Alt]}+{kbd [O]}.]
-        []
-        ['Open '{href https://st-org.github.io/?src=http://localhost:5500/test.stdn, a [https://st-org.github.io/?src=http://localhost:5500/test.stdn]}' in chrome.']
-        []
-    ]}
-    {dt [Method Three]}
-    {dd [
-        This method is essentially the same as the method two.
-        []
-        ['Require '{href https://code.visualstudio.com, a [vscode]}.]
-        []
-        ['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer, a [ritwickdey.LiveServer]}.]
-        []
-        Open the current folder with vscode.
-        []
-        Create index.html with the following content in the current folder.
-        []
-        {lang html, code [
-            <!DOCTYPE html>
-            <html data-src="test.stdn">
-            '    <body>'
-            '        <script type="module" src="https://cdn.jsdelivr.net/gh/st-org/st-view/main.js"></script>'
-            '    </body>'
-            </html>
-        ]}
-        []
-        Right click in editor and click "Open with Live Server" in context menu.
-        []
-        ['If your default browser is chrome, then '{href http://127.0.0.1:5500/index.html, a [http://127.0.0.1:5500/index.html]}' will be opened automatically in chrome.']
-        []
-    ]}
-]}
 ['Then, press '{kbd [Ctrl]}+{kbd [P]}' in chrome.']
 []
 'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
