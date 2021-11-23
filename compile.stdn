@@ -30,7 +30,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
-'Class list of the compiled result will contain "unit", the real tag and class names in "class" option.'
+'Class list of the compiled result will contain "unit", the real tag, class names in "class" option and class names in global "class" option of the tag.'
 []
 'If the unit is not a global tag unit or global option unit, then the compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.'
 []
