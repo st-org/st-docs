@@ -72,60 +72,65 @@
 ]}
 []
 {h1 [Useful CSS Classes]}
-{dl [
-    {dt [dark]}
-    {dd [
-        Turn darker in dark color scheme.
-        {lang css, code [
-            '{'
-            '    filter: brightness(.5);'
-            '}'
-        ]}
+{dt [dark]}
+{dd [
+    Turn darker in dark color scheme.
+    {lang css, code [
+        '{'
+        '    filter: brightness(.5);'
+        '}'
     ]}
-    {dt [invert]}
-    {dd [
-        Invert color in dark color scheme.
-        {lang css, code [
-            '{'
-            '    filter: invert(.9147982) brightness(.8745098);'
-            '}'
-        ]}
-    ]}
-    {dt [collapse]}
-    {dd [{lang css, code [
-        '{'
-        '    visibility: collapse;'
-        '}'
-    ]}]}
-    {dt [hide]}
-    {dd [{lang css, code [
-        '{'
-        '    display: none !important;'
-        '}'
-    ]}]}
-    {dt [invisible]}
-    {dd [{lang css, code [
-        '{'
-        '    visibility: hidden;'
-        '}'
-    ]}]}
-    {dt [translucent]}
-    {dd [{lang css, code [
-        '{'
-        '    opacity: .5;'
-        '}'
-    ]}]}
-    {dt [transparent]}
-    {dd [{lang css, code [
-        '{'
-        '    opacity: 0;'
-        '}'
-    ]}]}
-    {dt [warn]}
-    {dd [{lang css, code [
-        '{'
-        '    color: var(--color-warn);'
-        '}'
-    ]}]}
 ]}
+[]
+{dt [invert]}
+{dd [
+    Invert color in dark color scheme.
+    {lang css, code [
+        '{'
+        '    filter: invert(.9147982) brightness(.8745098);'
+        '}'
+    ]}
+]}
+[]
+{dt [collapse]}
+{dd [{lang css, code [
+    '{'
+    '    visibility: collapse;'
+    '}'
+]}]}
+[]
+{dt [hide]}
+{dd [{lang css, code [
+    '{'
+    '    display: none !important;'
+    '}'
+]}]}
+[]
+{dt [invisible]}
+{dd [{lang css, code [
+    '{'
+    '    visibility: hidden;'
+    '}'
+]}]}
+[]
+{dt [translucent]}
+{dd [{lang css, code [
+    '{'
+    '    opacity: .5;'
+    '}'
+]}]}
+[]
+{dt [transparent]}
+{dd [{lang css, code [
+    '{'
+    '    opacity: 0;'
+    '}'
+]}]}
+[]
+{dt [warn]}
+{dd [{lang css, code [
+    '{'
+    '    color: var(--color-warn);'
+    '}'
+]}]}
 []

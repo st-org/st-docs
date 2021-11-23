@@ -20,37 +20,47 @@
 ]}
 []
 {h2 [Supported SVG Elements and Attributes]}
-{dl [
-    {dt [animate]}
-    {dd [attributeName begin dur fill keyTimes repeatCount values]}
-    {dt [animateMotion]}
-    {dd [
-        attributeName begin dur fill keyTimes repeatCount values
-        keyPoints path rotate
-    ]}
-    {dt [circle]}
-    {dd []}
-    {dt [ellipse]}
-    {dd []}
-    {dt [foreignObject]}
-    {dd []}
-    {dt [g]}
-    {dd []}
-    {dt [image]}
-    {dd [href preserveAspectRatio]}
-    {dt [path]}
-    {dd [d]}
-    {dt [rect]}
-    {dd []}
-    {dt [svg]}
-    {dd [preserveAspectRatio viewBox]}
-    {dt [text]}
-    {dd [x y rotate textLength]}
-    {dt [textPath]}
-    {dd [path textLength]}
-    {dt [tspan]}
-    {dd [x y rotate textLength]}
+{dt [animate]}
+{dd [attributeName begin dur fill keyTimes repeatCount values]}
+[]
+{dt [animateMotion]}
+{dd [
+    attributeName begin dur fill keyTimes repeatCount values
+    keyPoints path rotate
 ]}
+[]
+{dt [circle]}
+{dd []}
+[]
+{dt [ellipse]}
+{dd []}
+[]
+{dt [foreignObject]}
+{dd []}
+[]
+{dt [g]}
+{dd []}
+[]
+{dt [image]}
+{dd [href preserveAspectRatio]}
+[]
+{dt [path]}
+{dd [d]}
+[]
+{dt [rect]}
+{dd []}
+[]
+{dt [svg]}
+{dd [preserveAspectRatio viewBox]}
+[]
+{dt [text]}
+{dd [x y rotate textLength]}
+[]
+{dt [textPath]}
+{dd [path textLength]}
+[]
+{dt [tspan]}
+{dd [x y rotate textLength]}
 []
 Some svg attributes like "r" of "circle" are not supported directly because they can be used as css properties.
 []
