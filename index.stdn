@@ -93,15 +93,15 @@ The tag part of a heading tag unit is hided.
 'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
 []
 {h1 [Customize Theorem Units]}
-{global, compile-with remark, notice []}
+{global, compile-with remark, note []}
 {two [
     {display [Source]}
     {display [Result]}
     {lang stdn, code [
-        '{global, compile-with remark, notice []}'
-        '{notice [This unit is compiled by the unit compiler of remark.]}'
+        '{global, compile-with remark, note []}'
+        '{note [This unit is compiled by the unit compiler of remark.]}'
     ]}
-    {notice [This unit is compiled by the unit compiler of remark.]}
+    {note [This unit is compiled by the unit compiler of remark.]}
 ]}
 []
 {h1 [Index Theorem Units Together]}
