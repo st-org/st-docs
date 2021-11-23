@@ -31,7 +31,8 @@
     {lang stdn, code ['{code [inline]}']}
 ]}
 []
-'Built-in langs: css, html, javascript, js, json, markdown, md, stdn, ston, ts, typescript, urls'
+{dt [Built-in langs]}
+{dd [css html javascript js json markdown md stdn ston ts typescript urls]}
 []
 {h2 [Other Langs]}
 ['For other langs, you need to import the info of the lang via '{src global.stdn#global-option-units, a [global option units]}' of code. You can import multiple langs via multiple global option units.']

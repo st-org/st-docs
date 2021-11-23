@@ -56,11 +56,13 @@
     ]}
 ]}
 []
-'Supported katex environments: align, alignat, aligned, alignedat, array, arraystretch, Bmatrix, bmatrix, cases, CD, darray, dcases, drcases, gather, matrix, pmatrix, rcases, smallmatrix, split, subarray, Vmatrix, vmatrix'
+{dt [Supported katex environments]}
+{dd [align alignat aligned alignedat array arraystretch Bmatrix bmatrix cases CD darray dcases drcases gather matrix pmatrix rcases smallmatrix split subarray Vmatrix vmatrix]}
 []
 'Note that, for tags in the following list, the katex environment actually used is added with "*" like "align*".'
 []
-'Adding star katex environments: align, alignat, Bmatrix, bmatrix, gather, matrix, pmatrix, Vmatrix, vmatrix'
+{dt [Adding star katex environments]}
+{dd [align alignat Bmatrix bmatrix gather matrix pmatrix Vmatrix vmatrix]}
 []
 {h1 [Use Units in KaTeX]}
 {two [

@@ -1,6 +1,6 @@
 {title [Index]}
 {css-src common.css, ucs cfr, global []}
-'Standard index units: index, heading, equation, figure, theorem units'
+'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
 'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from non-empty mark option or the index. The desc part is from desc option. The content part is from the children.'
 []
@@ -90,7 +90,8 @@ The tag part of a heading tag unit is hided.
     ]}
 ]}
 []
-'Standard theorem units: conjecture, corollary, definition, example, exercise, lemma, notation, proposition, remark, theorem'
+{dt [Tag of standard theorem units]}
+{dd [conjecture corollary definition example exercise lemma notation proposition remark theorem]}
 []
 {h1 [Customize Theorem Units]}
 {global, compile-with remark, note []}
