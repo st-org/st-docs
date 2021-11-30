@@ -32,6 +32,9 @@
 {dt [circle]}
 {dd []}
 []
+{dt [clipPath]}
+{dd []}
+[]
 {dt [ellipse]}
 {dd []}
 []
@@ -44,8 +47,14 @@
 {dt [image]}
 {dd [href preserveAspectRatio]}
 []
+{dt [mask]}
+{dd [x y width height]}
+[]
 {dt [path]}
 {dd [d]}
+[]
+{dt [pattern]}
+{dd [x y width height preserveAspectRatio viewBox]}
 []
 {dt [rect]}
 {dd []}
@@ -61,6 +70,9 @@
 []
 {dt [tspan]}
 {dd [x y rotate textLength]}
+[]
+{dt [use]}
+{dd [href]}
 []
 Some svg attributes like "r" of "circle" are not supported directly because they can be used as css properties.
 []
