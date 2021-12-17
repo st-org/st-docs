@@ -1,5 +1,5 @@
 .unit.logo {
     background: center / contain no-repeat url('https://st-org.github.io/imgs/st.png');
-    height: 8em;
+    height: 150px;
     margin: var(--length-tab);
 }
