@@ -1,5 +1,5 @@
 {title [STDN]}
-{css-src common.css, ucs cfr, global []}
+{css-src main.css, ucs cfr, global []}
 STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
 []
 This article is for explaining the parse of stdn. Compiled results are not invoved in this article. Parsed results are illustrated by ston in this article.
@@ -38,12 +38,12 @@ An Item in line can only be a char or a unit. So an item in the source of a line
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{css-src common.css, global []}']}
+    {lang stdn, block, code ['{css-src main.css, global []}']}
     {lang ston, code [
         '[[{'
         '    tag global'
         '    options {'
-        '        css-src common.css'
+        '        css-src main.css'
         '    }'
         '    children []'
         '}]]'

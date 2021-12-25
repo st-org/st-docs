@@ -1,5 +1,5 @@
 {title [KaTeX]}
-{css-src common.css, ucs cfr, global []}
+{css-src main.css, ucs cfr, global []}
 {h1 [Inline or Display]}
 {two [
     {display [Source]}
