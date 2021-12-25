@@ -1,19 +1,9 @@
 {title [Code]}
-{css-src main.css, ucs cfr, global []}
+{mod demo, ucs cfr, global []}
 {h1 [Inline or Block]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code ['{code [inline]}']}
+{demo [
     {code [inline]}
-    {lang stdn, block, code ['{block, code [block]}']}
     {block, code [block]}
-    {lang stdn, code [
-        '{code ['
-        '    block'
-        '    block'
-        ']}'
-    ]}
     {code [
         block
         block
@@ -24,12 +14,7 @@
 {h2 [Built-in Langs]}
 'For built-in langs, just pass the name of the lang.'
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code ['{lang stdn, code [\'{code [inline]}\']}']}
-    {lang stdn, code ['{code [inline]}']}
-]}
+{demo [{lang stdn, code ['{code [inline]}']}]}
 []
 {dt [Built-in langs]}
 {dd [css html javascript js json markdown md stdn ston ts typescript urls]}
@@ -37,50 +22,24 @@
 {h2 [Other Langs]}
 ['For other langs, you need to import the info of the lang via '{src global.stdn#global-option-units, a [global option units]}' of code. You can import multiple langs via multiple global option units.']
 []
-{global, vsce cpp, code []}
-{global, vsce-gh James-Yu/LaTeX-Workshop, code []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{global, vsce cpp, code []}'
-        '{lang c, code ['
-        '    \'int main(){\''
-        '    \'    return 0;\''
-        '    \'}\''
-        ']}'
-    ]}
+{demo [
+    {global, vsce cpp, code []}
+    {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
     {lang c, code [
         'int main(){'
         '    return 0;'
         '}'
     ]}
-    {lang stdn, code [
-        '{global, vsce-gh James-Yu/LaTeX-Workshop, code []}'
-        '{lang latex, code ['
-        '    \'\begin{document}\''
-        '    \'$e^{i\pi}=-1$\''
-        '    \'\end{document}\''
-        ']}'
-        '{lang bibtex, code ['
-        '    \'@article {MR721448,\''
-        '    \'    AUTHOR = {Atiyah, M. F. and Bott, R.},\''
-        '    \'    TITLE = {The moment map and equivariant cohomology}\''
-        '    \'}\''
-        ']}'
+    {lang latex, code [
+        '\begin{document}'
+        '$e^{i\pi}=-1$'
+        '\end{document}'
     ]}
-    {div [
-        {lang latex, code [
-            '\begin{document}'
-            '$e^{i\pi}=-1$'
-            '\end{document}'
-        ]}
-        {lang bibtex, code [
-            '@article {MR721448,'
-            '    AUTHOR = {Atiyah, M. F. and Bott, R.},'
-            '    TITLE = {The moment map and equivariant cohomology}'
-            '}'
-        ]}
+    {lang bibtex, code [
+        '@article {MR721448,'
+        '    AUTHOR = {Atiyah, M. F. and Bott, R.},'
+        '    TITLE = {The moment map and equivariant cohomology}'
+        '}'
     ]}
 ]}
 []
@@ -99,10 +58,5 @@ You can easily display the content of a code file via src option which supports 
 []
 Note that block option is needed if the code file has multiple lines.
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, block, code ['{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}']}
-    {src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}
-]}
+{demo [{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, lang json, block, code []}]}
 []
