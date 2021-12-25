@@ -40,7 +40,7 @@
     {display [Result]}
     {lang stdn, code [
         '{display, ['
-        '    \pi_1(S^n)='
+        '    \pi_1(S^n)\cong'
         '    {cases ['
         '        \Z & n=1\\\\'
         '        0 & n>1'
@@ -48,7 +48,7 @@
         ']}'
     ]}
     {display, [
-        \pi_1(S^n)=
+        \pi_1(S^n)\cong
         {cases [
             \Z & n=1\\
             0 & n>1
@@ -70,15 +70,15 @@
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{compile-with index, mark {['
+        '    [\'H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
+        '    [\'&\cong\Z \tag*{\'{compile-with index, mark {['
         '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
         '    ]}, equation []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-        ['&=\Z \tag*{'{compile-with index, mark {[
+        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+        ['&\cong\Z \tag*{'{compile-with index, mark {[
             //
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
         ]}, equation []}'}']

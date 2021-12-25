@@ -16,15 +16,15 @@ Adding "no-tag" class can hide the tag part which is a common feature of all ind
     {display [Result]}
     {lang stdn, code [
         '{align ['
-        '    [\'H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
-        '    [\'&=\Z \tag*{\'{compile-with index, mark {['
+        '    [\'H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
+        '    [\'&\cong\Z \tag*{\'{compile-with index, mark {['
         '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
         '    ]}, equation []}\'}\']'
         ']}'
     ]}
     {align [
-        ['H_0(pt)&=\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-        ['&=\Z \tag*{'{compile-with index, mark {[
+        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+        ['&\cong\Z \tag*{'{compile-with index, mark {[
             //
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
         ]}, equation []}'}']
