@@ -1,5 +1,6 @@
 {title [Compile]}
-{css-src main.css, ucs cfr, global []}
+{mod demo, ucs cfr, global []}
+{global, html, demo []}
 ['STDN can be compiled to html. To be exact, a stdn will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}.]
 []
 This article is for explaining the compile of stdn. Compiled results are illustrated by html in this article.
@@ -9,18 +10,9 @@ This article is for explaining the compile of stdn. Compiled results are illustr
 {h1 [Line]}
 Each line will be compiled to a div with "st-line" class.
 []
-{class hide, div [
+{demo [
     first line
     ['second '{span [line]}]
-]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        first line
-        '[\'second \'{span [line]}]'
-    ]}
-    {lang html, block, code [<div class="st-line">first line</div><div class="st-line">second <span class="unit span" id="line~2">line</span></div>]}
 ]}
 []
 {h1 [Unit]}
@@ -45,13 +37,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 []
 ['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' and the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}.]
 []
-{class hide, div [{src https://st-org.github.io/imgs/st.png, img []}]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, block, code ['{src https://st-org.github.io/imgs/st.png, img []}']}
-    {lang html, block, code [<div class="st-line"><img class="unit img" id="~2" src="https://st-org.github.io/imgs/st.png"></div>]}
-]}
+{demo [{src https://st-org.github.io/imgs/st.png, img []}]}
 []
 {h1 [Index]}
 'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
@@ -69,39 +55,14 @@ Units with the same orbit and level will be ordered togather and given the index
 {dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins col colgroup table tbody tfoot thead tr]}
 []
 {h2 [Inline Way]}
-{class hide, div [{span [
+{demo [{span [
     first line
     second line
 ]}]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{span ['
-        '    first line'
-        '    second line'
-        ']}'
-    ]}
-    {lang html, code [
-        <div class="st-line"><span class="unit span" id="first-line~4">first line
-        second line</span></div>
-    ]}
-]}
 []
 {h2 [Normal Way]}
-{class hide, div [{div [
+{demo [{div [
     first line
     second line
 ]}]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{div ['
-        '    first line'
-        '    second line'
-        ']}'
-    ]}
-    {lang html, block, code [<div class="st-line"><div class="unit div" id="first-line~6"><div class="st-line">first line</div><div class="st-line">second line</div></div></div>]}
-]}
 []
