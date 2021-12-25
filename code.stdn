@@ -46,9 +46,9 @@
 Following expressions are equivalent.
 []
 {ul [
-    {li [{lang stdn, block, code ['{global, vsce cpp, code []}']}]}
-    {li [{lang stdn, block, code ['{global, vsce-gh microsoft/vscode/extensions/cpp, code []}']}]}
-    {li [{lang stdn, block, code ['{global, vsce-src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, code []}']}]}
+    {li [{stdn [{global, vsce cpp, code []}]}]}
+    {li [{stdn [{global, vsce-gh microsoft/vscode/extensions/cpp, code []}]}]}
+    {li [{stdn [{global, vsce-src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, code []}]}]}
 ]}
 []
 vsce-src can point to a urls file and supports relative url.

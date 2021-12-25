@@ -1,37 +1,26 @@
 {title [Global]}
-{css-src main.css, ucs cfr, global []}
+{mod demo, ucs cfr, global []}
 {h1 [Title]}
 Text content of the first title tag unit will be viewed as the title.
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, block, code ['{title [Global]}']}
-    {title [Global]}
-]}
+{demo [{title [Global]}]}
 []
 {h1 [Global Tag Unit]}
 Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn. You can import multiple css and unit compilers via multiple global tag units.
 []
-{mod hello, global []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{mod hello, global []}'
-        '{name world, hello []}'
-    ]}
+{demo [
+    {mod hello, global []}
     {name world, hello []}
 ]}
 []
 Following expressions are equivalent.
 []
 {ul [
-    {li [{lang stdn, block, code ['{mod hello, global []}']}]}
-    {li [{lang stdn, block, code ['{css hello, ucs hello, global []}']}]}
-    {li [{lang stdn, block, code ['{mod-gh st-mod/hello, global []}']}]}
-    {li [{lang stdn, block, code ['{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}']}]}
-    {li [{lang stdn, block, code ['{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}']}]}
+    {li [{stdn [{mod hello, global []}]}]}
+    {li [{stdn [{css hello, ucs hello, global []}]}]}
+    {li [{stdn [{mod-gh st-mod/hello, global []}]}]}
+    {li [{stdn [{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}]}]}
+    {li [{stdn [{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}]}]}
 ]}
 []
 css-src and ucs-src can point to a urls file and support relative url.
@@ -43,14 +32,8 @@ A global option unit whose tag is some value is called a global option unit of t
 []
 ['Global option units have built-in effect which is detailedly explained in '{src compile.stdn, a [compile.stdn]}.]
 []
-{global, level 2, test []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{global, level 2, test []}'
-        '{orbit test, equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}'
-    ]}
+{demo [
+    {global, level 2, test []}
     {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
