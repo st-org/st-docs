@@ -1,60 +1,32 @@
 {title [KaTeX]}
-{css-src main.css, ucs cfr, global []}
+{mod demo, ucs cfr, global []}
 {h1 [Inline or Display]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code ['{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
+{demo [
     {'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
-    {lang stdn, block, code ['{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}']}
     {display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
-    {lang stdn, block, code ['{display [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
 {h1 [Equation]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, block, code ['{equation [{\'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
+{demo [
     {equation [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
-    {lang stdn, block, code ['{equation [{display, \'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2\'}]}']}
     {equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
 {h1 [Customize KaTeX Commands]}
-{global, '\def\exp#1{e^{#1}}'}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{global, \'\def\exp#1{e^{#1}}\'}'
-        '{display, \'\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2\'}'
-    ]}
+{demo [
+    {global, '\def\exp#1{e^{#1}}'}
     {display, '\int_0^\infty\exp{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
 {h1 [Use KaTeX Environments]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{display, ['
-        '    \pi_1(S^n)\cong'
-        '    {cases ['
-        '        \Z & n=1\\\\'
-        '        0 & n>1'
-        '    ]}'
-        ']}'
+{demo [{display, [
+    \pi_1(S^n)\cong
+    {cases [
+        \Z & n=1\\
+        0 & n>1
     ]}
-    {display, [
-        \pi_1(S^n)\cong
-        {cases [
-            \Z & n=1\\
-            0 & n>1
-        ]}
-    ]}
-]}
+]}]}
 []
 {dt [Supported katex environments]}
 {dd [align alignat aligned alignedat array arraystretch Bmatrix bmatrix cases CD darray dcases drcases gather matrix pmatrix rcases smallmatrix split subarray Vmatrix vmatrix]}
@@ -65,23 +37,11 @@
 {dd [align alignat Bmatrix bmatrix gather matrix pmatrix Vmatrix vmatrix]}
 []
 {h1 [Use Units in KaTeX]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{align ['
-        '    [\'H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{\'{id h-vs-h-tilde, compile-with index, equation []}\'}\'\\\]'
-        '    [\'&\cong\Z \tag*{\'{compile-with index, mark {['
-        '        [{ref-id h-vs-h-tilde, class no-tag, ref []}{\'\\\'\'}]'
-        '    ]}, equation []}\'}\']'
-        ']}'
-    ]}
-    {align [
-        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-        ['&\cong\Z \tag*{'{compile-with index, mark {[
-            //
-            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, equation []}'}']
-    ]}
-]}
+{demo [{align [
+    ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+    ['&\cong\Z \tag*{'{compile-with index, mark {[
+        {placeholder []}
+        [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+    ]}, equation []}'}']
+]}]}
 []
