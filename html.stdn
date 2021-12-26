@@ -1,21 +1,10 @@
 {title [HTML]}
-{css-src main.css, ucs cfr, global []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{ul ['
-        '    {li [first item]}'
-        '    {li [{i [second item]}]}'
-        '    {style font-size:0.8em, li [{b [third item]}]}'
-        ']}'
-    ]}
-    {ul [
-        {li [first item]}
-        {li [{i [second item]}]}
-        {style font-size:0.8em, li [{b [third item]}]}
-    ]}
-]}
+{mod demo, ucs cfr, global []}
+{demo [{ul [
+    {li [first item]}
+    {li [{i [second item]}]}
+    {style font-size:0.8em, li [{b [third item]}]}
+]}]}
 []
 {dt [Supported html elements]}
 {dd [address article aside footer header h1 h2 h3 h4 h5 h6 main nav section blockquote dd div dl dt figcaption figure hr li ol p pre ul a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins caption col colgroup table tbody td tfoot th thead tr]}

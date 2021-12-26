@@ -1,61 +1,34 @@
 {title [Ref]}
-{css-src main.css, ucs cfr, global []}
+{mod demo, ucs cfr, global []}
 {h1 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
 ['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. The tag part is from the tag of the referred unit. The mark part is from the non-empty children of the unit or the mark part of the referred unit. The desc part is from desc option.']
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{id flt1, mark FLT, desc Fermat, theorem ['
-        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
-        '    {display, \'a^n+b^n=c^n.\'}'
-        ']}'
-        '[\'The first successful proof of \'{ref-id flt1, ref []}\' was released in 1994 by Andrew Wiles.\']'
+{demo [
+    {id flt, mark FLT, desc Fermat, theorem [
+        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+        {display, 'a^n+b^n=c^n.'}
     ]}
-    {div [
-        {id flt1, mark FLT, desc Fermat, theorem [
-            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
-            {display, 'a^n+b^n=c^n.'}
-        ]}
-        ['The first successful proof of '{ref-id flt1, ref []}' was released in 1994 by Andrew Wiles.']
-    ]}
+    ['The first successful proof of '{ref-id flt, ref []}' was released in 1994 by Andrew Wiles.']
 ]}
 []
 Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can capitalize the tag part.
 []
 {h1 [Use HTML Anchor Element]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{id flt2, mark FLT, desc Fermat, theorem ['
-        '    [\'Let \'{\'n\'}\' be an integer greater than \'{\'2\'}\', then there are no positive integers \'{\'a,b,c\'}\' satisfying\']'
-        '    {display, \'a^n+b^n=c^n.\'}'
-        ']}'
-        '[\'The first successful proof of \'{href #flt2, a [theorem FLT]}\' was released in 1994 by Andrew Wiles.\']'
+{demo [
+    {id flt, mark FLT, desc Fermat, theorem [
+        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+        {display, 'a^n+b^n=c^n.'}
     ]}
-    {div [
-        {id flt2, mark FLT, desc Fermat, theorem [
-            ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
-            {display, 'a^n+b^n=c^n.'}
-        ]}
-        ['The first successful proof of '{href #flt2, a [theorem FLT]}' was released in 1994 by Andrew Wiles.']
-    ]}
+    ['The first successful proof of '{href #flt, a [theorem FLT]}' was released in 1994 by Andrew Wiles.']
 ]}
 []
 {h1 [Cross File Ref]}
 ['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{ucs cfr, global []}'
-        '{src compile.stdn#index, a [Index]}'
-    ]}
+{demo [
+    {ucs cfr, global []}
     {src compile.stdn#index, a [Index]}
 ]}
 []
