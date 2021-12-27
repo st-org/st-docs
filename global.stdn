@@ -16,11 +16,11 @@ Global tag units are used to import css and unit compilers. A valid global tag u
 Following expressions are equivalent.
 []
 {ul [
-    {li [{stdn [{mod hello, global []}]}]}
-    {li [{stdn [{css hello, ucs hello, global []}]}]}
-    {li [{stdn [{mod-gh st-mod/hello, global []}]}]}
-    {li [{stdn [{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}]}]}
-    {li [{stdn [{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}]}]}
+    {li [{source [{mod hello, global []}]}]}
+    {li [{source [{css hello, ucs hello, global []}]}]}
+    {li [{source [{mod-gh st-mod/hello, global []}]}]}
+    {li [{source [{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}]}]}
+    {li [{source [{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}]}]}
 ]}
 []
 css-src and ucs-src can point to a urls file and support relative url.

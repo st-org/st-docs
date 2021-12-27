@@ -55,14 +55,20 @@ Units with the same orbit and level will be ordered togather and given the index
 {dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins col colgroup table tbody tfoot thead tr]}
 []
 {h2 [Inline Way]}
-{demo [{span [
-    first line
-    second line
-]}]}
+{demo [
+    //
+    {span [
+        first line
+        second line
+    ]}
+]}
 []
 {h2 [Normal Way]}
-{demo [{div [
-    first line
-    second line
-]}]}
+{demo [
+    //
+    {div [
+        first line
+        second line
+    ]}
+]}
 []

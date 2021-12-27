@@ -8,7 +8,7 @@
         {display, 'a^n+b^n=c^n.'}
     ]}
     {mark {[
-        {placeholder []}
+        placeholder
         ['of '{ref-id flt, ref []}]
     ]}, desc Wiles, proof [Omitted.]}
 ]}
@@ -18,12 +18,15 @@ Adding "no-tag" class can hide the tag part.
 {h1 [QED Here]}
 {demo [
     {theorem [There is no largest prime number.]}
-    {class no-qed, proof [{ul [
-        {li [['Suppose '{'p'}' were the largest prime number.']]}
-        {li [['Let '{'q'}' be the product of the first '{'p'}' numbers.']]}
-        {li [['Then '{'q+1'}' is not divisible by any of them.']]}
-        {li [['But '{'q+1'}' is greater than '{'1'}', thus divisible by some prime number not in the first '{'p'}' numbers.'{qed []}]]}
-    ]}]}
+    {class no-qed, proof [
+        //
+        {ul [
+            {li [['Suppose '{'p'}' were the largest prime number.']]}
+            {li [['Let '{'q'}' be the product of the first '{'p'}' numbers.']]}
+            {li [['Then '{'q+1'}' is not divisible by any of them.']]}
+            {li [['But '{'q+1'}' is greater than '{'1'}', thus divisible by some prime number not in the first '{'p'}' numbers.'{qed []}]]}
+        ]}
+    ]}
 ]}
 []
 {h1 [Solution]}

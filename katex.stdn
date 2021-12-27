@@ -37,11 +37,14 @@
 {dd [align alignat Bmatrix bmatrix gather matrix pmatrix Vmatrix vmatrix]}
 []
 {h1 [Use Units in KaTeX]}
-{demo [{align [
-    ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-    ['&\cong\Z \tag*{'{compile-with index, mark {[
-        {placeholder []}
-        [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-    ]}, equation []}'}']
-]}]}
+{demo [
+    //
+    {align [
+        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
+        ['&\cong\Z \tag*{'{compile-with index, mark {[
+            placeholder
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+        ]}, equation []}'}']
+    ]}
+]}
 []

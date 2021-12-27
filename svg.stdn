@@ -1,19 +1,11 @@
 {title [SVG]}
-{css-src main.css, ucs cfr, global []}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        '{style display:block; fill:currentColor; width:100%, viewBox 0 0 200 100, svg ['
-        '    {style r:5px, circle ['
-        '        {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion []}'
-        '    ]}'
-        ']}'
-    ]}
+{mod demo, ucs cfr, global []}
+{demo [
+    //
     {style display:block; fill:currentColor; width:100%, viewBox 0 0 200 100, svg [
-        //
+        placeholder
         {style r:5px, circle [
-            //
+            placeholder
             {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion []}
         ]}
     ]}
