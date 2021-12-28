@@ -1,5 +1,5 @@
 {title [Code]}
-{mod demo@0.6.0, ucs cfr, global []}
+{mod demo@0.6.1, ucs cfr, global []}
 {global, no-count, demo []}
 {global, no-count, source []}
 {h1 [Inline or Block]}
