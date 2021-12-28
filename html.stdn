@@ -1,5 +1,6 @@
 {title [HTML]}
 {mod demo, ucs cfr, global []}
+{global, no-count, demo []}
 {demo [
     //
     {ul [

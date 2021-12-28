@@ -1,5 +1,6 @@
 {title [SVG]}
 {mod demo, ucs cfr, global []}
+{global, no-count, demo []}
 {demo [
     //
     {style display:block; fill:currentColor; width:100%, viewBox 0 0 200 100, svg [

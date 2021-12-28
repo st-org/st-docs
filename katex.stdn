@@ -1,5 +1,6 @@
 {title [KaTeX]}
 {mod demo, ucs cfr, global []}
+{global, no-count, demo []}
 {h1 [Inline or Display]}
 {demo [
     {'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
