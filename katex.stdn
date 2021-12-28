@@ -1,5 +1,5 @@
 {title [KaTeX]}
-{mod demo@0.6.1, ucs cfr, global []}
+{mod demo@0.6.2, ucs cfr, global []}
 {global, no-count, demo []}
 {h1 [Inline or Display]}
 {demo [
