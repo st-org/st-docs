@@ -25,7 +25,7 @@ Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can c
 ]}
 []
 {h1 [Cross File Ref]}
-['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a wonderful polyfill of original html anchor element. Cross file ref becomes simple and smooth with the help of this polyfill. Moreover, this polyfill fixes the problem of relative href in vscode preview.']
+['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a simple way to create cross file refs and fixes the problem of relative href in vscode preview.']
 []
 {demo [
     {ucs cfr, global []}

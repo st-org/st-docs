@@ -2,14 +2,12 @@
 {mod demo, ucs cfr, global []}
 'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from non-empty mark option or the index. The desc part is from desc option. The content part is from the children.'
+'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
 []
 {h1 [Index Tag Unit]}
-'We call a general index unit an index unit. In contrast, we call a unit whose tag is exactly "index" an index tag unit.'
-[]
 Index tag units are most basic index units.
 []
-Adding "no-tag" class can hide the tag part which is a common feature of all index units and many other built-in units.
+Adding "no-tag" class can hide the tag part.
 []
 {demo [
     //
@@ -51,7 +49,7 @@ The tag part of a heading tag unit is hided.
     {display, 'a^n+b^n=c^n.'}
 ]}]}
 []
-{dt [Tag of standard theorem units]}
+{dt [Standard theorem units]}
 {dd [conjecture corollary definition example exercise lemma notation proposition remark theorem]}
 []
 {h1 [Customize Theorem Units]}

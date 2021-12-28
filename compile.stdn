@@ -5,7 +5,7 @@
 []
 This article is for explaining the compile of stdn. Compiled results are illustrated by html in this article.
 []
-['All the source code of compile is in '{href https://github.com/st-org/stc/blob/main/src/compiler.ts, a [compiler.ts]}.]
+['All the source code of compile is in '{href https://github.com/st-org/stc/blob/main/src/mod.ts, a [mod.ts]}.]
 []
 {h1 [Line]}
 Each line will be compiled to a div with "st-line" class.
@@ -24,13 +24,15 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 []
 'Class list of the compiled result will contain "unit", the real tag, class names in "class" option and class names in global "class" option of the tag.'
 []
-'If the unit is not a global tag unit or global option unit, then the compiled result will have id which is from string value "id" option or the first line of the unit. The precise process is showed in the following code.'
+'If the unit is not a global tag unit or global option unit and "no-count" option is not true and global "no-count" option of the tag is not true, then the unit is "countable".'
+[]
+The compiled result of a countable unit will have id which is from string value "id" option or the chiildren of the unit. The precise process is showed in the following code.
 []
 {lang js, code [
     'function stringToId(string){'
     '    return Array.from(string.slice(0,100).matchAll(/[a-zA-Z0-9]+/g)).join(\'-\').toLowerCase()'
     '}'
-    'const baseId=stringToId(typeof unit.options.id===\'string\'?unit.options.id:unitToInlinePlainString(unit))'
+    'const baseId=stringToId(typeof unit.options.id===\'string\'?unit.options.id:stdnToInlinePlainString(unit.children))'
     'const count=baseIdToCount[baseId]=(baseIdToCount[baseId]??0)+1'
     'const id=count>1||baseId.length===0?`${baseId}~${count}`:baseId'
 ]}
@@ -40,13 +42,13 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 {demo [{src https://st-org.github.io/imgs/st.png, img []}]}
 []
 {h1 [Index]}
-'If a unit is not a global tag unit or global option unit, then an index will be given according to the orbit and the level of the unit.'
+An index will be given to the countable unit according to the orbit and the level of the unit.
 []
-'The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. h6 tag units are special. Their default orbit is heading and their default level is 6. h1, h2, h3, h4, h5 are similar.'
+'The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4, h5 are similar.'
 []
-Units with the same orbit and level will be ordered togather and given the index one by one. The index will be reset by any unit whose orbit is heading and whose level is smaller than the level of the units to be indexed.
+Countable units with the same orbit and level will be ordered togather and given the index one by one. The index will be reset by any countable unit whose orbit is heading and whose level is smaller than the level of the units to be indexed.
 []
-['Indexes can be accessed in unit compilers and are put into compiled results by unit compilers for '{src index.stdn, a [standard index units]}.]
+['Indexes can be accessed in unit compilers and are put into compiled results by built-in unit compilers for '{src index.stdn, a [index units]}.]
 []
 {h1 [Children]}
 'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the tag is in the following list, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
