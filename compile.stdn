@@ -26,7 +26,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 []
 'If the unit is not a global tag unit or global option unit and "no-count" option is not true and global "no-count" option of the tag is not true, then the unit is "countable".'
 []
-The compiled result of a countable unit will have id which is from string value "id" option or the chiildren of the unit. The precise process is showed in the following code.
+The compiled result of a countable unit will have id which is from string value "id" option or the children of the unit. The precise process is showed in the following code.
 []
 {lang js, code [
     'function stringToId(string){'
