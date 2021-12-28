@@ -1,7 +1,7 @@
 const {join}=require('path')
 const {readFileSync,writeFileSync}=require('fs')
 function stringToId(string){
-    return string.replace(/[^\s\w-]/g,'').toLowerCase().trim().split(/[\s_-]+/).join('-')
+    return Array.from(string.slice(0,100).matchAll(/[a-zA-Z0-9]+/g)).join('-').toLowerCase()
 }
 const array=[
     '{h1 [Docs]}',
