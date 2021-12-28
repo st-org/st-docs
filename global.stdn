@@ -1,9 +1,11 @@
 {title [Global]}
 {mod demo, ucs cfr, global []}
+{global, no-count, demo []}
+{global, no-count, source []}
 {h1 [Title]}
-Text content of the first title tag unit will be viewed as the title.
+Title is from the countable title tag unit.
 []
-{demo [{title [Global]}]}
+{demo [{title [Test]}]}
 []
 {h1 [Global Tag Unit]}
 Global tag units are used to import css and unit compilers. A valid global tag unit should be at the beginning of a line of stdn. You can import multiple css and unit compilers via multiple global tag units.
@@ -23,17 +25,17 @@ Following expressions are equivalent.
     {li [{source [{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}]}]}
 ]}
 []
-css-src and ucs-src can point to a urls file and support relative url.
+"css-src" and "ucs-src" can point to a urls file and support relative url.
 []
 {h1 [Global Option Units]}
 Global option units are units with "global" option and are designed to pass global options for unit compilers. A valid global option unit should be at the beginning of a line of stdn.
 []
-A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called an global option of the value for short.
-[]
-['Global option units have built-in effect which is detailedly explained in '{src compile.stdn, a [compile.stdn]}.]
+['Global option units have built-in effects which are detailedly explained in '{src compile.stdn, a [compile.stdn]}.]
 []
 {demo [
     {global, level 2, test []}
     {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
+[]
+A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called an global option of the value for short.
 []

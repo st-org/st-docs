@@ -1,5 +1,7 @@
 {title [Code]}
 {mod demo, ucs cfr, global []}
+{global, no-count, demo []}
+{global, no-count, source []}
 {h1 [Inline or Block]}
 {demo [
     {code [inline]}
@@ -51,10 +53,10 @@ Following expressions are equivalent.
     {li [{source [{global, vsce-src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, code []}]}]}
 ]}
 []
-vsce-src can point to a urls file and supports relative url.
+"vsce-src" can point to a urls file and supports relative url.
 []
 {h1 [Use Src]}
-You can easily display the content of a code file via src option which supports relative url.
+You can display the content of a code file via src option which supports relative url.
 []
 Note that block option is needed if the code file has multiple lines.
 []
