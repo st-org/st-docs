@@ -11,7 +11,7 @@
     ]}
 ]}
 []
-{h2 [Supported SVG Elements and Attributes]}
+{compile-with h2, div [Supported SVG Elements and Attributes]}
 {dt [animate]}
 {dd [attributeName begin dur fill keyTimes repeatCount values]}
 []
