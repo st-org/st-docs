@@ -1,5 +1,5 @@
 {title [Global]}
-{mod demo@0.6.4, ucs cfr, global []}
+{mod demo@0.6.5, ucs cfr, global []}
 {global, no-count, demo []}
 {global, no-count, source []}
 {h1 [Title]}
