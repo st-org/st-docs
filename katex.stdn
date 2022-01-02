@@ -35,7 +35,7 @@
 {dt [Supported katex environments]}
 {dd [align alignat aligned alignedat array arraystretch Bmatrix bmatrix cases CD darray dcases drcases gather matrix pmatrix rcases smallmatrix split subarray Vmatrix vmatrix]}
 []
-'The katex environment actually used is starred like "align*" for tags in the following list.'
+The katex environment actually used is starred like "align*" for tags in the following list.
 []
 {dt [Starred katex environments]}
 {dd [align alignat Bmatrix bmatrix gather matrix pmatrix Vmatrix vmatrix]}
