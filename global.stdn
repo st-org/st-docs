@@ -37,5 +37,5 @@ Global option units are units with "global" option and are designed to pass glob
     {orbit test, equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
 ]}
 []
-A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called an global option of the value for short.
+A global option unit whose tag is some value is called a global option unit of the value for short. An option of a a global option unit of some value is called a global option of the value for short.
 []
