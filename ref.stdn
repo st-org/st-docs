@@ -1,6 +1,6 @@
 {title [Ref]}
 {mod demo@0.7.0, ucs cfr, global []}
-{global, no-count, demo []}
+{global, no-count-inside, demo []}
 {h1 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
