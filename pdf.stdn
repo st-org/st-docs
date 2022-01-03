@@ -7,7 +7,7 @@ Assume that there is test.stdn in the current folder and related local resources
 []
 ['Then, press '{kbd [Ctrl]}+{kbd [P]}' in chrome.']
 []
-'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set at the bottom of the side bar of the webpage.'
+'To avoid exporting in dark color scheme, make sure the st color scheme is auto or light which can be set in the side bar of the webpage.'
 []
 {h1 [Import PDF via SVG Image]}
 ['You can use '{href https://github.com/dawbarton/pdf2svg, a [pdf2svg]}' to convert pdf to svg.']
