@@ -20,7 +20,7 @@
 {dd [
     {src compile.stdn#line, a [Line]}
     {src compile.stdn#unit, a [Unit]}
-    {src compile.stdn#index, a [Index]}
+    {src compile.stdn#count, a [Count]}
     {src compile.stdn#children, a [Children]}
 ]}
 []
