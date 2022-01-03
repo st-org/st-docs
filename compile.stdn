@@ -31,6 +31,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 {h1 [Count]}
 'Global tag units and global option units are not "countable". "no-count" option, "no-count-inside" option and corresponding global option of the tag can make units not countable.'
 []
+{h2 [Index]}
 An index will be given to each countable unit according to the orbit and the level of the unit.
 []
 'The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4, h5 are similar.'
@@ -39,6 +40,7 @@ Countable units with the same orbit and level will be ordered togather and given
 []
 ['Indexes can be accessed in unit compilers and are put into compiled results by built-in unit compilers for '{src index.stdn, a [index units]}.]
 []
+{h2 [Id]}
 The compiled result of a countable unit will have id which is from string value "id" option or the children of the unit. The precise process is showed in the following code.
 []
 {lang js, code [
