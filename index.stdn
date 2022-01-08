@@ -8,28 +8,14 @@
 {h1 [Index Tag Unit]}
 Index tag units are most basic index units.
 []
-Adding "no-tag" class can hide the tag part.
-[]
-{demo [
-    {global, compile-with index, orbit equation, tag eq, e []}
-    {global, compile-with ref, class no-tag, r []}
-    {align [
-        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, e []}\\]
-        [&\cong\Z \tag*{mark {[
-            placeholder
-            [{ref-id h-vs-h-tilde, r []}{'\''}]
-        ]}, e []}]
-    ]}
-]}
-[]
-{hr []}
-[]
 Index tag units are compiled in inline mode by default which can be changed by "block" option.
 []
 {demo [
     {global, compile-with index, block, article []}
     {article [['M. F. Atiyah and R. Bott, '{i [The moment map and equivariant cohomology]}', Topology 23 (1984), no 1, 1-28.']]}
 ]}
+[]
+Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can capitalize the tag part.
 []
 {h1 [Heading Tag Unit]}
 The tag part of a heading tag unit is hided.
