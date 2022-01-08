@@ -1,9 +1,9 @@
 {title [Index]}
-{mod demo@0.7.6, ucs cfr, global []}
+{mod demo@0.7.7, ucs cfr, global []}
 {global, no-count-inside, demo []}
 'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
+'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from global tag option of the tag or the tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
 []
 {h1 [Index Tag Unit]}
 Index tag units are most basic index units.
@@ -11,13 +11,14 @@ Index tag units are most basic index units.
 Adding "no-tag" class can hide the tag part.
 []
 {demo [
-    //
+    {global, compile-with index, orbit equation, tag eq, e []}
+    {global, compile-with ref, class no-tag, r []}
     {align [
-        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
-        [&\cong\Z \tag*{compile-with index, mark {[
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, e []}\\]
+        [&\cong\Z \tag*{mark {[
             placeholder
-            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, equation []}]
+            [{ref-id h-vs-h-tilde, r []}{'\''}]
+        ]}, e []}]
     ]}
 ]}
 []

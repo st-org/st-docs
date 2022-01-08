@@ -1,5 +1,5 @@
 {title [KaTeX]}
-{mod demo@0.7.6, ucs cfr, global []}
+{mod demo@0.7.7, ucs cfr, global []}
 {global, no-count-inside, demo []}
 {h1 [Inline or Display]}
 {demo [
@@ -42,13 +42,14 @@ The katex environment actually used is starred like "align*" for tags in the fol
 []
 {h1 [Use Units in KaTeX]}
 {demo [
-    //
+    {global, compile-with index, orbit equation, tag eq, e []}
+    {global, compile-with ref, class no-tag, r []}
     {align [
-        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
-        [&\cong\Z \tag*{compile-with index, mark {[
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, e []}\\]
+        [&\cong\Z \tag*{mark {[
             placeholder
-            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, equation []}]
+            [{ref-id h-vs-h-tilde, r []}{'\''}]
+        ]}, e []}]
     ]}
 ]}
 []
