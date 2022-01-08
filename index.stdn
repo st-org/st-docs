@@ -1,5 +1,5 @@
 {title [Index]}
-{mod demo@0.7.5, ucs cfr, global []}
+{mod demo@0.7.6, ucs cfr, global []}
 {global, no-count-inside, demo []}
 'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
@@ -13,11 +13,11 @@ Adding "no-tag" class can hide the tag part.
 {demo [
     //
     {align [
-        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-        ['&\cong\Z \tag*{'{compile-with index, mark {[
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+        [&\cong\Z \tag*{compile-with index, mark {[
             placeholder
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, equation []}'}']
+        ]}, equation []}]
     ]}
 ]}
 []

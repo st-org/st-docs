@@ -1,11 +1,11 @@
 {title [KaTeX]}
-{mod demo@0.7.5, ucs cfr, global []}
+{mod demo@0.7.6, ucs cfr, global []}
 {global, no-count-inside, demo []}
 {h1 [Inline or Display]}
 {demo [
     {'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
-    {display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
     {display [{'\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}
+    {display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}
 ]}
 []
 {h1 [Equation]}
@@ -44,11 +44,11 @@ The katex environment actually used is starred like "align*" for tags in the fol
 {demo [
     //
     {align [
-        ['H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{'{id h-vs-h-tilde, compile-with index, equation []}'}'\\]
-        ['&\cong\Z \tag*{'{compile-with index, mark {[
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+        [&\cong\Z \tag*{compile-with index, mark {[
             placeholder
             [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
-        ]}, equation []}'}']
+        ]}, equation []}]
     ]}
 ]}
 []
