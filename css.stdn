@@ -142,6 +142,28 @@
     ]}
 ]}
 []
+{dt [log]}
+{dd [
+    //
+    {lang css, code [
+        '{'
+        '    font-size: var(--length-font-log);'
+        '}'
+    ]}
+]}
+[]
+{dt [stretch]}
+{dd [
+    //
+    {lang css, code [
+        '{'
+        '    display: grid;'
+        '    grid-template-columns: 1fr;'
+        '    margin: var(--length-gap) 0;'
+        '}'
+    ]}
+]}
+[]
 {dt [warn]}
 {dd [
     //
