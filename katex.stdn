@@ -42,7 +42,7 @@ The katex environment actually used is starred like "align*" for tags in the fol
 []
 {h1 [Use Units in KaTeX]}
 {demo [
-    {global, compile-with index, orbit equation, tag eq, e []}
+    {global, orbit equation, compile-with index, tag eq, e []}
     {global, compile-with ref, class no-tag, r []}
     {align [
         [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, e []}\\]
