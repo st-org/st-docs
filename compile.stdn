@@ -53,10 +53,21 @@ The compiled result of a countable unit will have id which is from string value 
 ]}
 []
 {h1 [Children]}
-'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the tag is in the following list, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
+'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the real tag is in the following list or the unit is compiled to a svg element, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
 []
 {dt [Supported html elements with inline children]}
-{dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr audio img track video iframe del ins col colgroup table tbody tfoot thead tr]}
+{dd [
+    {dt [Inline text semantics]}
+    {dd [a abbr b bdi bdo br cite code data dfn em i kbd mark q rp rt ruby s samp small span strong sub sup time u var wbr]}
+    {dt [Image and multimedia]}
+    {dd [audio img track video]}
+    {dt [Embedded content]}
+    {dd [iframe]}
+    {dt [Demarcating edits]}
+    {dd [del ins]}
+    {dt [Table content]}
+    {dd [col colgroup table tbody tfoot thead tr]}
+]}
 []
 {h2 [Inline Way]}
 {demo [

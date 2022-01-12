@@ -3,71 +3,33 @@
 {global, no-count-inside, demo []}
 {demo [
     //
-    {style display:block; fill:currentColor; width:100%, viewBox 0 0 200 100, svg [
+    {style fill:currentColor; width:100%, viewBox 0 0 200 100, svg [
         placeholder
-        {style r:5px, circle [
-            placeholder
-            {dur 5s, repeatCount indefinite, path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, animateMotion []}
+        {circle [
+            {path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, dur 5s, repeatCount indefinite, animateMotion []}
+            {attributeName r, keyTimes 0; .5; 1, values 5; 10; 5, dur 5s, repeatCount indefinite, animate []}
         ]}
     ]}
 ]}
 []
-{compile-with h2, div [Supported SVG Elements and Attributes]}
-{dt [animate]}
-{dd [attributeName begin dur fill keyTimes repeatCount values]}
+{dt [Supported svg elements]}
+{dd [animate animateMotion animateTransform circle clipPath defs desc ellipse g image line marker mask mpath path pattern polygon polyline rect svg symbol text textPath tspan use]}
 []
-{dt [animateMotion]}
+{dt [Supported svg attributes]}
 {dd [
-    attributeName begin dur fill keyTimes repeatCount values
-    keyPoints path rotate
+    {dt [Generic attributes]}
+    {dd [class id lang style tabindex]}
+    {dt [Animation timing attributes]}
+    {dd [begin dur end min max restart repeatCount repeatDur fill]}
+    {dt [Animation value attributes]}
+    {dd [calcMode values keyTimes keySplines from to by]}
+    {dt [Other Animation attributes]}
+    {dd [attributeName additive accumulate]}
+    {dt [Others]}
+    {dd [clipPathUnits crossorigin d dx dy height href keyPoints lengthAdjust markerHeight markerUnits markerWidth maskContentUnits maskUnits method orient path pathLength patternContentUnits patternTransform patternUnits points preserveAspectRatio refX refY rotate side spacing startOffset textLength type viewBox width x x1 x2 y y1 y2]}
 ]}
-[]
-{dt [circle]}
-{dd []}
-[]
-{dt [clipPath]}
-{dd []}
-[]
-{dt [ellipse]}
-{dd []}
-[]
-{dt [foreignObject]}
-{dd []}
-[]
-{dt [g]}
-{dd []}
-[]
-{dt [image]}
-{dd [href preserveAspectRatio]}
-[]
-{dt [mask]}
-{dd [x y width height]}
-[]
-{dt [path]}
-{dd [d]}
-[]
-{dt [pattern]}
-{dd [x y width height preserveAspectRatio viewBox]}
-[]
-{dt [rect]}
-{dd []}
-[]
-{dt [svg]}
-{dd [preserveAspectRatio viewBox]}
-[]
-{dt [text]}
-{dd [x y rotate textLength]}
-[]
-{dt [textPath]}
-{dd [path textLength]}
-[]
-{dt [tspan]}
-{dd [x y rotate textLength]}
-[]
-{dt [use]}
-{dd [href]}
 []
 Some svg attributes like "r" of "circle" are not supported directly because they can be used as css properties.
 []
-['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/SVG/Element, a [mdn]}.]
+['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/SVG, a [mdn]}.]
 []
