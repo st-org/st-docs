@@ -18,8 +18,8 @@
     '    --length-font-heading: 1.3em;'
     '    --length-font-log: .8em;'
     '    --number-ratio-line: 1.5;'
-    '    --font: ui-sans-serif, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;'
-    '    --font-mono: ui-monospace, "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
+    '    --font: "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
+    '    --font-mono: "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
     '}'
 ]}
 []
