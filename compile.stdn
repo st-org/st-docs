@@ -1,5 +1,5 @@
 {title [Compile]}
-{mod demo@0.8.0, ucs cfr, global []}
+{mod demo@0.9.0, ucs cfr, global []}
 {global, no-count-inside, html, demo []}
 ['STDN can be compiled to html. To be exact, a stdn will be compiled to a '{href https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment, a [document fragment]}.]
 []
