@@ -34,8 +34,8 @@
 []
 {dt [{src css.stdn, a [CSS]}]}
 {dd [
-    {src css.stdn#standard-css-variables, a [Standard CSS Variables]}
-    {src css.stdn#useful-css-classes, a [Useful CSS Classes]}
+    {src css.stdn#built-in-css-variables, a [Built-in CSS Variables]}
+    {src css.stdn#built-in-css-classes, a [Built-in CSS Classes]}
 ]}
 []
 {dt [{src global.stdn, a [Global]}]}

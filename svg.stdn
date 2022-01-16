@@ -1,9 +1,9 @@
 {title [SVG]}
-{mod demo@0.9.2, ucs cfr, global []}
+{mod demo@0.9.3, ucs cfr, global []}
 {global, no-count-inside, demo []}
 {demo [
     //
-    {style fill:currentColor; width:100%, viewBox 0 0 200 100, svg [
+    {style fill: currentColor; width: 100%, viewBox 0 0 200 100, svg [
         placeholder
         {circle [
             {path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, dur 5s, repeatCount indefinite, animateMotion []}

@@ -1,12 +1,12 @@
 {title [HTML]}
-{mod demo@0.9.2, ucs cfr, global []}
+{mod demo@0.9.3, ucs cfr, global []}
 {global, no-count-inside, demo []}
 {demo [
     //
     {ul [
         {li [first item]}
         {li [{i [second item]}]}
-        {style font-size:0.8em, li [{b [third item]}]}
+        {style font-size: 0.8em, li [{b [third item]}]}
     ]}
 ]}
 []

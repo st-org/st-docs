@@ -4,90 +4,97 @@
 []
 ['You can learn css in '{href https://developer.mozilla.org/en-US/docs/Web/CSS/Reference, a [mdn]}.]
 []
-{h1 [Standard CSS Variables]}
+{h1 [Built-in CSS Variables]}
+{h2 [Color]}
+{h3 [Light Color Scheme]}
+{lang css, code [
+    'html {'
+    '    --color-text: black;'
+    '    --color-light: gray;'
+    '    --color-border: gainsboro;'
+    '    --color-pre: whitesmoke;'
+    '    --color-background: white;'
+    '    --color-warn: red;'
+    '    --color-string: darkorange;'
+    '    --color-function: goldenrod;'
+    '    --color-number: green;'
+    '    --color-comment: limegreen;'
+    '    --color-class: mediumseagreen;'
+    '    --color-modifier: dodgerblue;'
+    '    --color-variable: deepskyblue;'
+    '    --color-keyword: mediumvioletred;'
+    '    --color-slice: rgba(211 211 211 / .5);'
+    '    --color-selection: rgba(135 206 235 / .5);'
+    '}'
+]}
+[]
+{h3 [Dark Color Scheme]}
+{lang css, code [
+    'html {'
+    '    --color-text: rgb(204 204 204);'
+    '    --color-light: rgb(110 110 110);'
+    '    --color-border: rgb(43 43 43);'
+    '    --color-pre: rgb(24 24 24);'
+    '    --color-background: rgb(17 17 17);'
+    '    --color-warn: rgb(204 111 111);'
+    '    --color-string: rgb(204 162 111);'
+    '    --color-function: rgb(190 171 122);'
+    '    --color-number: rgb(111 157 111);'
+    '    --color-comment: rgb(129 186 129);'
+    '    --color-class: rgb(133 176 152);'
+    '    --color-modifier: rgb(122 163 204);'
+    '    --color-variable: rgb(111 181 204);'
+    '    --color-keyword: rgb(183 118 159);'
+    '    --color-slice: rgb(94 94 94 / .5);'
+    '    --color-selection: rgb(67 93 103 / .5);'
+    '}'
+]}
+[]
+{h2 [Others]}
 {lang css, code [
     'html {'
     '    --length-width: calc(210mm - .8in);'
     '    --length-width-side: 336px;'
-    '    --length-width-bar: 15px;'
     '    --length-tab: 2em;'
     '    --length-padding: 1em;'
     '    --length-gap: .5em;'
     '    --length-space: .25em;'
     '    --length-font-title: 1.8em;'
     '    --length-font-heading: 1.3em;'
-    '    --length-font-log: .8em;'
+    '    --length-font-code: .8em;'
     '    --number-ratio-line: 1.5;'
     '    --font: "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
     '    --font-mono: "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
     '}'
 ]}
 []
-{h2 [Light Color Scheme]}
-{lang css, code [
-    'html {'
-    '    --color-text: black;'
-    '    --color-light: #6a737d;'
-    '    --color-string: darkorange;'
-    '    --color-number: #098658;'
-    '    --color-keyword: #AF00DB;'
-    '    --color-function: #ecad00;'
-    '    --color-variable: deepskyblue;'
-    '    --color-modifier: dodgerblue;'
-    '    --color-class: #267f99;'
-    '    --color-warn: red;'
-    '    --color-comment: limegreen;'
-    '    --color-border: #e1e4e8;'
-    '    --color-bg: white;'
-    '    --color-area: whitesmoke;'
-    '    --color-pre: #f6f8fa;'
-    '    --color-slice: rgba(211, 211, 211, .5);'
-    '    --color-selection: rgba(135, 206, 235, .5);'
-    '    --color-span: rgba(27, 31, 35, .05);'
-    '}'
-]}
-[]
-{h2 [Dark Color Scheme]}
-{lang css, code [
-    'html {'
-    '    --color-text: #cccccc;'
-    '    --color-light: #8f8f8f;'
-    '    --color-string: #df9e61;'
-    '    --color-number: #B5CEA8;'
-    '    --color-keyword: #cc80c6;'
-    '    --color-function: #DCDCAA;'
-    '    --color-variable: #6ec0ec;'
-    '    --color-modifier: #5991cc;'
-    '    --color-class: #4EC9B0;'
-    '    --color-warn: #F44747;'
-    '    --color-comment: #6A9955;'
-    '    --color-border: #2e3133;'
-    '    --color-bg: #131313;'
-    '    --color-area: #161616;'
-    '    --color-pre: #191b1d;'
-    '    --color-slice: rgba(88, 88, 88, .5);'
-    '    --color-selection: rgba(95, 144, 163, .5);'
-    '    --color-span: rgba(58, 61, 65, .5);'
-    '}'
-]}
-[]
-{h1 [Useful CSS Classes]}
-{dt [dark]}
-{dd [
-    Turn darker in dark color scheme.
-    {lang css, code [
-        '{'
-        '    filter: brightness(.5);'
-        '}'
-    ]}
-]}
-[]
+{h1 [Built-in CSS Classes]}
 {dt [invert]}
 {dd [
     Invert color in dark color scheme.
     {lang css, code [
         '{'
-        '    filter: invert(.9147982) brightness(.8745098);'
+        '    filter: brightness(calc(11 / 12)) invert(1) brightness(.8);'
+        '}'
+    ]}
+]}
+[]
+{dt [light]}
+{dd [
+    Turn lighter in dark color scheme.
+    {lang css, code [
+        '{'
+        '    filter: brightness(calc(11 / 14)) invert(.325) brightness(calc(4 / 3));'
+        '}'
+    ]}
+]}
+[]
+{dt [dark]}
+{dd [
+    Turn darker in dark color scheme.
+    {lang css, code [
+        '{'
+        '    filter: brightness(.6875) invert(.1) brightness(calc(2 / 3));'
         '}'
     ]}
 ]}
@@ -138,28 +145,6 @@
     {lang css, code [
         '{'
         '    opacity: 0;'
-        '}'
-    ]}
-]}
-[]
-{dt [log]}
-{dd [
-    //
-    {lang css, code [
-        '{'
-        '    font-size: var(--length-font-log);'
-        '}'
-    ]}
-]}
-[]
-{dt [stretch]}
-{dd [
-    //
-    {lang css, code [
-        '{'
-        '    display: grid;'
-        '    grid-template-columns: 1fr;'
-        '    margin: var(--length-gap) 0;'
         '}'
     ]}
 ]}
