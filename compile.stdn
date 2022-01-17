@@ -16,15 +16,15 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {h1 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the real tag is in the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
+['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is in the supported list in '{src html.stdn#supported-html-elements, a [html.stdn]}', then the unit will be compiled to a corresponding html element. If the real tag is in the supported list in '{src svg.stdn#supported-svg-elements, a [svg.stdn]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
-The real tag is non-empty "compile-with" option or non-empty global "compile-with" option of the tag or the tag.
+['The '{i [real tag]}' is non-empty "compile-with" option or non-empty global "compile-with" option of the tag or the tag.']
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
 'Class list of the compiled result will contain "unit", the real tag, class names in "class" option and class names in global "class" option of the tag.'
 []
-['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' and the supported list in '{src svg.stdn#supported-svg-elements-and-attributes, a [svg.stdn]}.]
+['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not in the supported list in '{src html.stdn#supported-html-attributes, a [html.stdn]}' and the supported list in '{src svg.stdn#supported-svg-attributes, a [svg.stdn]}.]
 []
 {demo [{src https://st-org.github.io/imgs/st.png, img []}]}
 []
@@ -34,7 +34,7 @@ The real tag is non-empty "compile-with" option or non-empty global "compile-wit
 {h2 [Index]}
 An index will be given to each countable unit according to the orbit and the level of the unit.
 []
-'The orbit is non-empty orbit option or non-empty global orbit option of the tag or the tag. The level is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4, h5 are similar.'
+['The '{i [orbit]}' is non-empty orbit option or non-empty global orbit option of the tag or the tag. The '{i [level]}' is non-empty level option or non-empty global level option of the tag or non-empty global level option of the orbit or 1. H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4, h5 are similar.']
 []
 Countable units with the same orbit and level will be ordered togather and given the index one by one. The index will be reset by any countable unit whose orbit is heading and whose level is smaller than the level of the units to be indexed.
 []
