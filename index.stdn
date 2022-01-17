@@ -3,7 +3,9 @@
 {global, no-count-inside, demo []}
 'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
-'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from global tag option of the tag or the tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
+'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the front tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
+[]
+The front tag is global tag option of the tag or the tag.
 []
 {h1 [Index Tag Unit]}
 Index tag units are most basic index units.

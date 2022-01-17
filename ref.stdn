@@ -4,7 +4,7 @@
 {h1 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
 []
-['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. The tag part is from the tag of the referred unit. The mark part is from the non-empty children of the unit or the mark part of the referred unit. The desc part is from desc option.']
+['The compiled result of a ref tag unit consists of three parts: tag, mark and desc. The tag part is from the front tag of the referred unit. The mark part is from the non-empty children of the unit or mark option of the referred unit or the index of the referred unit. The desc part is from desc option.']
 []
 {demo [
     {id flt, mark FLT, desc Fermat, theorem [
