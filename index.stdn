@@ -5,7 +5,7 @@
 []
 'The compiled result of an index unit consists of four parts: tag, mark, desc and content. The tag part is from the front tag. The mark part is from mark option or the index. The desc part is from desc option. The content part is from the children.'
 []
-The front tag is global tag option of the tag or the tag.
+['The '{i [front tag]}' is global tag option of the tag or the tag.']
 []
 {h1 [Index Tag Unit]}
 Index tag units are most basic index units.
