@@ -1,5 +1,5 @@
 {title [Index]}
-{mod demo@0.9.5, ucs cfr, global []}
+{mod demo@0.9.6, ucs cfr, global []}
 {global, no-count-inside, demo []}
 'Standard index units are index tag units, heading tag units, equation tag units, figure tag units and theorem units.'
 []
