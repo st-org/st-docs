@@ -56,7 +56,7 @@ STON is short for simple text object notation.
     {display [STON]}
     {display [JSON]}
     {lang ston, block, code ['[\'hellow \'world, !]']}
-    {lang json, block, code ['["hello ","world","!"]']}
+    {lang json, block, code ['["hello ", "world", "!"]']}
     {lang ston, code [
         '['
         '    \'hellow \''
@@ -75,14 +75,14 @@ STON is short for simple text object notation.
 []
 Commas and spaces can be omitted if there is no confusion.
 []
-[{lang ston, code ['[,\'hellow \'world, , !,]']}' is equivalent to '{lang ston, code ['[\'hellow \'world, !]']}]
+[{lang ston, code ['[,\'hellow \'world, , !,]']}' is equivalent to '{lang ston, code ['[\'hellow \'world, !]']}.]
 []
 {h1 [Object]}
 {two [
     {display [STON]}
     {display [JSON]}
     {lang ston, block, code ['{key\'value\' standalone-key, \'standalone-value\'}']}
-    {lang json, block, code ['{"key":"value","standalone-key":true,"__":"standalone-value"}']}
+    {lang json, block, code ['{"key": "value", "standalone-key": true, "__": "standalone-value"}']}
     {lang ston, code [
         '{'
         '    key value'
@@ -100,8 +100,6 @@ Commas and spaces can be omitted if there is no confusion.
 ]}
 []
 Commas and spaces can be omitted if there is no confusion.
-[]
-[{lang ston, code ['{,key\'value\' standalone-key, , \'standalone-value\',}']}' is equivalent to '{lang ston, code ['{key\'value\' standalone-key, \'standalone-value\'}']}]
 []
 Default value is true. Default key is __.
 []
@@ -122,5 +120,5 @@ There is no colon between key and value.
     '}'
 ]}
 []
-Comments can only be add above an item in array or object.
+Comments can only be placed above some array item or object item.
 []

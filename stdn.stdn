@@ -1,8 +1,9 @@
 {title [STDN]}
-{css-src main.css, ucs cfr, global []}
+{mod demo@0.9.5, css-src main.css, ucs cfr, global []}
+{global, no-count-inside, source []}
 STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
 []
-This article is for explaining the parse of stdn. Compiled results are not invoved in this article. Parsed results are illustrated by ston in this article.
+This article is for explaining the parse of stdn. Compiled results are not invoved. Parsed results are illustrated by ston.
 []
 ['All the source code of parse is in '{href https://github.com/st-org/stdn/blob/main/src/mod.ts, a [mod.ts]}.]
 []
@@ -30,7 +31,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 []
 'The syntax of a stdn source should meet the syntax of the content of a ston array. A stdn source will be parsed to an array with array items. The array is called stdn and these array items are called lines. If an item in stdn source is not an array, then it will be converted to an array in the process of parse.'
 []
-An Item in line can only be a char or a unit. So an item in the source of a line can only be a string or an object. A string in line source will be converted to chars in the process of parse. An object in line source will be converted to a unit in the process of parse.
+An item in the source of a line can only be a string or an object. A string in line source will be converted to chars. An object in line source will be converted to a unit.
 []
 {h1 [Unit]}
 'A unit is an object with three keys: tag, options and children.'
@@ -38,7 +39,7 @@ An Item in line can only be a char or a unit. So an item in the source of a line
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{css-src main.css, global []}']}
+    {source [{css-src main.css, global []}]}
     {lang ston, code [
         '[[{'
         '    tag global'
@@ -59,7 +60,7 @@ Default tag is div.
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{display}']}
+    {source [{display}]}
     {lang ston, code [
         '[[{'
         '    tag div'
@@ -78,7 +79,7 @@ Default tag is div.
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{display, \'e^{i\pi}=-1\'}']}
+    {source [{display, 'e^{i\pi}=-1'}]}
     {lang ston, code [
         '[[{'
         '    tag katex'
@@ -93,17 +94,19 @@ Default tag is div.
 ]}
 []
 {h1 [Options]}
-Options of a unit is an object with string or number or boolean or stdn values. Values in options are from non-array values in unit source. A key in options is called a option of the unit.
+Options are from non-array value keys in unit source.
 []
-'For a value in unit source, if it is an object and the value of __ key in the object is an array, then the corresponding value in options is a stdn which is parsed from the array value.'
+'For an object value key in unit source, if the object has array value __ key, then the value of the corresponding option is a stdn which is parsed from the array.'
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code [
-        '{mark {['
-        '    [\'of \'{ref-id flt, ref []}]'
-        ']}, proof []}'
+    {source [
+        //
+        {mark {[
+            placeholder
+            ['of '{ref-id flt, ref []}]
+        ]}, proof []}
     ]}
     {lang ston, code [
         '[[{'
@@ -126,12 +129,12 @@ Options of a unit is an object with string or number or boolean or stdn values. 
 []
 {hr []}
 []
-'For a value in unit source, if it is an object and the value of __ key in the object is a string, then the corresponding value in options is a stdn which contains a katex tag unit whose children is from the string value.'
+'For an object value key in unit source, if the object has string value __ key, then the value of the corresponding option is a stdn which contains a katex tag unit whose children is from the string.'
 []
 {two [
     {display [Source]}
     {display [Result]}
-    {lang stdn, block, code ['{mark {\'\\\'\'}, proof []}']}
+    {source [{mark {'\''}, proof []}]}
     {lang ston, code [
         '[[{'
         '    tag proof'
