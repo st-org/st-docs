@@ -41,7 +41,7 @@ Countable units with the same orbit and level will be ordered togather and given
 ['Indexes can be accessed in unit compilers and are put into compiled results by built-in unit compilers of '{src index.stdn, a [index units]}.]
 []
 {h2 [Id]}
-The compiled result of a countable unit will have id which is from string value "id" option or the children of the unit. The precise process is showed in the following code.
+The compiled result of a countable unit will have id which is from string value id option or the children of the unit. The precise process is showed in the following code.
 []
 {lang js, code [
     'function stringToId(string) {'
