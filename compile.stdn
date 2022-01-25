@@ -5,7 +5,7 @@
 []
 This article is for explaining the compile of stdn. Compiled results are illustrated by html.
 []
-['All the source code of compile is in '{href https://github.com/st-org/stc/blob/main/src/mod.ts, a [mod.ts]}.]
+['All the source code of compile can be found via '{href https://github.com/st-org/stc/blob/main/src/mod.ts, a [mod.ts]}.]
 []
 {h1 [Line]}
 Each line will be compiled to a div with "st-line" class.

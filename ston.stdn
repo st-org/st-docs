@@ -2,7 +2,7 @@
 {css-src main.css, ucs cfr, global []}
 STON is short for simple text object notation.
 []
-['All the source code of ston is in '{href https://github.com/st-org/ston/blob/main/src/mod.ts, a [mod.ts]}.]
+['All the source code of ston can be found via '{href https://github.com/st-org/ston/blob/main/src/mod.ts, a [mod.ts]}.]
 []
 {h1 [String]}
 {h2 [Unquoted]}
