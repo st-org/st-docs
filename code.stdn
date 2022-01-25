@@ -60,7 +60,7 @@ You can display the content of a code file via src option which supports relativ
 []
 Note that block option is needed if the code file has multiple lines.
 []
-"lang" can be omitted if the value of src option ends with it.
+"lang" can be omitted if it can be guessed from the value of src option.
 []
 {demo [{src https://cdn.jsdelivr.net/gh/microsoft/vscode/extensions/cpp/package.json, block, code []}]}
 []
