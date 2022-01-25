@@ -23,16 +23,16 @@ Assume that there is test.pdf in the current folder.
 {h1 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
 []
-Assume that there is fiber-bundle.tex with the following content in the current folder.
+Assume that there is test.tex with the following content in the current folder.
 []
 {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
-{src fiber-bundle.tex, lang latex, block, code []}
+{src codes/tikz.tex, lang latex, block, code []}
 []
-{block, code [pdflatex fiber-bundle.tex]}
+{block, code [pdflatex test.tex]}
 []
-{block, code [pdf2svg fiber-bundle.pdf fiber-bundle.svg]}
+{block, code [pdf2svg test.pdf test.svg]}
 []
-'Then, you can import fiber-bundle.svg via the following code.'
+'Then, you can import test.svg via the following code.'
 []
-{lang stdn, block, code ['{src fiber-bundle.svg, class invert, img []}']}
+{lang stdn, block, code ['{src test.svg, class invert, img []}']}
 []

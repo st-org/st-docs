@@ -35,16 +35,7 @@ Open the current folder with vscode.
 []
 Create index.html with the following content in the current folder.
 []
-{lang html, code [
-    <!DOCTYPE html>
-    <html data-src="test.stdn">
-    ''
-    <body>
-    '    <script type="module" src="https://cdn.jsdelivr.net/gh/st-org/st-view@0.26.7/main.js"></script>'
-    </body>
-    ''
-    </html>
-]}
+{src codes/index.html, lang html, block, code []}
 []
 Right click in editor and click "Open with Five Server" in context menu.
 []

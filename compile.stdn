@@ -26,9 +26,9 @@ Each line will be compiled to a div with "st-line" class.
 []
 Style of the compiled result will contain "style" option and global "style" option of the tag.
 []
-['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not a '{src html.stdn#supported-html-attributes, a [supported html attribute]}' or '{src svg.stdn#supported-svg-attributes, a [supported svg attribute]}.]
+['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not a '{src html.stdn#supported-html-attributes, a [supported html attribute]}' or '{src svg.stdn#supported-svg-attributes, a [supported svg attribute]}. The value of the corresponding attribute will be an absolute url generated from the value of the option if the option ends with href or src.]
 []
-{demo [{src https://st-org.github.io/imgs/st.png, img []}]}
+{demo [{src imgs/st.png, style height: 5em, img []}]}
 []
 {h1 [Count]}
 'Global tag units and global option units are not "countable". "no-count" option, "no-count-inside" option and corresponding global option of the tag can make units not countable.'
@@ -45,14 +45,7 @@ Countable units with the same orbit and level will be ordered togather and given
 {h2 [Id]}
 The compiled result of a countable unit will have id which is from string value id option or the children of the unit. The precise process is showed in the following code.
 []
-{lang js, code [
-    'function stringToId(string) {'
-    '    return Array.from(string.slice(0, 100).matchAll(/[a-zA-Z0-9]+/g)).join(\'-\').toLowerCase()'
-    '}'
-    'const baseId = stringToId(typeof unit.options.id === \'string\' ? unit.options.id : stdnToInlinePlainString(unit.children))'
-    'const count = baseIdToCount[baseId] = (baseIdToCount[baseId] ?? 0) + 1'
-    'const id = count > 1 || baseId.length === 0 ? `${baseId}~${count}` : baseId'
-]}
+{src codes/id.js, lang js, block, code []}
 []
 {h1 [Children]}
 'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the real tag is in the following list or is the tag of some supported svg element, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
