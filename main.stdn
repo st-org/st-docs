@@ -2,6 +2,6 @@
     {logo []}
     Simple Text
 ]}
-{css-src main.css, ucs cfr, global []}
+{css-src main.css, use cfr@0.1.0, global []}
 'To make typesetting simple and flexible, we designed a new markup language which can be compiled to html like markdown. This new language is similar to json in syntax which makes it more extensible than markdown and briefer than html. We name it "stdn" which is short for simple text document notation.'
 []
