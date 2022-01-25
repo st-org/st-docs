@@ -1,0 +1,18 @@
+html {
+    --color-text: rgb(204 204 204);
+    --color-light: rgb(110 110 110);
+    --color-border: rgb(43 43 43);
+    --color-pre: rgb(24 24 24);
+    --color-background: rgb(17 17 17);
+    --color-warn: rgb(204 111 111);
+    --color-string: rgb(204 162 111);
+    --color-function: rgb(190 171 122);
+    --color-number: rgb(111 157 111);
+    --color-comment: rgb(129 186 129);
+    --color-class: rgb(133 176 152);
+    --color-modifier: rgb(122 163 204);
+    --color-variable: rgb(111 181 204);
+    --color-keyword: rgb(183 118 159);
+    --color-slice: rgb(94 94 94 / .5);
+    --color-selection: rgb(67 93 103 / .5);
+}

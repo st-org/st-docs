@@ -1,0 +1,18 @@
+html {
+    --color-text: black;
+    --color-light: gray;
+    --color-border: gainsboro;
+    --color-pre: whitesmoke;
+    --color-background: white;
+    --color-warn: red;
+    --color-string: darkorange;
+    --color-function: goldenrod;
+    --color-number: green;
+    --color-comment: limegreen;
+    --color-class: mediumseagreen;
+    --color-modifier: dodgerblue;
+    --color-variable: deepskyblue;
+    --color-keyword: mediumvioletred;
+    --color-slice: rgba(211 211 211 / .5);
+    --color-selection: rgba(135 206 235 / .5);
+}

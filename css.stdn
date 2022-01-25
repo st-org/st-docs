@@ -7,66 +7,13 @@
 {h1 [Built-in CSS Variables]}
 {h2 [Color]}
 {h3 [Light Color Scheme]}
-{lang css, code [
-    'html {'
-    '    --color-text: black;'
-    '    --color-light: gray;'
-    '    --color-border: gainsboro;'
-    '    --color-pre: whitesmoke;'
-    '    --color-background: white;'
-    '    --color-warn: red;'
-    '    --color-string: darkorange;'
-    '    --color-function: goldenrod;'
-    '    --color-number: green;'
-    '    --color-comment: limegreen;'
-    '    --color-class: mediumseagreen;'
-    '    --color-modifier: dodgerblue;'
-    '    --color-variable: deepskyblue;'
-    '    --color-keyword: mediumvioletred;'
-    '    --color-slice: rgba(211 211 211 / .5);'
-    '    --color-selection: rgba(135 206 235 / .5);'
-    '}'
-]}
+{src codes/light.css, block, code []}
 []
 {h3 [Dark Color Scheme]}
-{lang css, code [
-    'html {'
-    '    --color-text: rgb(204 204 204);'
-    '    --color-light: rgb(110 110 110);'
-    '    --color-border: rgb(43 43 43);'
-    '    --color-pre: rgb(24 24 24);'
-    '    --color-background: rgb(17 17 17);'
-    '    --color-warn: rgb(204 111 111);'
-    '    --color-string: rgb(204 162 111);'
-    '    --color-function: rgb(190 171 122);'
-    '    --color-number: rgb(111 157 111);'
-    '    --color-comment: rgb(129 186 129);'
-    '    --color-class: rgb(133 176 152);'
-    '    --color-modifier: rgb(122 163 204);'
-    '    --color-variable: rgb(111 181 204);'
-    '    --color-keyword: rgb(183 118 159);'
-    '    --color-slice: rgb(94 94 94 / .5);'
-    '    --color-selection: rgb(67 93 103 / .5);'
-    '}'
-]}
+{src codes/dark.css, block, code []}
 []
 {h2 [Others]}
-{lang css, code [
-    'html {'
-    '    --length-width: calc(210mm - .8in);'
-    '    --length-width-side: 336px;'
-    '    --length-tab: 2em;'
-    '    --length-padding: 1em;'
-    '    --length-gap: .5em;'
-    '    --length-space: .25em;'
-    '    --length-font-title: 1.8em;'
-    '    --length-font-heading: 1.3em;'
-    '    --length-font-code: .8em;'
-    '    --number-ratio-line: 1.5;'
-    '    --font: "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
-    '    --font-mono: "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
-    '}'
-]}
+{src codes/others.css, block, code []}
 []
 {h1 [Built-in CSS Classes]}
 {dt [invert]}
