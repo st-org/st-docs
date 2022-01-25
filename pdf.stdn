@@ -1,5 +1,6 @@
 {title [PDF]}
-{ucs cfr, global []}
+{mod demo@0.9.10, ucs cfr, global []}
+{global, no-count-inside, source []}
 {h1 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
 []
@@ -18,7 +19,7 @@ Assume that there is test.pdf in the current folder.
 []
 'Then, you can import test01.svg via the following code.'
 []
-{lang stdn, block, code ['{src test01.svg, class invert, img []}']}
+{source [{src test01.svg, class invert, img []}]}
 []
 {h1 [Import TikZ via Standalone PDF]}
 Note that tikz can not be used in katex.
@@ -34,5 +35,5 @@ Assume that there is test.tex with the following content in the current folder.
 []
 'Then, you can import test.svg via the following code.'
 []
-{lang stdn, block, code ['{src test.svg, class invert, img []}']}
+{source [{src test.svg, class invert, img []}]}
 []
