@@ -13,7 +13,7 @@ STON is short for simple text object notation.
     {lang json, code ["unquoted string"]}
 ]}
 []
-['Unquoted strings can not contain '{code ['\',{}[]\n\r']}' and can not start with whitespace or end with whitespace. There is no escape in unquoted strings.']
+['Unquoted strings can not contain '{code ['\n\r\',[]{}']}' and can not start with whitespace or end with whitespace. There is no escape in unquoted strings.']
 []
 {h2 [Quoted]}
 {two [
