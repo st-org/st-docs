@@ -103,7 +103,7 @@ Commas and spaces can be omitted if there is no confusion.
 []
 Default value is true. Default key is __.
 []
-['Keys can only contain English letters, numbers and '{code [_-]}' and can not be quoted.']
+['Keys can only contain English letters, numbers and '{code [-_]}' and can not be quoted.']
 []
 There is no colon between key and value.
 []
