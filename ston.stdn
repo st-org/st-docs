@@ -1,5 +1,5 @@
 {title [STON]}
-{css-src main.css, ucs cfr@0.1.0, global []}
+{css-src main.css, ucs cfr@0.1.1, global []}
 STON is short for simple text object notation.
 []
 ['All the source code of ston can be found via '{href https://github.com/st-org/ston/blob/main/src/mod.ts, a [mod.ts]}.]

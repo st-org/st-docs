@@ -1,9 +1,10 @@
+{ucs cfr@0.1.1, global []}
 {h1 [Quick Start]}
 {ol [
     {li [['Install text editor '{href https://code.visualstudio.com, a [vscode]}.]]}
     {li [['Install vscode extension '{href https://marketplace.visualstudio.com/items?itemName=ddu.st-lang, a [ddu.st-lang]}.]]}
     {li [Create new folder hello-st and open it with vscode.]}
     {li [['Download '{href html.stdn, a []}' into hello-st and open it in vscode.']]}
-    {li [Right click in editor and click "Preview" in context menu.]}
+    {li [['Press '{kbd [Ctrl]}+{kbd [Shift]}+{kbd [V]}.]]}
 ]}
 []
