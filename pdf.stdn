@@ -1,5 +1,5 @@
 {title [PDF]}
-{mod demo@0.9.11, ucs cfr@0.1.1, global []}
+{mod demo@0.9.12, ucs cfr@0.1.1, global []}
 {global, no-count-inside, source []}
 {h1 [Export to PDF Using Chrome]}
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
