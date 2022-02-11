@@ -1,0 +1,33 @@
+.unit.ston {
+    display: grid;
+    gap: var(--length-gap);
+    grid-template-columns: 1fr 1fr;
+}
+
+.unit.ston>div {
+    display: grid;
+    gap: var(--length-gap);
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.unit.ston>div::before {
+    display: block;
+    margin: var(--length-space) 0;
+    text-align: center;
+}
+
+.unit.ston>.source::before {
+    content: "STON";
+}
+
+.unit.ston>.result::before {
+    content: "JSON";
+}
+
+.unit.ston>div:first-child>textarea {
+    font-family: var(--font-mono);
+    font-size: var(--length-font-code);
+    margin: var(--length-gap) 0;
+    padding: var(--length-padding);
+}
