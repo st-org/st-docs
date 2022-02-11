@@ -11,7 +11,7 @@ STON is short for simple text object notation.
 ['Unquoted strings can not contain '{code ['\n\r\',[]{}']}' and can not start with whitespace or end with whitespace. There is no escape in unquoted strings.']
 []
 {h2 [Quoted]}
-{ston ['\'\pi\\\\\pi\\\\\'']}
+{ston ['\'\pi\\\\\pi\\\'\\\\\'']}
 []
 ['Strings can only be quoted with single quotes. Only '{code ['\'']}' and '{code [\]}' can be escaped. '{code [\]}' need not to be escaped if there is no confusion.']
 []
