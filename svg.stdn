@@ -13,23 +13,12 @@
 ]}
 []
 {dt [Supported svg elements]}
-{dd [animate animateMotion animateTransform circle clipPath defs desc ellipse g image line marker mask mpath path pattern polygon polyline rect svg symbol text textPath tspan use]}
-[]
-{dt [Supported svg attributes]}
 {dd [
-    {dt [Generic attributes]}
-    {dd [class id lang style tabindex]}
-    {dt [Animation timing attributes]}
-    {dd [begin dur end min max restart repeatCount repeatDur fill]}
-    {dt [Animation value attributes]}
-    {dd [calcMode values keyTimes keySplines from to by]}
-    {dt [Other Animation attributes]}
-    {dd [attributeName additive accumulate]}
+    {dt [Filter elements]}
+    {dd [feblend fecolormatrix fecomponenttransfer fecomposite feconvolvematrix fediffuselighting fedisplacementmap feflood fefunca fefuncb fefuncg fefuncr fegaussianblur feimage femerge femergenode femorphology feoffset fepointlight fespecularlighting fespotlight fetile feturbulence]}
     {dt [Others]}
-    {dd [clipPathUnits crossorigin d dx dy height href keyPoints lengthAdjust markerHeight markerUnits markerWidth maskContentUnits maskUnits method orient path pathLength patternContentUnits patternTransform patternUnits points preserveAspectRatio refX refY rotate side spacing startOffset textLength type viewBox width x x1 x2 y y1 y2]}
+    {dd [animate animateMotion animateTransform circle clipPath defs desc ellipse g image line linearGradient marker mask mpath path pattern polygon polyline radialGradient rect svg symbol text textPath tspan use]}
 ]}
 []
-Some svg attributes like "r" of "circle" are not supported directly because they can be used as css properties.
-[]
-['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/SVG, a [mdn]}.]
+['You can learn these elements in '{href https://developer.mozilla.org/en-US/docs/Web/SVG, a [mdn]}.]
 []

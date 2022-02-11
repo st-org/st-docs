@@ -28,8 +28,5 @@
     {dd [caption col colgroup table tbody td tfoot th thead tr]}
 ]}
 []
-{dt [Supported html attributes]}
-{dd [accesskey align allow alt autoplay cite class cols colspan controls coords crossorigin datetime data-* decoding default dir download draggable for headers href hreflang id kind label lang loop muted name open ping poster preload referrerpolicy rel reversed rows rowspan sandbox scope span spellcheck src srcdoc srclang srcset start style tabindex target title translate usemap value]}
-[]
-['You can learn the effects of these elements and attributes in '{href https://developer.mozilla.org/en-US/docs/Web/HTML/Reference, a [mdn]}.]
+['You can learn these elements in '{href https://developer.mozilla.org/en-US/docs/Web/HTML/Reference, a [mdn]}.]
 []

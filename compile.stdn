@@ -26,7 +26,7 @@ Each line will be compiled to a div with "st-line" class.
 []
 Style of the compiled result will contain "style" option and global "style" option of the tag.
 []
-['General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The corresponding attribute will have "data-" prefix if the option is not a '{src html.stdn#supported-html-attributes, a [supported html attribute]}' or '{src svg.stdn#supported-svg-attributes, a [supported svg attribute]}. The value of the corresponding attribute will be an absolute url generated from the value of the option if the option ends with href or src.]
+General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with href or src.
 []
 {demo [{src imgs/st.png, style height: 5em, img []}]}
 []
