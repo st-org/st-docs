@@ -39,18 +39,16 @@ export const ston = async (unit, compiler) => {
         }
         textarea.disabled = true
         string = textarea.value
-        const pre = await createSourcePre(string, compiler)
+        const pre = sourcePre = await createSourcePre(string, compiler)
         source.innerHTML = ''
-        sourcePre = pre
         source.append(pre)
         pre.addEventListener('click', () => {
             pre.replaceWith(textarea)
             textarea.disabled = false
             textarea.focus()
         })
-        const df = await createResultPre(string, compiler)
         resultEle.innerHTML = ''
-        resultEle.append(df)
+        resultEle.append(await createResultPre(string, compiler))
         return true
     }
     await render()

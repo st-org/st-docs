@@ -1,5 +1,6 @@
 {title [STDN]}
-{mod demo@0.9.12, css-src main.css, ucs cfr@0.1.1, global []}
+{mod demo@0.10.2, ucs cfr@0.1.1, global []}
+{global, parse, demo []}
 {global, no-count-inside, source []}
 STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
 []
@@ -8,25 +9,9 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 ['All the source code of parse can be found via '{href https://github.com/st-org/stdn/blob/main/src/mod.ts, a [mod.ts]}.]
 []
 {h1 [Line]}
-{two [
-    {display [Source]}
-    {display [Result]}
-    {lang stdn, code [
-        first line
-        'second line, third line'
-        '[fourth line]'
-        '\'fifth'
-        ' line\''
-    ]}
-    {lang ston, code [
-        '['
-        '    [f, i, r, s, t, \' \', l, i, n, e]'
-        '    [s, e, c, o, n, d, \' \', l, i, n, e]'
-        '    [t, h, i, r, d, \' \', l, i, n, e]'
-        '    [f, o, u, r, t, h, \' \', l, i, n, e]'
-        '    [f, i, f, t, h, \' \', l, i, n, e]'
-        ']'
-    ]}
+{demo [
+    L 1
+    [{'L'}' 2']
 ]}
 []
 'The syntax of a stdn source should meet the syntax of the content of a ston array. A stdn source will be parsed to an array with array items. The array is called stdn and these array items are called lines. If an item in stdn source is not an array, then it will be converted to an array in the process of parse.'
@@ -36,20 +21,7 @@ An item in the source of a line can only be a string or an object. A string in l
 {h1 [Unit]}
 'A unit is an object with three keys which are tag, options and children.'
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {source [{css-src main.css, global []}]}
-    {lang ston, code [
-        '[[{'
-        '    tag global'
-        '    options {'
-        '        css-src main.css'
-        '    }'
-        '    children []'
-        '}]]'
-    ]}
-]}
+{demo [{class warn, span [L]}]}
 []
 'In the source of a unit, the key with array value will be regarded as the tag, and the children is from the array value. The syntax inside the array value is exactly the syntax of a stdn source.'
 []
@@ -57,98 +29,30 @@ An item in the source of a line can only be a string or an object. A string in l
 []
 Default tag is div.
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {source [{display}]}
-    {lang ston, code [
-        '[[{'
-        '    tag div'
-        '    options {'
-        '        display'
-        '    }'
-        '    children []'
-        '}]]'
-    ]}
-]}
+{demo [{class warn}]}
 []
 {hr []}
 []
 'If there is __ key in unit source, then the tag is katex and the children is from the value of __ key.'
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {source [{display, 'e^{i\pi}=-1'}]}
-    {lang ston, code [
-        '[[{'
-        '    tag katex'
-        '    options {'
-        '        display'
-        '    }'
-        '    children ['
-        '        [e, ^, \'{\', i, \, p, i, \'}\', =, -, \'1\']'
-        '    ]'
-        '}]]'
-    ]}
-]}
+{demo [{display, 'L'}]}
 []
 {h1 [Options]}
 Options are from non-array value keys in unit source.
 []
 'For an object value key in unit source, if the object has array value __ key, then the value of the corresponding option is a stdn which is parsed from the array.'
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {source [
-        //
-        {mark {[
-            placeholder
-            ['of '{ref-id flt, ref []}]
-        ]}, proof []}
-    ]}
-    {lang ston, code [
-        '[[{'
-        '    tag proof'
-        '    options {'
-        '        mark ['
-        '            [o, f, \' \', {'
-        '                tag ref'
-        '                options {'
-        '                    ref-id flt'
-        '                }'
-        '                children []'
-        '            }]'
-        '        ]'
-        '    }'
-        '    children []'
-        '}]]'
-    ]}
+{demo [
+    //
+    {mark {[
+        placeholder
+        ['of '{ref-id flt, ref []}]
+    ]}, proof []}
 ]}
 []
 {hr []}
 []
 'For an object value key in unit source, if the object has string value __ key, then the value of the corresponding option is a stdn which contains a katex tag unit whose children is from the string.'
 []
-{two [
-    {display [Source]}
-    {display [Result]}
-    {source [{mark {'\''}, proof []}]}
-    {lang ston, code [
-        '[[{'
-        '    tag proof'
-        '    options {'
-        '        mark [[{'
-        '            tag katex'
-        '            options {}'
-        '            children ['
-        '                [\'\\\'\']'
-        '            ]'
-        '        }]]'
-        '    }'
-        '    children []'
-        '}]]'
-    ]}
-]}
+{demo [{mark {'\''}, proof []}]}
 []

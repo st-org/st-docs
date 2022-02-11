@@ -3,9 +3,3 @@
     height: 5em;
     margin: var(--length-padding) 0;
 }
-
-.unit.two {
-    display: grid;
-    gap: var(--length-gap);
-    grid-template-columns: 1fr 1fr;
-}
