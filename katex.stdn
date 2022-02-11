@@ -1,7 +1,7 @@
 {title [KaTeX]}
 {mod demo@0.10.2, ucs cfr@0.1.1, global []}
 {global, no-count-inside, demo []}
-['Here is a '{href https://katex.org/docs/supported.html, a [cheat sheet]}' of katex.']
+['Basic commands of katex can be found in this '{href https://katex.org/docs/supported.html, a [cheat sheet]}.]
 []
 {h1 [Inline or Display]}
 {demo [
