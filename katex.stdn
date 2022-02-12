@@ -1,5 +1,5 @@
 {title [KaTeX]}
-{mod demo@0.11.2, ucs cfr@0.1.1, global []}
+{mod demo@0.11.3, ucs cfr@0.1.1, global []}
 {global, no-count-inside, demo []}
 ['Basic commands of katex can be found in this '{href https://katex.org/docs/supported.html, a [cheat sheet]}.]
 []
