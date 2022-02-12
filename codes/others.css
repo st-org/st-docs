@@ -9,6 +9,6 @@ html {
     --length-font-heading: 1.3em;
     --length-font-code: .8em;
     --number-ratio-line: 1.5;
-    --font: "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-mono: "SF Mono", Consolas, monospace, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font: ui-sans-serif, "Segoe UI", sans-serif;
+    --font-mono: ui-monospace, Consolas, monospace, ui-sans-serif, "Segoe UI", sans-serif;
 }
