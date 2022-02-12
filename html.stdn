@@ -4,9 +4,9 @@
 {demo [
     //
     {ul [
-        {li [first item]}
-        {li [{i [second item]}]}
-        {style font-size: 0.8em, li [{b [third item]}]}
+        {li [First item]}
+        {li [{i [Second item]}]}
+        {style font-size: 0.8em, li [{b [Third item]}]}
     ]}
 ]}
 []
