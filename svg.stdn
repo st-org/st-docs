@@ -3,7 +3,7 @@
 {global, no-count-inside, demo []}
 {demo [
     //
-    {style fill: currentColor; width: 100%, viewBox 0 0 200 100, svg [
+    {viewBox 0 0 200 100, style fill: currentColor; width: 100%, svg [
         placeholder
         {circle [
             {path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, dur 5s, repeatCount indefinite, animateMotion []}
@@ -15,7 +15,7 @@
 {dt [Supported svg elements]}
 {dd [
     {dt [Filter elements]}
-    {dd [feblend fecolormatrix fecomponenttransfer fecomposite feconvolvematrix fediffuselighting fedisplacementmap feflood fefunca fefuncb fefuncg fefuncr fegaussianblur feimage femerge femergenode femorphology feoffset fepointlight fespecularlighting fespotlight fetile feturbulence filter]}
+    {dd [feBlend feColorMatrix feComponentTransfer feComposite feConvolveMatrix feDiffuseLighting feDisplacementMap feDistantLight feDropShadow feFlood feFuncA feFuncB feFuncG feFuncR feGaussianBlur feImage feMerge feMergeNode feMorphology feOffset fePointLight feSpecularLighting feSpotLight feTile feTurbulence filter]}
     {dt [Others]}
     {dd [animate animateMotion animateTransform circle clipPath defs desc ellipse g image line linearGradient marker mask mpath path pattern polygon polyline radialGradient rect set stop svg symbol text textPath tspan use]}
 ]}
