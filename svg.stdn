@@ -3,7 +3,7 @@
 {global, no-count-inside, demo []}
 {demo [
     //
-    {viewBox 0 0 200 100, style fill: currentColor; width: 100%, svg [
+    {viewBox 0 0 200 100, style width: 100%; fill: currentColor, svg [
         placeholder
         {circle [
             {path M20 50 C20 -50 180 150 180 50 C180 -50 20 150 20 50 z, dur 5s, repeatCount indefinite, animateMotion []}
