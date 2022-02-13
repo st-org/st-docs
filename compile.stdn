@@ -11,8 +11,8 @@ This article is for explaining the compile of stdn. Compiled results are illustr
 Each line will be compiled to a div with "st-line" class.
 []
 {demo [
-    first line
-    ['second '{span [line]}]
+    First line
+    ['Second '{span [line]}]
 ]}
 []
 {h1 [Unit]}
@@ -68,8 +68,8 @@ The compiled result of a countable unit will have id which is from string value 
 {demo [
     //
     {span [
-        first line
-        second line
+        First line
+        Second line
     ]}
 ]}
 []
@@ -77,8 +77,8 @@ The compiled result of a countable unit will have id which is from string value 
 {demo [
     //
     {div [
-        first line
-        second line
+        First line
+        Second line
     ]}
 ]}
 []
