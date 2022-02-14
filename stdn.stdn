@@ -1,5 +1,5 @@
 {title [STDN]}
-{mod demo@0.12.0, ucs cfr@0.1.1, global []}
+{mod demo@0.12.1, ucs cfr@0.1.1, global []}
 {global, parse, demo []}
 STDN is short for simple text document notation and is based on ston. STDN can be compiled to html.
 []
