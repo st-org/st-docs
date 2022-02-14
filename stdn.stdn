@@ -15,7 +15,7 @@ This article is for explaining the parse of stdn. Compiled results are not invov
 []
 'The syntax of a stdn source should meet the syntax of the content of a ston array. A stdn source will be parsed to an array with array items. The array is called stdn and these array items are called lines. If an item in stdn source is not an array, then it will be converted to an array in the process of parse.'
 []
-An item in the source of a line can only be a string or an object. A string in line source will be converted to chars. An object in line source will be converted to a unit.
+An item in the source of a line can only be a string or an object. A string in line source will be parsed to chars. An object in line source will be parsed to a unit.
 []
 {h1 [Unit]}
 'A unit is an object with three keys which are tag, options and children.'
@@ -39,19 +39,7 @@ Default tag is div.
 {h1 [Options]}
 Options are from non-array value keys in unit source.
 []
-'For an object value key in unit source, if the object has array value __ key, then the value of the corresponding option is a stdn which is parsed from the array.'
-[]
-{demo [
-    //
-    {mark {[
-        placeholder
-        ['of '{ref-id flt, ref []}]
-    ]}, proof []}
-]}
-[]
-{hr []}
-[]
-'For an object value key in unit source, if the object has string value __ key, then the value of the corresponding option is a stdn which contains a katex tag unit whose children is from the string.'
+An object value will be parsed to a unit.
 []
 {demo [{mark {'\''}, proof []}]}
 []

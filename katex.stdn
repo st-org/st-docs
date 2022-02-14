@@ -48,7 +48,7 @@ The katex environment actually used is starred like "align*" for tags in the fol
     {global, compile-with ref, class no-tag, r []}
     {align [
         [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, e []}\\]
-        [&\cong\Z \tag*{mark {[
+        [&\cong\Z \tag*{mark {span [
             placeholder
             [{ref-id h-vs-h-tilde, r []}{'\''}]
         ]}, e []}]
