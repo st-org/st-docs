@@ -35,7 +35,7 @@ The tag part of a heading tag unit is hided.
 []
 {h1 [Theorem Units]}
 {demo [{desc Fermat, theorem [
-    ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+    ['Let '{'n'}' be an integer greater than '{'2,'}' then there are no positive integers '{'a,b,c'}' satisfying']
     {display, 'a^n+b^n=c^n.'}
 ]}]}
 []
@@ -52,7 +52,7 @@ The tag part of a heading tag unit is hided.
 {demo [
     {global, orbit theorem, remark []}
     {desc Fermat, theorem [
-        ['Let '{'n'}' be an integer greater than '{'2'}', then there are no positive integers '{'a,b,c'}' satisfying']
+        ['Let '{'n'}' be an integer greater than '{'2,'}' then there are no positive integers '{'a,b,c'}' satisfying']
         {display, 'a^n+b^n=c^n.'}
     ]}
     {remark [The first successful proof of the above theorem was released in 1994 by Andrew Wiles.]}
