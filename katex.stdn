@@ -55,3 +55,11 @@ The katex environment actually used is starred like "align*" for tags in the fol
     ]}
 ]}
 []
+{h1 [Punctuation]}
+Note the use of punctuations in the following recommended example. Punctuations are not recommend to be placed directly after a katex unit for the consideration of correct line breaking.
+[]
+{demo [
+    ['Let '{'n'}' be an integer greater than '{'2,'}' then there are no positive integers '{'a,b,c'}' satisfying']
+    {equation [{display, 'a^n+b^n=c^n.'}]}
+]}
+[]
