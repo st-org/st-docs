@@ -29,5 +29,5 @@
     font-family: var(--font-mono);
     font-size: var(--length-font-code);
     margin: var(--length-gap) 0;
-    padding: var(--length-padding);
+    padding: calc(var(--length-padding) - 1px);
 }
