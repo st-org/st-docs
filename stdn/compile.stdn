@@ -18,7 +18,12 @@ Each line will be compiled to a div with "st-line" class.
 {h1 [Unit]}
 ['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is the tag of some '{src html.stdn#supported-html-elements, a [supported html element]}', then the unit will be compiled to a corresponding html element. If the real tag is the tag of some '{src svg.stdn#supported-svg-elements, a [supported svg element]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
 []
-['The '{i [real tag]}' is "compile-with" option or global "compile-with" option of the tag or the tag.']
+['The '{i [real tag]}' is']
+{display ["compile-with" option]}
+or
+{display [global "compile-with" option of the tag]}
+or
+{display [the tag.]}
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
@@ -26,17 +31,31 @@ Each line will be compiled to a div with "st-line" class.
 []
 Style of the compiled result will contain "style" option and global "style" option of the tag.
 []
-General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with href or src.
+General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with "href" or "src".
 []
 {demo [{src ../imgs/st.png, style height: 5em, img []}]}
 []
 {h1 [Count]}
-'Global tag units and global option units are not "countable". "no-count" option, "no-count-inside" option and corresponding global option of the tag can make units not countable.'
+['Global tag units and global option units are not '{i [countable]}'. Moreover, "no-count" option, "no-count-inside" option and corresponding global option of the tag can make units not countable.']
 []
 {h2 [Index]}
 An index will be given to each countable unit according to the orbit and the level of the unit.
 []
-['The '{i [orbit]}' is orbit option or global orbit option of the tag or the tag. The '{i [level]}' is level option or global level option of the tag or global level option of the orbit or 1. H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4 and h5 are similar.']
+['The '{i [orbit]}' is']
+{display [orbit option]}
+or
+{display [global orbit option of the tag]}
+or
+{display [the tag.]}
+['The '{i [level]}' is']
+{display [level option]}
+or
+{display [global level option of the tag]}
+or
+{display [global level option of the orbit]}
+or
+{display ['1.']}
+'H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4 and h5 are similar.'
 []
 Countable units with the same orbit and level will be ordered togather and given the index one by one. The index will be reset by any countable unit whose orbit is heading and whose level is smaller than the level of the units to be indexed.
 []
