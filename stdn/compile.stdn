@@ -42,17 +42,17 @@ General non-stdn value options will be added to the compiled result if the corre
 An index will be given to each countable unit according to the orbit and the level of the unit.
 []
 ['The '{i [orbit]}' is']
-{display [orbit option]}
+{display ["orbit" option]}
 or
-{display [global orbit option of the tag]}
+{display [global "orbit" option of the tag]}
 or
 {display [the tag.]}
 ['The '{i [level]}' is']
-{display [level option]}
+{display ["level" option]}
 or
-{display [global level option of the tag]}
+{display [global "level" option of the tag]}
 or
-{display [global level option of the orbit]}
+{display [global "level" option of the orbit]}
 or
 {display ['1.']}
 'H6 tag units are special. Their default orbit is heading and their default level is 6. H1, h2, h3, h4 and h5 are similar.'
