@@ -1,5 +1,5 @@
 {title [CSS]}
-{ucs cfr@0.1.2, global []}
+{ucs cfr@0.2.0, global []}
 ['In stdn, css can be used via "style" option or '{src global.stdn#global-tag-unit, a [global tag units]}.]
 []
 ['You can learn css in '{href https://developer.mozilla.org/en-US/docs/Web/CSS/Reference, a [mdn]}.]

@@ -1,5 +1,5 @@
 {title [Proof]}
-{mod demo@0.12.3, ucs cfr@0.1.2, global []}
+{mod demo@0.12.3, ucs cfr@0.2.0, global []}
 {global, no-count-inside, demo []}
 ['The compiled result of a proof tag unit consists of four parts: tag, mark, desc and content. The tag part is from the '{src index.stdn#front-tag, a [front tag]}. The mark part is from mark option. The desc part is from desc option. The content part is from the children.]
 []

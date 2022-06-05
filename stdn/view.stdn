@@ -1,5 +1,5 @@
 {title [View]}
-{ucs cfr@0.1.2, global []}
+{ucs cfr@0.2.0, global []}
 ['As showed in '{src main.urls#quick-start, a [quick start]}', stdn files can be previewed in vscode. Moreover, they can be viewed in browser which has many advantages. There are many methods of doing this.']
 []
 Assume that there is test.stdn in the current folder and related local resources are all in the current folder.
