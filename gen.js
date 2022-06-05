@@ -8,7 +8,7 @@ const array = [
     '{h1 [Docs]}'
 ]
 for (const file of readFileSync(join(__dirname, 'docs'), {encoding: 'utf8'}).trim().split('\n')) {
-    const string = readFileSync(join(__dirname, `${file}.stdn`), {encoding: 'utf8'})
+    const string = readFileSync(join(__dirname, `stdn/${file}.stdn`), {encoding: 'utf8'})
     const title = string.match(/title \[(.+?)\]/)[1]
     array.push(`{dt [{src ${file}.stdn, a [${title}]}]}`, '{dd [')
     for (const [, name] of string.matchAll(/(?:^|\n){h1 \[(.+)\]}\n/g)) {
@@ -16,4 +16,4 @@ for (const file of readFileSync(join(__dirname, 'docs'), {encoding: 'utf8'}).tri
     }
     array.push(']}', '[]')
 }
-writeFileSync(join(__dirname, 'docs.stdn'), array.join('\n'))
+writeFileSync(join(__dirname, 'stdn/docs.stdn'), array.join('\n'))

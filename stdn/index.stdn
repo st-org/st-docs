@@ -31,7 +31,7 @@ The tag part of a heading tag unit is hided.
 {demo [{equation [{display, '\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2'}]}]}
 []
 {h1 [Figure Tag Unit]}
-{demo [{figure [{src imgs/st.png, style height: 5em, img []}]}]}
+{demo [{figure [{src ../imgs/st.png, style height: 5em, img []}]}]}
 []
 {h1 [Theorem Units]}
 {demo [{desc Fermat, theorem [

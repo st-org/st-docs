@@ -27,7 +27,7 @@ Note that tikz can not be used in katex.
 Assume that there is test.tex with the following content in the current folder.
 []
 {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
-{src codes/tikz.tex, lang latex, block, code []}
+{src ../codes/tikz.tex, lang latex, block, code []}
 []
 {block, code [pdflatex test.tex]}
 []

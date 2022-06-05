@@ -7,13 +7,13 @@
 {h1 [Built-in CSS Variables]}
 {h2 [Color]}
 {h3 [Light Color Scheme]}
-{src codes/light.css, block, code []}
+{src ../codes/light.css, block, code []}
 []
 {h3 [Dark Color Scheme]}
-{src codes/dark.css, block, code []}
+{src ../codes/dark.css, block, code []}
 []
 {h2 [Others]}
-{src codes/others.css, block, code []}
+{src ../codes/others.css, block, code []}
 []
 {h1 [Built-in CSS Classes]}
 {dt [invert]}

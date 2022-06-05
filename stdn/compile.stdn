@@ -28,7 +28,7 @@ Style of the compiled result will contain "style" option and global "style" opti
 []
 General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with href or src.
 []
-{demo [{src imgs/st.png, style height: 5em, img []}]}
+{demo [{src ../imgs/st.png, style height: 5em, img []}]}
 []
 {h1 [Count]}
 'Global tag units and global option units are not "countable". "no-count" option, "no-count-inside" option and corresponding global option of the tag can make units not countable.'
@@ -45,7 +45,7 @@ Countable units with the same orbit and level will be ordered togather and given
 {h2 [Id]}
 The compiled result of a countable unit will have id which is from string value id option or the children of the unit. The precise process is showed in the following code.
 []
-{src codes/id.js, block, code []}
+{src ../codes/id.js, block, code []}
 []
 {h1 [Children]}
 'If a unit is not compiled using a unit compiler, then the children of the unit will be compiled to a document fragment which will be appended to the compiled result of the unit. If the real tag is in the following list or is the tag of some supported svg element, then the children will be compiled in inline way. Otherwise, the children will be compiled in normal way. Normal way is exactly the way in which a stdn is compiled.'
