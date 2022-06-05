@@ -4,7 +4,7 @@ function stringToId(string) {
     return Array.from(string.slice(0, 100).matchAll(/[a-zA-Z0-9]+/g)).join('-').toLowerCase()
 }
 const array = [
-    '{ucs cfr@0.1.1, global []}',
+    '{ucs cfr@0.1.2, global []}',
     '{h1 [Docs]}'
 ]
 for (const file of readFileSync(join(__dirname, 'docs'), {encoding: 'utf8'}).trim().split('\n')) {

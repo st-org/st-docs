@@ -1,5 +1,5 @@
 {title [Ref]}
-{mod demo@0.12.3, ucs cfr@0.1.1, global []}
+{mod demo@0.12.3, ucs cfr@0.1.2, global []}
 {global, no-count-inside, demo []}
 {h1 [Ref Tag Unit]}
 Ref tag units should have ref-id option.
@@ -29,7 +29,7 @@ Adding "no-tag" class can hide the tag part. Adding "capitalize-tag" class can c
 ['Standard module '{href https://github.com/st-mod/cfr, a [cfr]}' provides a simple way to create cross file refs and fixes the problem of relative href in vscode preview.']
 []
 {demo [
-    {ucs cfr@0.1.1, global []}
+    {ucs cfr@0.1.2, global []}
     {src compile.stdn#index, a [Index]}
 ]}
 []
