@@ -16,7 +16,15 @@ Each line will be compiled to a div with "st-line" class.
 ]}
 []
 {h1 [Unit]}
-['Each unit will be compiled to a html element or svg element. If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div. If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler. If the real tag is the tag of some '{src html.stdn#supported-html-elements, a [supported html element]}', then the unit will be compiled to a corresponding html element. If the real tag is the tag of some '{src svg.stdn#supported-svg-elements, a [supported svg element]}', then the unit will be compiled to a corresponding svg element. Otherwise, the unit will be compiled to a div.']
+Each unit will be compiled to a html element or svg element.
+[]
+{ul [
+    {li [['If the unit is a '{src global.stdn#global-tag-unit, a [global tag unit]}' or '{src global.stdn#global-option-units, a [global option unit]}', then it will be compiled to an empty div.']]}
+    {li ['If there is a corresponding unit compiler of the real tag, then the unit will be compiled using the unit compiler.']}
+    {li [['If the real tag is the tag of some '{src html.stdn#supported-html-elements, a [supported html element]}', then the unit will be compiled to a corresponding html element.']]}
+    {li [['If the real tag is the tag of some '{src svg.stdn#supported-svg-elements, a [supported svg element]}', then the unit will be compiled to a corresponding svg element.']]}
+    {li ['Otherwise, the unit will be compiled to a div.']}
+]}
 []
 ['The '{i [real tag]}' is']
 {display ["compile-with" option]}
@@ -27,9 +35,15 @@ or
 []
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
-'Class list of the compiled result will contain "unit", the real tag, class names in "class" option and class names in global "class" option of the tag.'
+Class list of the compiled result will contain
+{dd ['"unit",']}
+{dd ['the real tag,']}
+{dd [class names in "class" option]}
+{dd [and class names in global "class" option of the tag.]}
 []
-Style of the compiled result will contain "style" option and global "style" option of the tag.
+Style of the compiled result will contain
+{dd ["style" option]}
+{dd [and global "style" option of the tag.]}
 []
 General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with "href" or "src".
 []
