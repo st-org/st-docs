@@ -36,14 +36,18 @@ or
 ['Built-in unit compilers can be found via '{href https://github.com/st-org/st-std/blob/main/src/ucs.ts, a [ucs.ts]}. You can import other unit compilers using global tag units.]
 []
 Class list of the compiled result will contain
-{dd ['"unit",']}
-{dd ['the real tag,']}
-{dd [class names in "class" option]}
-{dd [and class names in global "class" option of the tag.]}
+{dd [
+    '"unit",'
+    'the real tag,'
+    class names in "class" option
+    and class names in global "class" option of the tag.
+]}
 []
 Style of the compiled result will contain
-{dd ["style" option]}
-{dd [and global "style" option of the tag.]}
+{dd [
+    "style" option
+    and global "style" option of the tag.
+]}
 []
 General non-stdn value options will be added to the compiled result if the corresponding attribute is not set by unit compiler. The value of the corresponding attribute will be an absolute url if the option ends with "href" or "src".
 []
