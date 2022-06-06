@@ -23,6 +23,11 @@ Following expressions are equivalent.
     {li [{source [{mod-gh st-mod/hello, global []}]}]}
     {li [{source [{css-gh st-mod/hello, ucs-gh st-mod/hello, global []}]}]}
     {li [{source [{css-src https://cdn.jsdelivr.net/gh/st-mod/hello/main.css, ucs-src https://cdn.jsdelivr.net/gh/st-mod/hello/ucs.js, global []}]}]}
+    {li [{source [{registry https://cdn.jsdelivr.net/gh, mod st-mod/hello, global []}]}]}
+    {li [{source [
+        {registry https://cdn.jsdelivr.net/gh/st-mod/hello, global []}
+        {css ., ucs ., global []}
+    ]}]}
 ]}
 []
 "css-src" and "ucs-src" can point to a urls file and support relative url.
