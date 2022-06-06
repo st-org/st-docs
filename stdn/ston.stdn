@@ -1,6 +1,6 @@
 {title [STON]}
 {ucs cfr@0.2.0, global []}
-{registry ../ston-demo, mod ., global []}
+{registry ../ston-demo, mod .., global []}
 STON is short for simple text object notation.
 []
 ['All the source code of ston can be found via '{href https://github.com/st-org/ston/blob/main/src/mod.ts, a [mod.ts]}.]
