@@ -1,5 +1,5 @@
 {title [STON]}
-{ucs cfr@0.2.0, global []}
+{ucs cfr@0.2.1, global []}
 {registry ../ston-demo, mod ., global []}
 STON is short for simple text object notation.
 []
