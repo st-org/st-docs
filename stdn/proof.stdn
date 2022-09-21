@@ -1,5 +1,5 @@
 {title [Proof]}
-{mod demo@0.12.4, ucs cfr@0.2.1, global []}
+{mod demo@0.12.5, ucs cfr@0.2.1, global []}
 {global, no-count-inside, demo []}
 'The compiled result of a proof tag unit consists of four parts: tag, mark, desc and content.'
 []
