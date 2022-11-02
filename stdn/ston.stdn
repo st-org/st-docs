@@ -39,6 +39,7 @@ STON is short for simple text object notation.
 []
 {h1 [Array]}
 {ston ['[\'hellow \'world, !]']}
+[]
 {ston [
     '['
     '    \'hellow \''
@@ -53,6 +54,7 @@ Commas and spaces can be omitted if there is no confusion.
 []
 {h1 [Object]}
 {ston ['{key\'value\' standalone-key, \'standalone-value\'}']}
+[]
 {ston [
     '{'
     '    key value'
