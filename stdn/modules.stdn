@@ -1,0 +1,20 @@
+{ucs cfr@main, global []}
+{h1 [Modules]}
+{src https://cdn.jsdelivr.net/gh/st-mod/demo@main/test/main.stdn, a [demo]}
+{dd [A stdn module for demos]}
+[]
+{src https://cdn.jsdelivr.net/gh/st-mod/beamer@main/main.stdn, a [beamer]}
+{dd [A stdn module for creating slides]}
+[]
+{src https://cdn.jsdelivr.net/gh/st-mod/cd@main/test/main.stdn, a [cd]}
+{dd [A stdn module for creating commutative diagrams]}
+[]
+{src https://cdn.jsdelivr.net/gh/st-mod/page@main/test/main.urls, a [page]}
+{dd [A stdn module for page breaking]}
+[]
+{src https://cdn.jsdelivr.net/gh/st-mod/item@main/test/main.stdn, a [item]}
+{dd [A stdn module for items]}
+[]
+{src https://cdn.jsdelivr.net/gh/st-mod/player@main/test/main.stdn, a [player]}
+{dd [A stdn module for creating video players]}
+[]

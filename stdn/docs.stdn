@@ -1,6 +1,6 @@
-{ucs cfr@0.2.1, global []}
+{ucs cfr@main, global []}
 {h1 [Docs]}
-{dt [{src ston.stdn, a [STON]}]}
+{src ston.stdn, a [STON]}
 {dd [
     {src ston.stdn#string, a [String]}
     {src ston.stdn#number, a [Number]}
@@ -10,14 +10,14 @@
     {src ston.stdn#comment, a [Comment]}
 ]}
 []
-{dt [{src stdn.stdn, a [STDN]}]}
+{src stdn.stdn, a [STDN]}
 {dd [
     {src stdn.stdn#line, a [Line]}
     {src stdn.stdn#unit, a [Unit]}
     {src stdn.stdn#options, a [Options]}
 ]}
 []
-{dt [{src compile.stdn, a [Compile]}]}
+{src compile.stdn, a [Compile]}
 {dd [
     {src compile.stdn#line, a [Line]}
     {src compile.stdn#unit, a [Unit]}
@@ -25,35 +25,35 @@
     {src compile.stdn#children, a [Children]}
 ]}
 []
-{dt [{src html.stdn, a [HTML]}]}
+{src html.stdn, a [HTML]}
 {dd [
 ]}
 []
-{dt [{src svg.stdn, a [SVG]}]}
+{src svg.stdn, a [SVG]}
 {dd [
 ]}
 []
-{dt [{src css.stdn, a [CSS]}]}
+{src css.stdn, a [CSS]}
 {dd [
     {src css.stdn#built-in-css-variables, a [Built-in CSS Variables]}
     {src css.stdn#built-in-css-classes, a [Built-in CSS Classes]}
 ]}
 []
-{dt [{src global.stdn, a [Global]}]}
+{src global.stdn, a [Global]}
 {dd [
     {src global.stdn#title, a [Title]}
     {src global.stdn#global-tag-unit, a [Global Tag Unit]}
     {src global.stdn#global-option-units, a [Global Option Units]}
 ]}
 []
-{dt [{src code.stdn, a [Code]}]}
+{src code.stdn, a [Code]}
 {dd [
     {src code.stdn#inline-or-block, a [Inline or Block]}
     {src code.stdn#highlight, a [Highlight]}
     {src code.stdn#use-src, a [Use Src]}
 ]}
 []
-{dt [{src katex.stdn, a [KaTeX]}]}
+{src katex.stdn, a [KaTeX]}
 {dd [
     {src katex.stdn#inline-or-display, a [Inline or Display]}
     {src katex.stdn#equation, a [Equation]}
@@ -63,7 +63,7 @@
     {src katex.stdn#punctuation, a [Punctuation]}
 ]}
 []
-{dt [{src index.stdn, a [Index]}]}
+{src index.stdn, a [Index]}
 {dd [
     {src index.stdn#index-tag-unit, a [Index Tag Unit]}
     {src index.stdn#heading-tag-unit, a [Heading Tag Unit]}
@@ -75,27 +75,27 @@
     {src index.stdn#change-level, a [Change Level]}
 ]}
 []
-{dt [{src ref.stdn, a [Ref]}]}
+{src ref.stdn, a [Ref]}
 {dd [
     {src ref.stdn#ref-tag-unit, a [Ref Tag Unit]}
     {src ref.stdn#use-html-anchor-element, a [Use HTML Anchor Element]}
     {src ref.stdn#cross-file-ref, a [Cross File Ref]}
 ]}
 []
-{dt [{src proof.stdn, a [Proof]}]}
+{src proof.stdn, a [Proof]}
 {dd [
     {src proof.stdn#qed-here, a [QED Here]}
     {src proof.stdn#solution, a [Solution]}
 ]}
 []
-{dt [{src view.stdn, a [View]}]}
+{src view.stdn, a [View]}
 {dd [
     {src view.stdn#method-one, a [Method One]}
     {src view.stdn#method-two, a [Method Two]}
     {src view.stdn#method-three, a [Method Three]}
 ]}
 []
-{dt [{src pdf.stdn, a [PDF]}]}
+{src pdf.stdn, a [PDF]}
 {dd [
     {src pdf.stdn#export-to-pdf-using-chrome, a [Export to PDF Using Chrome]}
     {src pdf.stdn#import-pdf-via-svg-image, a [Import PDF via SVG Image]}

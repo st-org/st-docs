@@ -1,4 +1,4 @@
-{ucs cfr@0.2.1, global []}
+{ucs cfr@main, global []}
 {h1 [Quick Start]}
 {ol [
     {li [['Install text editor '{href https://code.visualstudio.com, a [vscode]}.]]}

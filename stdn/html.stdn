@@ -1,5 +1,5 @@
 {title [HTML]}
-{mod demo@0.12.8, ucs cfr@0.2.1, global []}
+{mod demo@main, ucs cfr@main, global []}
 {global, no-count-inside, demo []}
 {demo [
     //
